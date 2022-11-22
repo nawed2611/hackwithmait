@@ -7,6 +7,7 @@ import Carousel from './pages/Carousel';
 import Speakers from './pages/Speakers';
 import Schedule from './pages/Schedule';
 import Sponsors from './pages/Sponsors';
+import FAQ from './pages/FAQ';
 import Team from './pages/Team';
 import Footer from './pages/Footer';
 
@@ -22,6 +23,7 @@ function App() {
       <Schedule />
       <Sponsors />
       <Team />
+      <FAQ/>
       <Footer />
     </div>
   )
