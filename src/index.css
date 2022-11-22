@@ -18,3 +18,9 @@ body {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.41), rgba(0, 0, 0, 0.41)),
     linear-gradient(99.17deg, #204ce8 6.86%, #984db3 106.87%);
 }
+.hero-text {
+  background: linear-gradient(99.17deg, #204ce8 6.86%, #984db3 106.87%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
