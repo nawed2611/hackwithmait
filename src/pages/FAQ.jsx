@@ -32,7 +32,7 @@ const FAQ = () => {
             <div className='w-full bg-white '>
                 {/* HEAD */}
                 <div className='transition-all duration-1000 flex justify-between items-center  px-2'>
-                    <h1 className='font-medium text-gray-800 py-2'>Accordion 1</h1>
+                    <h1 className='font-sans font-medium text-gray-800 py-2'>Accordion 1</h1>
                     <button className='bg-white p-3 text-2xl rounded-full hover:bg-emerald-400 shadow-2xl border shadow-inner' style={{'transform':'rotate(0deg)','transitionDuration':'1s'}} onClick={()=>view('1')} id='1'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
@@ -42,7 +42,7 @@ const FAQ = () => {
                 </div>
                 {/* CONTENT */}
                 <div className='max-h-0 transition-all duration-1000 overflow-hidden p-0' id='1c'>
-                    <p className='p-2 text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea incidunt molestiae magnam ab, unde facilis ipsam laborum repellat, doloremque quasi autem at voluptatibus labore nisi dolor dolore temporibus ipsa praesentium.
+                    <p className='font-sans font-light p-2 text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea incidunt molestiae magnam ab, unde facilis ipsam laborum repellat, doloremque quasi autem at voluptatibus labore nisi dolor dolore temporibus ipsa praesentium.
                     </p>
                 </div>
             </div>
@@ -53,7 +53,7 @@ const FAQ = () => {
             <div className='w-full bg-white '>
                 {/* HEAD */}
                 <div className='transition-all duration-1000 flex justify-between items-center  px-2'>
-                    <h1 className='font-medium text-gray-800 py-2'>Accordion 1</h1>
+                    <h1 className='font-sans font-medium text-gray-800 py-2'>Accordion 1</h1>
                     <button className='bg-white p-3 text-2xl rounded-full hover:bg-emerald-400 shadow-2xl border shadow-inner' style={{'transform':'rotate(0deg)','transitionDuration':'1s'}} onClick={()=>view('2')} id='2'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
@@ -63,7 +63,7 @@ const FAQ = () => {
                 </div>
                 {/* CONTENT */}
                 <div className='max-h-0 transition-all duration-1000 overflow-hidden' id='2c'>
-                    <p className='p-2 text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea incidunt molestiae magnam ab, unde facilis ipsam laborum repellat, doloremque quasi autem at voluptatibus labore nisi dolor dolore temporibus ipsa praesentium.
+                    <p className='font-sans font-light p-2 text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea incidunt molestiae magnam ab, unde facilis ipsam laborum repellat, doloremque quasi autem at voluptatibus labore nisi dolor dolore temporibus ipsa praesentium.
                     </p>
                 </div>
             </div>
@@ -74,7 +74,7 @@ const FAQ = () => {
             <div className='w-full bg-white '>
                 {/* HEAD */}
                 <div className='transition-all duration-1000 flex justify-between items-center  px-2'>
-                    <h1 className='font-medium text-gray-800 py-2'>Accordion 1</h1>
+                    <h1 className='font-sans font-medium text-gray-800 py-2'>Accordion 1</h1>
                     <button className='bg-white p-3 text-2xl rounded-full hover:bg-emerald-400 shadow-2xl border shadow-inner' style={{'transform':'rotate(0deg)','transitionDuration':'1s'}} onClick={()=>view('3')} id='3'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
@@ -84,7 +84,7 @@ const FAQ = () => {
                 </div>
                 {/* CONTENT */}
                 <div className='max-h-0 transition-all duration-1000 overflow-hidden' id='3c'>
-                    <p className='p-2 text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea incidunt molestiae magnam ab, unde facilis ipsam laborum repellat, doloremque quasi autem at voluptatibus labore nisi dolor dolore temporibus ipsa praesentium.
+                    <p className='font-sans font-light p-2 text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea incidunt molestiae magnam ab, unde facilis ipsam laborum repellat, doloremque quasi autem at voluptatibus labore nisi dolor dolore temporibus ipsa praesentium.
                     </p>
                 </div>
             </div>
@@ -95,7 +95,7 @@ const FAQ = () => {
             <div className='w-full bg-white '>
                 {/* HEAD */}
                 <div className='transition-all duration-1000 flex justify-between items-center  px-2'>
-                    <h1 className='font-medium text-gray-800 py-2'>Accordion 1</h1>
+                    <h1 className='font-sans font-medium text-gray-800 py-2'>Accordion 1</h1>
                     <button className='bg-white p-3 text-2xl rounded-full hover:bg-emerald-400 shadow-2xl border shadow-inner' style={{'transform':'rotate(0deg)','transitionDuration':'1s'}} onClick={()=>view('4')} id='4'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
@@ -105,7 +105,7 @@ const FAQ = () => {
                 </div>
                 {/* CONTENT */}
                 <div className='max-h-0 transition-all duration-1000 overflow-hidden' id='4c'>
-                    <p className='p-2 text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea incidunt molestiae magnam ab, unde facilis ipsam laborum repellat, doloremque quasi autem at voluptatibus labore nisi dolor dolore temporibus ipsa praesentium.
+                    <p className='font-sans font-light p-2 text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea incidunt molestiae magnam ab, unde facilis ipsam laborum repellat, doloremque quasi autem at voluptatibus labore nisi dolor dolore temporibus ipsa praesentium.
                     </p>
                 </div>
             </div>
@@ -116,7 +116,7 @@ const FAQ = () => {
             <div className='w-full bg-white '>
                 {/* HEAD */}
                 <div className='transition-all duration-1000 flex justify-between items-center  px-2'>
-                    <h1 className='font-medium text-gray-800 py-2'>Accordion 1</h1>
+                    <h1 className='font-sans font-medium text-gray-800 py-2'>Accordion 1</h1>
                     <button className='bg-white p-3 text-2xl rounded-full hover:bg-emerald-400 shadow-2xl border shadow-inner' style={{'transform':'rotate(0deg)','transitionDuration':'1s'}} onClick={()=>view('5')} id='5'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
@@ -126,7 +126,7 @@ const FAQ = () => {
                 </div>
                 {/* CONTENT */}
                 <div className='max-h-0 transition-all duration-1000 overflow-hidden' id='5c'>
-                    <p className='p-2 text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea incidunt molestiae magnam ab, unde facilis ipsam laborum repellat, doloremque quasi autem at voluptatibus labore nisi dolor dolore temporibus ipsa praesentium.
+                    <p className='font-sans font-light p-2 text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea incidunt molestiae magnam ab, unde facilis ipsam laborum repellat, doloremque quasi autem at voluptatibus labore nisi dolor dolore temporibus ipsa praesentium.
                     </p>
                 </div>
             </div>
@@ -137,7 +137,7 @@ const FAQ = () => {
             <div className='w-full bg-white '>
                 {/* HEAD */}
                 <div className='transition-all duration-1000 flex justify-between items-center  px-2'>
-                    <h1 className='font-medium text-gray-800 py-2'>Accordion 1</h1>
+                    <h1 className='font-sans font-medium text-gray-800 py-2'>Accordion 1</h1>
                     <button className='bg-white p-3 text-2xl rounded-full hover:bg-emerald-400 shadow-2xl border shadow-inner' style={{'transform':'rotate(0deg)','transitionDuration':'1s'}} onClick={()=>view('6')} id='6'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
@@ -147,7 +147,7 @@ const FAQ = () => {
                 </div>
                 {/* CONTENT */}
                 <div className='max-h-0 transition-all duration-1000 overflow-hidden' id='6c'>
-                    <p className='p-2 text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea incidunt molestiae magnam ab, unde facilis ipsam laborum repellat, doloremque quasi autem at voluptatibus labore nisi dolor dolore temporibus ipsa praesentium.
+                    <p className='font-sans font-light p-2 text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea incidunt molestiae magnam ab, unde facilis ipsam laborum repellat, doloremque quasi autem at voluptatibus labore nisi dolor dolore temporibus ipsa praesentium.
                     </p>
                 </div>
             </div>
