@@ -17,7 +17,7 @@ const About = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia at quis risus sed vulputate odio ut enim. Nibh nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Mauris vitae ultricies leo integer malesuada nunc. Velit dignissim sodales ut eu sem integer vitae justo. Nullam non nisi est sit. Eros donec ac odio tempor orci. Eu consequat ac felis donec et. Iaculis nunc sed augue lacus viverra vitae congue eu. Mauris augue neque gravida in fermentum et. Scelerisque varius morbi enim nunc. Libero volutpat sed cras ornare arcu dui vivamus arcu. Id diam maecenas ultricies mi eget mauris pharetra et ultrices. Suspendisse sed nisi lacus sed viverra. Eu feugiat pretium nibh ipsum consequat nisl. Ornare arcu dui vivamus arcu felis bibendum ut tristique et. Elementum pulvinar etiam non quam lacus suspendisse. Suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse.
         </p>
 
-        <div className='flex mt-12 w-full p-2 justify-around text-xl font-[800]'>
+        <div className='flex mt-12 w-full p-2 justify-between text-xl font-[800]'>
           <div className=''>
             <p className='underline mb-2'>Date</p>
             <p>14th-15th November 2022 - Hacking</p>

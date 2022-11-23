@@ -19,30 +19,16 @@ const FAQ = () => {
     }
     return (
         <div className='flex flex-col'>
-            <div className='flex w-full space-x-4 px-20 mt-6'>
+            <div className='flex w-full space-x-4 mt-6 px-20'>
                 <div className='font-bold text-2xl'>
-                    Frequently Asked Question
+                    Frequently Asked Questions
                 </div>
-                <div className='bg-gradient-to-r from-[#2441A7] to-transparent w-[80%] h-2 mt-4'>
+                <div className='bg-gradient-to-r from-[#2441A7] to-transparent w-[60%] h-2 mt-4'>
                 </div>
             </div>
 
             <div className='flex flex-col justify-center items-center m-16 mt-4 p-4 '>
-                {/* ACCORDIAN */}
-                <div className='w-full bg-white '>
-                    {/* HEAD */}
-                    <div className='transition-all duration-1000 flex justify-between items-center  px-2'>
-                        <h1 className='font-sans font-medium text-gray-800 py-2'>Accordion 1</h1>
-                        <button className='bg-white p-3 text-2xl rounded-full hover:bg-emerald-400 shadow-2xl border' style={{ 'transform': 'rotate(0deg)', 'transitionDuration': '1s' }} onClick={() => view('1')} id='1'>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                            </svg>
-                        </button>
 
-                    </div>
-                    <div className='bg-gradient-to-r from-[#2441A7] to-transparent w-[60%] h-2 mt-4'>
-                    </div>
-                </div>
 
                 <div className='flex flex-col justify-center items-center m-16 mt-4 p-4 '>
                     {/* ACCORDIAN */}
