@@ -18,7 +18,7 @@ const FAQ = () => {
         }
     }
     return (
-        <div className='flex flex-col  h-screen FAQ'>
+        <div className='flex flex-col'>
           <div className='flex w-full space-x-4 px-20 mt-6'>
             <div className='font-bold text-2xl'>
                 Frequently Asked Question
