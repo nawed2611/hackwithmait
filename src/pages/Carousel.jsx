@@ -12,7 +12,7 @@ const CarouselScreen = () => {
             </div>
             <div className='m-12 '>
                 <div id="carouselExampleControls" className="carousel slide relative" data-bs-ride="carousel">
-                    <div className="carousel-inner relative w-full overflow-hidden">
+                    <div className="carousel-inner relative w-full border-4 border-white rounded overflow-hidden">
                         <div className="carousel-item active relative float-left w-full">
                             <img
                                 src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
