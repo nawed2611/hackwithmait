@@ -7,12 +7,14 @@ const FAQ = () => {
         if(button.style.transform === 'rotate(0deg)'){
             content.style.maxHeight=content.scrollHeight+'px';
             content.style.visibility='visible';
-            button.style.transform = 'rotate(45deg)';            
+            button.style.transform = 'rotate(45deg)'; 
+            button.style.backgroundColor='rgb(52 211 153)'           
         }
         else{
             content.style.maxHeight='';
             content.style.visibility='hidden';
             button.style.transform = 'rotate(0deg)';
+            button.style.backgroundColor='white'
         }
     }
     return (
@@ -31,7 +33,7 @@ const FAQ = () => {
                 {/* HEAD */}
                 <div className='transition-all duration-1000 flex justify-between items-center  px-2'>
                     <h1 className='font-medium text-gray-800 py-2'>Accordion 1</h1>
-                    <button style={{'transform':'rotate(0deg)','transitionDuration':'1s'}} onClick={()=>view('1')} id='1'>
+                    <button className='bg-white p-3 text-2xl rounded-full hover:bg-emerald-400 shadow-2xl border shadow-inner' style={{'transform':'rotate(0deg)','transitionDuration':'1s'}} onClick={()=>view('1')} id='1'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                         </svg>
@@ -52,7 +54,7 @@ const FAQ = () => {
                 {/* HEAD */}
                 <div className='transition-all duration-1000 flex justify-between items-center  px-2'>
                     <h1 className='font-medium text-gray-800 py-2'>Accordion 1</h1>
-                    <button style={{'transform':'rotate(0deg)','transitionDuration':'1s'}} onClick={()=>view('2')} id='2'>
+                    <button className='bg-white p-3 text-2xl rounded-full hover:bg-emerald-400 shadow-2xl border shadow-inner' style={{'transform':'rotate(0deg)','transitionDuration':'1s'}} onClick={()=>view('2')} id='2'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                         </svg>
@@ -73,7 +75,7 @@ const FAQ = () => {
                 {/* HEAD */}
                 <div className='transition-all duration-1000 flex justify-between items-center  px-2'>
                     <h1 className='font-medium text-gray-800 py-2'>Accordion 1</h1>
-                    <button style={{'transform':'rotate(0deg)','transitionDuration':'1s'}} onClick={()=>view('3')} id='3'>
+                    <button className='bg-white p-3 text-2xl rounded-full hover:bg-emerald-400 shadow-2xl border shadow-inner' style={{'transform':'rotate(0deg)','transitionDuration':'1s'}} onClick={()=>view('3')} id='3'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                         </svg>
@@ -94,7 +96,7 @@ const FAQ = () => {
                 {/* HEAD */}
                 <div className='transition-all duration-1000 flex justify-between items-center  px-2'>
                     <h1 className='font-medium text-gray-800 py-2'>Accordion 1</h1>
-                    <button style={{'transform':'rotate(0deg)','transitionDuration':'1s'}} onClick={()=>view('4')} id='4'>
+                    <button className='bg-white p-3 text-2xl rounded-full hover:bg-emerald-400 shadow-2xl border shadow-inner' style={{'transform':'rotate(0deg)','transitionDuration':'1s'}} onClick={()=>view('4')} id='4'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                         </svg>
@@ -115,7 +117,7 @@ const FAQ = () => {
                 {/* HEAD */}
                 <div className='transition-all duration-1000 flex justify-between items-center  px-2'>
                     <h1 className='font-medium text-gray-800 py-2'>Accordion 1</h1>
-                    <button style={{'transform':'rotate(0deg)','transitionDuration':'1s'}} onClick={()=>view('5')} id='5'>
+                    <button className='bg-white p-3 text-2xl rounded-full hover:bg-emerald-400 shadow-2xl border shadow-inner' style={{'transform':'rotate(0deg)','transitionDuration':'1s'}} onClick={()=>view('5')} id='5'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                         </svg>
@@ -136,7 +138,7 @@ const FAQ = () => {
                 {/* HEAD */}
                 <div className='transition-all duration-1000 flex justify-between items-center  px-2'>
                     <h1 className='font-medium text-gray-800 py-2'>Accordion 1</h1>
-                    <button style={{'transform':'rotate(0deg)','transitionDuration':'1s'}} onClick={()=>view('6')} id='6'>
+                    <button className='bg-white p-3 text-2xl rounded-full hover:bg-emerald-400 shadow-2xl border shadow-inner' style={{'transform':'rotate(0deg)','transitionDuration':'1s'}} onClick={()=>view('6')} id='6'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                         </svg>
