@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Hero from './pages/Hero';
 import About from './pages/About';
-
 import Tracks from './pages/Tracks';
 import CarouselScreen from './pages/Carousel';
 import Speakers from './pages/Speakers';

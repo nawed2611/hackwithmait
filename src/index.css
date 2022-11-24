@@ -33,3 +33,23 @@ body {
     #321638 148.44%
   );
 }
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: linear-gradient(99.17deg, #16308b 6.86%, #984db3 106.87%);
+  
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #708790;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  
+  background: #708790;
+}
