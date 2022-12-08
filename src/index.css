@@ -33,3 +33,55 @@ body {
     #321638 148.44%
   );
 }
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: linear-gradient(99.17deg, #16308b 6.86%, #984db3 106.87%);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #708790;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #708790;
+}
+.svg-wrapper {
+  transform: translateY(-50%);
+}
+
+.svg-wrapper svg {
+  position: absolute;
+  top: 48%;
+}
+
+.shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 6px;
+  stroke: #16308b;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 6px;
+  }
+  100% {
+    stroke-dasharray: 960;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}

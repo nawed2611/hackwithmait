@@ -1,5 +1,6 @@
-import React from 'react'
-import { ImLinkedin } from 'react-icons/im'
+import React from 'react';
+import { ImLinkedin } from 'react-icons/im';
+
 const Card = ({ img, linkedin, name, role }) => {
   return (
     <div className='w-[18%] p-2 bg-gradient-to-r from-[#1C42C9] to-[#8E3DAA] flex flex-col items-center rounded-lg'>
