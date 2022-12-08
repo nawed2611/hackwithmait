@@ -2,7 +2,7 @@ import React from 'react';
 
 const CarouselScreen = () => {
     return (
-        <div className='flex flex-col carousel-bg items-center h-screen'>
+        <div className='flex flex-col carousel-bg items-center'>
             <div className='flex w-full space-x-4 px-20 mt-6'>
                 <div className='text-white font-semibold text-2xl'>
                     Hack with MAIT 1.0

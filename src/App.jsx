@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Hero from './pages/Hero';
 import About from './pages/About';
 import Tracks from './pages/Tracks';
@@ -11,7 +11,6 @@ import Team from './pages/Team';
 import Footer from './pages/Footer';
 
 function App() {
-
   return (
     <div className="flex flex-col">
       <Hero />

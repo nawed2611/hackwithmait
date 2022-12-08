@@ -16,25 +16,25 @@ const Sponsors = () => {
 
             {/* sponsors row 1 */}
             <div className='flex px-12 mt-5 space-x-10 items-center justify-center'>
-                <img src="https://miro.medium.com/max/1400/0*c43pw7UiQgpfjDCl.jpg" alt="" className='w-56 h-32' />
-                <img src="https://miro.medium.com/max/1400/0*c43pw7UiQgpfjDCl.jpg" alt="" className='w-56 h-32' />
-                <img src="https://miro.medium.com/max/1400/0*c43pw7UiQgpfjDCl.jpg" alt="" className='w-56 h-32' />
-                <img src="https://miro.medium.com/max/1400/0*c43pw7UiQgpfjDCl.jpg" alt="" className='w-56 h-32' />
+                <img src="https://miro.medium.com/max/1400/0*c43pw7UiQgpfjDCl.jpg" alt="" className='w-56 h-32 hover:scale-105 transition-all rounded-md' />
+                <img src="https://miro.medium.com/max/1400/0*c43pw7UiQgpfjDCl.jpg" alt="" className='w-56 h-32 hover:scale-105 transition-all rounded-md' />
+                <img src="https://miro.medium.com/max/1400/0*c43pw7UiQgpfjDCl.jpg" alt="" className='w-56 h-32 hover:scale-105 transition-all rounded-md' />
+                <img src="https://miro.medium.com/max/1400/0*c43pw7UiQgpfjDCl.jpg" alt="" className='w-56 h-32 hover:scale-105 transition-all rounded-md' />
             </div>
 
             {/* sponsors row 2 */}
             <div className='flex px-16 mt-6 space-x-10 items-center justify-center'>
-                <img src="https://cdn.telanganatoday.com/wp-content/uploads/2021/11/Google-Hyderabad-is-looking-to-hire-for-multiple-roles.jpg" alt="" className='w-56 h-32' />
-                <img src="https://cdn.telanganatoday.com/wp-content/uploads/2021/11/Google-Hyderabad-is-looking-to-hire-for-multiple-roles.jpg" alt="" className='w-56 h-32' />
-                <img src="https://cdn.telanganatoday.com/wp-content/uploads/2021/11/Google-Hyderabad-is-looking-to-hire-for-multiple-roles.jpg" alt="" className='w-56 h-32' />
+                <img src="https://cdn.telanganatoday.com/wp-content/uploads/2021/11/Google-Hyderabad-is-looking-to-hire-for-multiple-roles.jpg" alt="" className='w-56 h-32 hover:scale-105 transition-all rounded-md' />
+                <img src="https://cdn.telanganatoday.com/wp-content/uploads/2021/11/Google-Hyderabad-is-looking-to-hire-for-multiple-roles.jpg" alt="" className='w-56 h-32 hover:scale-105 transition-all rounded-md' />
+                <img src="https://cdn.telanganatoday.com/wp-content/uploads/2021/11/Google-Hyderabad-is-looking-to-hire-for-multiple-roles.jpg" alt="" className='w-56 h-32 hover:scale-105 transition-all rounded-md' />
             </div>
 
             {/* spnsors row 3 */}
             <div className='flex px-12 mt-6 space-x-10 items-center justify-center'>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Netflix_logo.svg/2560px-Netflix_logo.svg.png" alt="" className='w-56 h-32' />
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Netflix_logo.svg/2560px-Netflix_logo.svg.png" alt="" className='w-56 h-32' />
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Netflix_logo.svg/2560px-Netflix_logo.svg.png" alt="" className='w-56 h-32' />
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Netflix_logo.svg/2560px-Netflix_logo.svg.png" alt="" className='w-56 h-32' />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Netflix_logo.svg/2560px-Netflix_logo.svg.png" alt="" className='w-56 h-32 hover:scale-105 transition-all rounded-md' />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Netflix_logo.svg/2560px-Netflix_logo.svg.png" alt="" className='w-56 h-32 hover:scale-105 transition-all rounded-md' />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Netflix_logo.svg/2560px-Netflix_logo.svg.png" alt="" className='w-56 h-32 hover:scale-105 transition-all rounded-md' />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Netflix_logo.svg/2560px-Netflix_logo.svg.png" alt="" className='w-56 h-32 hover:scale-105 transition-all rounded-md' />
             </div>
         </div>
     )
