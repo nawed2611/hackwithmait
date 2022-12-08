@@ -9,7 +9,7 @@ import { Link } from 'react-scroll';
 import { motion } from "framer-motion"
 
 const variants = {
-    open: { opacity: 1, x: 0 },
+    open: { opacity: 10, x: 0 },
     closed: { opacity: 0, x: "-100%" },
 }
 
@@ -37,11 +37,11 @@ const Hero = () => {
                     </ul>
                     <button onClick={() => setIsOpen(isOpen => !isOpen)} className="visible sm:invisible absolute top-10 right-10"><GiHamburgerMenu size={20} /></button>
                     <motion.ul
-                        className='absolute top-0 left-0 w-screen h-screen bg-black flex flex-col items-center justify-center gap-8'
+                        className='absolute top-0 left-0 w-screen h-screen bg-black z-200 flex flex-col items-center justify-center gap-8'
                         animate={isOpen ? "open" : "closed"}
                         variants={variants}
                     >
-                        <button onClick={() => setIsOpen(isOpen => !isOpen)} className=""><AiFillCloseCircle size={20} /></button>
+                        <button onClick={() => setIsOpen(isOpen => !isOpen)} className=""><AiFillCloseCircle size={24} /></button>
                         {
                             navLinks.map((link, index) => {
                                 if (link === 'About Us')
@@ -59,15 +59,20 @@ const Hero = () => {
             <img src={HeroBG} alt='Hero Background' className='absolute top-0 object-cover w-screen h-screen -z-10' />
             <motion.div
                 animate={{ y: -20 }}
-                transition={{ type: "spring", stiffness: 100 }}
-                className='flex flex-col items-center mt-14 sm:mt-24 justify-center'>
-                <h1 className='font-[800] text-center text-8xl'>Hack with MAIT <strong className='hero-text font-[800]'>3.0</strong></h1>
-                <p className='text-2xl mt-4'>Towards a better world through tech</p>
-                <div className='flex text-xl items-center justify-center mt-12'><BsCalendar3 size={18} className='mx-2' />{' '} <p>14th, 15th, 16th November 2022</p></div>
+                transition={{ type: "spring" }}
+                className={'flex flex-col items-center mt-14 sm:mt-24 justify-center' + (isOpen && ' blur-xl')}>
+                <h1 className='font-[800] text-center text-8xl text-wrapper'>Hack with MAIT <strong className='hero-text font-[800]'>3.0</strong></h1>
+                <div className='svg-wrapper'>
+                    <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+                        <rect className="shape" height="60" width="320" />
+                    </svg>
+                    <p className='text-2xl mt-16'>Towards a better world through tech</p>
+                </div>
+                <div className='flex text-xl items-center justify-center mt-12 sm:mt-4'><BsCalendar3 size={18} className='mx-2' />{' '} <p>14th, 15th, 16th November 2022</p></div>
                 <motion.button
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 1 }}
-                    className='mt-6 sm:mt-20 flex items-center text-2xl  justify-center px-4 p-2 button-bg  rounded-xl'><BiUserPlus size={24} className='mr-2' />{' '}<p>Register Here</p></motion.button>
+                    className='mt-6 sm:mt-12 flex items-center text-2xl  justify-center px-4 p-2 button-bg  rounded-xl'><BiUserPlus size={24} className='mr-2' />{' '}<p>Register Here</p></motion.button>
             </motion.div>
         </div>
     )
