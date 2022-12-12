@@ -3,7 +3,7 @@ import location from '../assets/location.svg';
 
 const Schedule = () => {
     return (
-        <div className='flex flex-col h-screen Schedule'>
+        <div className='flex flex-col h-screen Timeline'>
             <div className='flex w-full space-x-4 mt-6 px-20'>
                 <div className='font-bold text-2xl'>
                     Schedule

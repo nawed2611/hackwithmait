@@ -1,16 +1,13 @@
 import React from 'react';
 import trackssvg from '../assets/tracks.svg';
+import PageHeading from '../components/PageHeading';
+
 
 const Tracks = () => {
     return (
-        <div className='flex flex-col Tracks items-center min-h-screen'>
-            <div className='flex w-full space-x-4 px-20 mt-6'>
-                <div className='text-white font-semibold text-2xl'>
-                    Hackathon Tracks
-                </div>
-                <div className='bg-gradient-to-r from-white to-transparent w-[70vw] h-2 mt-4'>
-                </div>
-            </div>
+        <div className='flex flex-col Tracks items-center h-screen'>
+            <PageHeading name="Hackathon Tracks" color="white" />
+
             <img src={trackssvg} className='absolute object-cover w-screen h-screen -z-10' alt='Tracks' />
             <div className='mt-12 sm:mt-2'>
                 <section className="overflow-hidden text-gray-700">

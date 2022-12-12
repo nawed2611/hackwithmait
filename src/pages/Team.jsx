@@ -3,7 +3,7 @@ import Card from '../components/Card'
 
 const Team = () => {
     return (
-        <div className='flex flex-col h-screen'>
+        <div className='flex flex-col h-screen Team Members'>
             <div className='flex w-full space-x-4 px-20 my-6'>
 
                 <div className='font-bold text-2xl'>

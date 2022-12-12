@@ -3,11 +3,11 @@ import React from 'react';
 const CarouselScreen = () => {
     return (
         <div className='flex flex-col carousel-bg items-center'>
-            <div className='flex w-full space-x-4 px-20 mt-6'>
-                <div className='text-white font-semibold text-2xl'>
+            <div className='flex flex-col items-center sm:items-baseline sm:flex-row w-full space-x-4 sm:px-20 p-2 mt-6'>
+                <p className='text-white font-semibold text-2xl'>
                     Hack with MAIT 1.0
-                </div>
-                <div className='bg-gradient-to-r from-white to-transparent w-[70vw] h-2 mt-4'>
+                </p>
+                <div className='bg-gradient-to-r from-white to-transparent sm:w-[80%] w-[90%] h-2 mt-4'>
                 </div>
             </div>
             <div className='m-12 '>

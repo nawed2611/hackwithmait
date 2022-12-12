@@ -20,7 +20,6 @@ const Hero = () => {
     return (
         <div className='flex flex-col min-h-screen overflow-x-hidden text-white'>
             <motion.div
-
                 className='flex items-center justify-between mx-8 px-8 h-[15vh] border-black'>
                 <img src={Logo} alt='React Logo' className='w-18 h-18' />
                 <nav>
@@ -68,7 +67,7 @@ const Hero = () => {
                     </svg>
                     <p className='text-2xl mt-16'>Towards a better world through tech</p>
                 </div>
-                <div className='flex text-xl items-center justify-center mt-12 sm:mt-4'><BsCalendar3 size={18} className='mx-2' />{' '} <p>14th, 15th, 16th November 2022</p></div>
+                <div className='flex text-xl items-center justify-center mt-12 sm:mt-4'><BsCalendar3 size={18} className='mx-2' />{' '} <p>22nd-23rd December 2022</p></div>
                 <motion.button
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 1 }}
