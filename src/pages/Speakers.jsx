@@ -9,7 +9,7 @@ const Speakers = () => {
                     Speakers
                 </p>
 
-                <div className='bg-gradient-to-r from-[#2441A7] to-transparent w-[90%] sm:w-[80%] h-2 mt-4'>
+                <div className='bg-gradient-to-r from-white to-transparent w-[90%] sm:w-[80%] h-2 mt-4'>
                 </div>
             </div>
 

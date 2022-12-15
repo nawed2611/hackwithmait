@@ -10,7 +10,7 @@ import Rishabh from '../assets/Team_Pics/Rishabh.jpg'
 
 const Team = () => {
     return (
-        <div className='flex flex-col h-screen Team Members'>
+        <div className='flex flex-col min-h-screen Team Members'>
             <div className='flex w-full space-x-4 px-20 my-6'>
 
                 <div className='font-bold text-2xl'>
