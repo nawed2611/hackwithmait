@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import trackssvg from '../assets/tracks.svg';
 import PageHeading from '../components/PageHeading';
-import { AiFillCloseCircle } from 'react-icons/ai';
+import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { AnimatePresence, motion } from 'framer-motion';
 
 
@@ -76,12 +76,17 @@ const Tracks = () => {
             </div>
             <AnimatePresence>
                 {selectedId && (
-                    <motion.div className='bg-white rounded-md p-4 absolute sm:mt-64 w-[33vw] min-h-[35vh]' layoutId={selectedId}>
-                        <motion.button onClick={() => setSelectedId(null)}>
-                            <AiFillCloseCircle />
-                        </motion.button>
-                        <motion.h1>{items[selectedId].header}</motion.h1>
-                        <motion.p>{items[selectedId].content}</motion.p>
+                    <motion.div className='bg-white rounded-md border border-blue-800 p-4 absolute sm:mt-64 w-[45vw] min-h-[35vh]' layoutId={selectedId}>
+                        <div className='flex items-center justify-between my-4 px-4'>
+                            <motion.h1 className='font-bold text-2xl'>{items[selectedId].header}</motion.h1>
+                            <motion.button className='flex items-end' onClick={() => setSelectedId(null)}>
+                                <AiOutlineCloseCircle size={22} />
+                            </motion.button>
+                        </div>
+                        <div className='flex items-center justify-between'>
+                            <motion.p>{items[selectedId].content}</motion.p>
+                            <motion.img src={items[selectedId].imageUrl} className='w-32 h-32 border object-cover rounded-lg' alt='Tracks' />
+                        </div>
                     </motion.div>
 
                 )}
