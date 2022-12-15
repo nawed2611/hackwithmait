@@ -68,12 +68,23 @@ const Hero = () => {
                     <p className='text-2xl mt-16'>Towards a better world through tech</p>
                 </div>
                 <div className='flex text-xl items-center justify-center mt-12 sm:mt-4'><BsCalendar3 size={18} className='mx-2' />{' '} <p>22nd-23rd December 2022</p></div>
-                <motion.button
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 1 }}
-                    className='mt-6 sm:mt-12 flex items-center text-2xl  justify-center px-4 p-2 button-bg  rounded-xl'><BiUserPlus size={24} className='mr-2' />{' '}<p>Register Here</p></motion.button>
+                <div className='flex gap-x-6'>
+
+                    <motion.a
+                        href='https://forms.gle/6Z7Z1Z1Z1Z1Z1Z1Z6'
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 1 }}
+                        className='mt-6 sm:mt-12 flex items-center text-2xl  justify-center px-4 p-2 button-bg  rounded-xl'>
+                        <BiUserPlus size={24} className='mr-2' />{' '}<p>Register Here</p></motion.a>
+                    <motion.a
+                        href='https://discord.gg/xrubKyn7'
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 1 }}
+                        className='mt-6 sm:mt-12 flex items-center text-2xl  justify-center px-4 p-2 button-bg  rounded-xl'>
+                        <BiUserPlus size={24} className='mr-2' />{' '}<p>Join Our Discord</p></motion.a>
+                </div>
             </motion.div>
-        </div>
+        </div >
     )
 }
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import PageHeading from '../components/PageHeading';
 
 const FAQ = () => {
     function view(id) {
@@ -19,14 +20,8 @@ const FAQ = () => {
     }
     return (
         <div className='flex flex-col FAQs'>
-            <div className='flex w-full space-x-4 mt-6 px-20'>
-                <div className='font-bold text-2xl'>
-                    Frequently Asked Questions
-                </div>
-                <div className='bg-gradient-to-r from-[#2441A7] to-transparent w-[60%] h-2 mt-4'>
-                </div>
-            </div>
-            <div className='flex flex-col justify-center items-center m-16 mt-4 p-4 '>
+            <PageHeading name='FAQs' color='white' />
+            <div className='flex flex-col w-[80%] mx-auto justify-center items-center m-16 mt-4 p-4 '>
                 <div className='w-full bg-white '>
                     {/* HEAD */}
                     <div className='transition-all duration-1000 flex justify-between items-center  px-2'>

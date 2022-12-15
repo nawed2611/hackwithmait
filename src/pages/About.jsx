@@ -1,15 +1,30 @@
 import React from 'react';
 import Aboutsvg from '../assets/about.svg'
+import trackssvg from '../assets/tracks.svg';
 import PageHeading from '../components/PageHeading';
 
 const About = () => {
   return (
-    <div className='flex flex-col items-center min-h-screen About'>
-      <PageHeading name="About Us" color="blue" /> 
+    <div className='flex flex-col carousel-bg text-white items-center min-h-screen About'>
+      <div className='flex w-full space-x-4 mt-6 px-20'>
+        <div className='font-bold text-2xl'>
+          About Us
+        </div>
+        <div className='bg-gradient-to-r from-[#2441A7] to-transparent w-[70%] h-2 mt-4'>
+        </div>
+      </div>
 
-      <div className='flex flex-col justify-center items-center m-4 sm:m-16 mt-4 p-4'>
+      <img src={trackssvg} className='absolute object-cover w-screen -z-10' alt='About' />
+
+      <div className='flex flex-col justify-center items-center m-2 sm:m-16 mt-2 p-6'>
         <p className='leading-relaxed text-xl font-[500]'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia at quis risus sed vulputate odio ut enim. Nibh nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Mauris vitae ultricies leo integer malesuada nunc. Velit dignissim sodales ut eu sem integer vitae justo. Nullam non nisi est sit. Eros donec ac odio tempor orci. Eu consequat ac felis donec et. Iaculis nunc sed augue lacus viverra vitae congue eu. Mauris augue neque gravida in fermentum et. Scelerisque varius morbi enim nunc. Libero volutpat sed cras ornare arcu dui vivamus arcu. Id diam maecenas ultricies mi eget mauris pharetra et ultrices. Suspendisse sed nisi lacus sed viverra. Eu feugiat pretium nibh ipsum consequat nisl. Ornare arcu dui vivamus arcu felis bibendum ut tristique et. Elementum pulvinar etiam non quam lacus suspendisse. Suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse.
+          Welcome to HackwithMAIT3.0, the annual hackathon organized by the Techcom society of the Computer Science and Engineering department at MAIT.
+
+          This event brings together some of the brightest and most creative minds from across India to compete and collaborate on innovative ideas and projects. Over the course of the hackathon, participants will have the opportunity to work on a wide range of challenges and problem statements, and to learn from experienced mentors and judges from the tech industry.
+
+          At HackwithMAIT3.0, we believe that creativity and ingenuity knows no bounds. Whether you are a seasoned programmer or a complete beginner, we welcome all participants who are eager to learn and to push the boundaries of what is possible.
+
+          We look forward to seeing the amazing ideas and solutions that emerge from this year's hackathon, and to celebrating the achievements of all our participants. Join us and let's make HackwithMAIT3.0 a truly memorable hackathon!
         </p>
 
         <div className='flex flex-col sm:flex-row mt-12 w-full p-2 justify-between text-xl font-[800]'>
