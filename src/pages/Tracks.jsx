@@ -47,7 +47,13 @@ const Tracks = () => {
     }
     return (
         <div className='flex flex-col Tracks items-center min-h-screen'>
-            <PageHeading name="Hackathon Tracks" color="blue" />
+            <div className='flex flex-col sm:flex-row w-full space-x-4 px-20 mt-14'>
+                <div className='text-white font-semibold text-2xl'>
+                   Hackathon Tracks
+                </div>
+                <div className='bg-gradient-to-r from-white to-transparent sm:w-[80%] w-full h-2 mt-4'>
+                </div>
+            </div>
             <img src={trackssvg} className='absolute object-cover w-screen h-screen -z-10' alt='Tracks' />
             <div className={`flex items-center justify-center flex-wrap mt-4 ` + (selectedId && ' blur-lg')}>
                 {

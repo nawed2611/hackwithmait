@@ -3,7 +3,7 @@ import sponsorBg from '../assets/sponsors.svg'
 
 const Sponsors = () => {
     return (
-        <div className='flex flex-col carousel-bg h-screen Sponsors'>
+        <div className='flex flex-col carousel-bg min-h-screen Sponsors py-1'>
             <img src={sponsorBg} className='absolute object-cover w-screen h-screen -z-10' />
             <div className='flex w-full space-x-4 px-20 mt-14'>
                 <div className='text-white font-semibold text-2xl'>

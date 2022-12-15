@@ -2,7 +2,7 @@ import React from 'react'
 
 const PageHeading = ({ name, color }) => {
     return (
-        <div className={'flex flex-col sm:flex-row w-full space-x-4 sm:px-20 items-center p-2 mt-6 ' + (color == "white" ? 'text-black' : 'text-white')}>
+        <div className={'flex flex-col sm:flex-row w-full space-x-4 sm:px-20 items-center p-2 mt-6 ' + (color == "blue" ? 'text-black' : 'text-white')}>
             <p className='font-bold text-2xl'>
                 {name}
             </p>
