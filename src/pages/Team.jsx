@@ -226,7 +226,7 @@ const Team = () => {
             <AnimatePresence>
                 {
                     selectedId && (
-                        <motion.div className='bg-[#1e1e1e] text-white rounded-md sm:ml-72 ml-4 drop-shadow-md border border-blue-800 p-4 absolute mt-32 w-[90vw] sm:w-[45vw] sm:min-h-[50vh]'
+                        <motion.div className='bg-black text-white rounded-md sm:ml-72 ml-4 drop-shadow-md border border-blue-800 p-4 absolute mt-32 w-[90vw] sm:w-[45vw] sm:min-h-[50vh]'
                             initial={{ opacity: 0, y: 100 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: 100 }}

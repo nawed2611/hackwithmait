@@ -12,7 +12,7 @@
 
 body {
   font-family: "Darker Grotesque", sans-serif;
-  background-color: #1e1e1e;
+  background-color: black;
 }
 
 .button-bg {
@@ -89,7 +89,7 @@ body {
     #72c2d3 28.48%,
     #e7a1e0 98.99%
   );
-  opacity: 0.6;
+  opacity: 0.4;
   filter: blur(212.104px);
   position: absolute;
   /* transform: matrix(-0.31, -0.95, -0.95, 0.31, 0, 0); */

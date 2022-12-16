@@ -38,9 +38,9 @@ const About = () => {
           <img src={Aboutsvg} className='w-24 h-24 mx-6 ' />
           <div className='flex flex-col sm:flex-row items-center w-full font-bold sm:ml-20 gap-6'>
             <div className='flex'>
-              <p className='shadow-lg shadow-[#00000030] p-2 px-4'>4</p>
-              <p className='shadow-lg shadow-[#00000030] p-2 px-4'>2</p>
-              <p className='shadow-lg shadow-[#00000030] p-2 px-4'>2</p>
+              <p className='drop-shadow-lg shadow-[#00000030] p-2 px-4'>4</p>
+              <p className='drop-shadow-lg shadow-[#00000030] p-2 px-4'>2</p>
+              <p className='drop-shadow-lg shadow-[#00000030] p-2 px-4'>2</p>
             </div>
             <p className='mx-1 text-center text-3xl'>Connections since Hack with MAIT 1.0</p>
           </div>

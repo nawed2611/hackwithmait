@@ -3,7 +3,8 @@ import '../components/styles/Footer.css';
 
 const Footer = () => {
     return (
-        <div className='flex content-center Contact Us' style={{ 'backgroundImage': 'url(https://i2.wp.com/pixahive.com/wp-content/uploads/2021/03/purple-black-background-369602-pixahive.jpg?fit=2560%2C1440&ssl=1)' }}>
+        <div className='flex content-center Contact Us'>
+            <div className="radial-bg-2 w-[98vw] h-[30vh] absolute"></div>
             <div className='flex flex-wrap  mx-auto shrink justify-evenly'
                 style={{
                     'color': 'white',
