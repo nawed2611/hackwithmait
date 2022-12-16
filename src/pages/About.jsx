@@ -16,7 +16,7 @@ const About = () => {
 
       <img src={trackssvg} className='absolute object-cover w-screen -z-10' alt='About' />
 
-      <div className='flex flex-col justify-center items-center m-2 sm:m-16 mt-2 p-6'>
+      <div className='flex glass flex-col justify-center items-center m-2 sm:m-16 mt-8 p-6'>
         <p className='leading-relaxed text-xl font-[500]'>
           Welcome to HackwithMAIT3.0, the annual hackathon organized by the TechCom society of the Computer Science and Engineering department at MAIT.
 
@@ -27,7 +27,7 @@ const About = () => {
           We look forward to seeing the amazing ideas and solutions that emerge from this year's hackathon, and to celebrating the achievements of all our participants. Join us and let's make HackwithMAIT3.0 a truly memorable hackathon!
         </p>
 
-        <div className='flex flex-col sm:flex-row mt-12 w-full p-2 justify-between text-xl font-[800]'>
+        <div className='flex flex-col sm:flex-row mt-12 w-full p-2 sm:px-6 justify-between text-xl font-[800]'>
           <div className=''>
             <p className='underline mb-2'>Date</p>
             <p>22nd-23rd December 2022 - Hacking</p>
