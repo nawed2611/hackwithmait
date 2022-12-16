@@ -225,9 +225,7 @@ const Team = () => {
                 {
                     selectedId && (
                         <motion.div className='bg-white rounded-md sm:ml-72 ml-4 drop-shadow-md border border-blue-800 p-4 absolute mt-32 w-[90vw] sm:w-[45vw] sm:min-h-[50vh]'
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            exit={{ opacity: 0 }}
+                            
                             layoutId={selectedId}
                         >
                             <motion.button
