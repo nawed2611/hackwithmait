@@ -21,7 +21,7 @@ const Hero = () => {
     return (
         <div className='flex flex-col min-h-screen overflow-x-hidden text-white'>
             <motion.div
-                className='flex items-center justify-between mx-8 pl-8 pr-2 h-[15vh] border-black'>
+                className='flex items-center justify-between mx-4 sm:mx-8 pl-8 pr-2 h-[15vh] border-black'>
                 <img src={Logo} alt='React Logo' className='w-52 h-52' />
                 <nav className=''>
                     <ul className='invisible sm:visible px-4 py-2 ring rounded-md glass flex text-lg gap-8'>
