@@ -20,7 +20,7 @@ const FAQ = () => {
         }
     }
     return (
-        <div className='flex carousel-bg flex-col FAQs'>
+        <div className='flex carousel-bg  flex-col FAQs'>
             <div className='flex flex-col sm:flex-row items-center sm:items-baseline space-x-4 px-20 mt-14'>
                 <div className='text-white font-semibold text-2xl'>
                     FAQs
@@ -28,7 +28,7 @@ const FAQ = () => {
                 <div className='bg-gradient-to-r from-white to-transparent sm:w-[80%] w-full h-2 mt-4'>
                 </div>
             </div>
-            <div className='flex flex-col text-white w-[80%] mx-auto justify-center items-center m-16 mt-4 p-4 '>
+            <div className='flex flex-col glass text-white w-[80%] mx-auto justify-center items-center m-16 mt-4 p-4 '>
                 <div className='w-full'>
                     {/* HEAD */}
                     <div className='transition-all duration-1000 flex justify-between items-center  px-2'>
