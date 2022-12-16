@@ -213,12 +213,12 @@ const Team = () => {
             {/* team members row1 */}
             <motion.div className={`flex flex-1 flex-wrap gap-4 gap-x-6 pb-4 mx-auto sm:w-[80%] items-center justify-center ` + (selectedId && ' blur-lg')} >
                 <Card img={Prakhar} layout layoutId={1} onClick={() => setSelectedId(1)} id={1} linkedin="#" name="Prakhar" role="President" />
-                <Card img={Anupam} layout layoutId={2} onClick={() => setSelectedId(2)} id={2} linkedin="#" name="Anupam" role="role" />
-                <Card img={Megha} layout layoutId={3} onClick={() => setSelectedId(3)} id={3} linkedin="#" name="Megha" role="role" />
-                <Card img={Reeha} layout layoutId={4} onClick={() => setSelectedId(4)} id={4} linkedin="#" name="Reeha" role="role" />
-                <Card img={Kunal} layout layoutId={5} onClick={() => setSelectedId(5)} id={5} linkedin="#" name="Kunal" role="role" />
-                <Card img={Khushboo} layout layoutId={6} onClick={() => setSelectedId(6)} id={6} linkedin="#" name="Khushboo" role="role" />
-                <Card img={Rishabh} layout layoutId={7} onClick={() => setSelectedId(7)} id={7} linkedin="#" name="Rishabh" role="role" />
+                <Card img={Anupam} layout layoutId={2} onClick={() => setSelectedId(2)} id={2} linkedin="#" name="Anupam" role="Vice President" />
+                <Card img={Megha} layout layoutId={3} onClick={() => setSelectedId(3)} id={3} linkedin="#" name="Megha" role="Operational Head" />
+                <Card img={Reeha} layout layoutId={4} onClick={() => setSelectedId(4)} id={4} linkedin="#" name="Reeha" role="General Secretary" />
+                <Card img={Kunal} layout layoutId={5} onClick={() => setSelectedId(5)} id={5} linkedin="#" name="Kunal" role="Senior Student Coordinator" />
+                <Card img={Khushboo} layout layoutId={6} onClick={() => setSelectedId(6)} id={6} linkedin="#" name="Khushboo" role="Social Media Incharge" />
+                <Card img={Rishabh} layout layoutId={7} onClick={() => setSelectedId(7)} id={7} linkedin="#" name="Rishabh" role="Senior Student Coordinator" />
             </motion.div >
 
             <AnimatePresence>
