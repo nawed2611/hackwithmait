@@ -11,26 +11,22 @@ import Rishabh from '../assets/Team_Pics/Rishabh.jpg';
 
 const Team = () => {
     return (
-        <div className='flex flex-col min-h-screen Team Members'>
-            <div className='flex w-full space-x-4 text-white px-20 my-6'>
-
+        <div className='flex flex-col sm:p-6 carousel-bg min-h-screen Team Members'>
+            <div className='flex  w-full flex-col sm:flex-row items-center sm:items-baseline space-x-4 text-white px-20 my-6'>
                 <div className='font-bold text-2xl'>
                     Team Members
                 </div>
-                <div className='bg-gradient-to-r from-white to-transparent w-[80%] h-2 mt-4'>
+                <div className='bg-gradient-to-r from-white to-transparent w-full sm:w-[80%] h-2 mt-4'>
                 </div>
             </div>
 
-            <img src={trackssvg} alt="trackssvg" className='absolute object-cover w-screen h-screen -z-10' />
-
             {/* team members row1 */}
-            <div className='flex px-12 mt-5 space-x-10 items-center justify-center'>
+            <div className='flex flex-1 flex-wrap gap-4 gap-x-6 pb-4 mx-auto sm:w-[80%] items-center justify-center'>
                 <Card img={Prakhar} linkedin="#" name="Prakhar" role="President" />
                 <Card img={Anupam} linkedin="#" name="Anupam" role="role" />
                 <Card img={Megha} linkedin="#" name="Megha" role="role" />
                 <Card img={Reeha} linkedin="#" name="Reeha" role="role" />
-            </div>
-            <div className='flex px-12 mt-5 space-x-10 items-center justify-center'>
+
                 <Card img={Kunal} linkedin="#" name="Kunal" role="role" />
                 <Card img={Khushboo} linkedin="#" name="Khushboo" role="role" />
                 <Card img={Rishabh} linkedin="#" name="Rishabh" role="role" />

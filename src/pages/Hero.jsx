@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import Logo from '../assets/react.svg';
+import Logo from '../assets/logo.jpg';
 import HeroBG from '../assets/hero.svg';
 import { BsCalendar3 } from 'react-icons/bs';
 import { BiUserPlus } from 'react-icons/bi';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiFillCloseCircle } from 'react-icons/ai';
+import { FaDiscord } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import { motion } from "framer-motion"
 
@@ -20,10 +21,10 @@ const Hero = () => {
     return (
         <div className='flex flex-col min-h-screen overflow-x-hidden text-white'>
             <motion.div
-                className='flex items-center justify-between mx-8 px-8 h-[15vh] border-black'>
-                <img src={Logo} alt='React Logo' className='w-18 h-18' />
-                <nav>
-                    <ul className='invisible sm:visible flex text-lg gap-8'>
+                className='flex items-center justify-between mx-8 pl-8 pr-2 h-[15vh] border-black'>
+                <img src={Logo} alt='React Logo' className='w-52 h-52' />
+                <nav className=''>
+                    <ul className='invisible sm:visible px-4 py-2 ring rounded-md glass flex text-lg gap-8'>
                         {
                             navLinks.map((link, index) => {
                                 if (link === 'About Us')
@@ -59,17 +60,16 @@ const Hero = () => {
             <motion.div
                 animate={{ y: -20 }}
                 transition={{ type: "spring" }}
-                className={'flex flex-col items-center mt-14 sm:mt-24 justify-center' + (isOpen && ' blur-xl')}>
+                className={'flex bg-clip-text flex-col items-center mt-4 sm:mt-24 justify-center' + (isOpen && ' blur-xl')}>
                 <h1 className='font-[800] text-center text-8xl text-wrapper'>Hack with MAIT <strong className='hero-text font-[800]'>3.0</strong></h1>
                 <div className='svg-wrapper'>
                     <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
                         <rect className="shape" height="60" width="320" />
                     </svg>
-                    <p className='text-2xl mt-16'>Towards a better world through tech</p>
+                    <p className='text-2xl mt-16 sm:mt-16'>Towards a better world through tech</p>
                 </div>
-                <div className='flex text-xl items-center justify-center mt-12 sm:mt-4'><BsCalendar3 size={18} className='mx-2' />{' '} <p>22nd-23rd December 2022</p></div>
-                <div className='flex gap-x-6'>
-
+                <div className='flex text-xl items-center justify-center sm:mt-4'><BsCalendar3 size={18} className='mx-2' />{' '} <p>22nd-23rd December 2022</p></div>
+                <div className='flex flex-col sm:flex-row gap-x-6'>
                     <motion.a
                         href='https://forms.gle/6Z7Z1Z1Z1Z1Z1Z1Z6'
                         whileHover={{ scale: 1.1 }}
@@ -81,7 +81,7 @@ const Hero = () => {
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 1 }}
                         className='mt-6 sm:mt-12 flex items-center text-2xl  justify-center px-4 p-2 button-bg  rounded-xl'>
-                        <BiUserPlus size={24} className='mr-2' />{' '}<p>Join Our Discord</p></motion.a>
+                        <FaDiscord size={24} className='mr-2' />{' '}<p>Join Our Discord</p></motion.a>
                 </div>
             </motion.div>
         </div >

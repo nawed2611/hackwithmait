@@ -18,6 +18,14 @@ body {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.41), rgba(0, 0, 0, 0.41)),
     linear-gradient(99.17deg, #204ce8 6.86%, #984db3 106.87%);
 }
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
 .hero-text {
   background: linear-gradient(99.17deg, #204ce8 6.86%, #984db3 106.87%);
   -webkit-background-clip: text;
@@ -73,7 +81,7 @@ body {
   stroke-dasharray: 140 540;
   stroke-dashoffset: -474;
   stroke-width: 6px;
-  stroke: #16308b;
+  stroke: #1b2c68;
 }
 
 @keyframes draw {

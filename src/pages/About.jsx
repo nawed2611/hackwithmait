@@ -6,11 +6,11 @@ import PageHeading from '../components/PageHeading';
 const About = () => {
   return (
     <div className='flex flex-col carousel-bg text-white items-center min-h-screen About'>
-      <div className='flex w-full space-x-4 mt-6 px-20'>
+      <div className='flex flex-col sm:flex-row w-full items-center sm:items-baseline sm:space-x-4 mt-6 px-20'>
         <div className='font-bold text-2xl'>
           About Us
         </div>
-        <div className='bg-gradient-to-r from-[#2441A7] to-transparent w-[70%] h-2 mt-4'>
+        <div className='bg-gradient-to-r from-[#2441A7] to-transparent w-full sm:w-[70%] h-2 mt-4'>
         </div>
       </div>
 
@@ -18,7 +18,7 @@ const About = () => {
 
       <div className='flex flex-col justify-center items-center m-2 sm:m-16 mt-2 p-6'>
         <p className='leading-relaxed text-xl font-[500]'>
-          Welcome to HackwithMAIT3.0, the annual hackathon organized by the Techcom society of the Computer Science and Engineering department at MAIT.
+          Welcome to HackwithMAIT3.0, the annual hackathon organized by the TechCom society of the Computer Science and Engineering department at MAIT.
 
           This event brings together some of the brightest and most creative minds from across India to compete and collaborate on innovative ideas and projects. Over the course of the hackathon, participants will have the opportunity to work on a wide range of challenges and problem statements, and to learn from experienced mentors and judges from the tech industry.
 

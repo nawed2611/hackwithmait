@@ -4,11 +4,11 @@ import location from '../assets/location.svg';
 const Schedule = () => {
     return (
         <div className='flex flex-col h-screen Timeline'>
-            <div className='flex w-full space-x-4 mt-6 px-20'>
+            <div className='flex flex-col sm:flex-row items-center sm:items-baseline w-full space-x-4 mt-6 px-20'>
                 <div className='font-bold text-2xl'>
                     Schedule
                 </div>
-                <div className='bg-gradient-to-r from-[#2441A7] to-transparent w-[70%] h-2 mt-4'>
+                <div className='bg-gradient-to-r from-[#2441A7] to-transparent w-full sm:w-[70%] h-2 mt-4'>
                 </div>
             </div>
 

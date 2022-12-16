@@ -46,16 +46,16 @@ const Tracks = () => {
                 layout
                 layoutId={id}
                 onClick={() => setSelectedId(id)}
-                className='flex z-10 flex-col justify-center items-center w-32 h-32 sm:w-[28vw] sm:h-[35vh] m-2 bg-white rounded-lg shadow-lg cursor-pointer'
+                className='flex z-10 flex-col justify-center items-center w-[40%] h-32 sm:w-[28vw] sm:h-[35vh] m-2 bg-white rounded-lg shadow-lg cursor-pointer'
             >
-                <motion.img src={items[id].imageUrl} className='w-full h-full object-fit rounded-lg hover:blur-lg transition-all' alt='Tracks' />
-                <motion.h2 className='bg-white drop-shadow-sm p-2 rounded-md absolute font-bold text-xl' layout>{header}</motion.h2>
+                <motion.img src={items[id].imageUrl} className='w-full h-full object-fit rounded-lg hover:blur-md transition-all' alt='Tracks' />
+                <motion.h2 className='bg-white drop-shadow-sm p-2 rounded-md absolute font-bold  text-xs sm:text-xl' layout>{header}</motion.h2>
             </motion.div>
         )
     }
     return (
         <div className='flex flex-col Tracks items-center min-h-screen'>
-            <div className='flex flex-col sm:flex-row w-full space-x-4 px-20 mt-14'>
+            <div className='flex flex-col sm:flex-row items-center sm:items-baseline w-full space-x-4 px-20 mt-8'>
                 <div className='text-white font-semibold text-2xl'>
                     Hackathon Tracks
                 </div>
@@ -63,7 +63,7 @@ const Tracks = () => {
                 </div>
             </div>
             <img src={trackssvg} className='absolute object-cover w-screen h-screen -z-10' alt='Tracks' />
-            <div className={`flex items-center justify-center flex-wrap mt-4 ` + (selectedId && ' blur-lg')}>
+            <div className={`flex flex-1 items-center justify-center flex-wrap mt-4 ` + (selectedId && ' blur-lg')}>
                 {
                     Object.keys(items).map((id) => (
                         <ToggleContent
@@ -76,7 +76,7 @@ const Tracks = () => {
             </div>
             <AnimatePresence>
                 {selectedId && (
-                    <motion.div className='bg-white rounded-md border border-blue-800 p-4 absolute sm:mt-64 w-[45vw] min-h-[35vh]' layoutId={selectedId}>
+                    <motion.div className='bg-white rounded-md drop-shadow-md border border-blue-800 p-4 absolute sm:mt-64 mt-32 w-[90vw] sm:w-[45vw] sm:min-h-[35vh]' layoutId={selectedId}>
                         <div className='flex items-center justify-between my-4 px-4'>
                             <motion.h1 className='font-bold text-2xl'>{items[selectedId].header}</motion.h1>
                             <motion.button className='flex items-end' onClick={() => setSelectedId(null)}>
@@ -84,7 +84,7 @@ const Tracks = () => {
                             </motion.button>
                         </div>
                         <div className='flex items-center justify-between'>
-                            <motion.p>{items[selectedId].content}</motion.p>
+                            <motion.p className='text-lg m-1'>{items[selectedId].content}</motion.p>
                             <motion.img src={items[selectedId].imageUrl} className='w-32 h-32 border object-cover rounded-lg' alt='Tracks' />
                         </div>
                     </motion.div>
