@@ -10,26 +10,55 @@ const CarouselScreen = () => {
                 <div className='bg-gradient-to-r from-white to-transparent sm:w-[80%] w-[90%] h-2 mt-4'>
                 </div>
             </div>
-            <div className='m-12 '>
+            <div className='m-12 w-screen'>
                 <div id="carouselExampleControls" className="carousel slide relative" data-bs-ride="carousel">
                     <div className="carousel-inner relative w-full border-4 border-white rounded overflow-hidden">
+                        <div className="carousel-item relative float-left w-full">
+                            <img
+                                src="https://cse.mait.ac.in/images/HwM__day2-10.jpeg"
+                                className="block w-full"
+                                alt="Exotic Fruits"
+                            />
+                        </div>
                         <div className="carousel-item active relative float-left w-full">
                             <img
-                                src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
+                                src="https://cse.mait.ac.in/images/Hack-With-MAIT_20_14.jpeg"
                                 className="block w-full"
                                 alt="Wild Landscape"
+                                style={{backgroundSize:'98%'}}
                             />
                         </div>
                         <div className="carousel-item relative float-left w-full">
                             <img
-                                src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
+                                src="https://cse.mait.ac.in/images/Hack-With-MAIT_20_13.jpeg"
                                 className="block w-full"
                                 alt="Camera"
                             />
                         </div>
                         <div className="carousel-item relative float-left w-full">
                             <img
-                                src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
+                                src="https://cse.mait.ac.in/images/Hack-With-MAIT_20_12.jpeg"
+                                className="block w-full"
+                                alt="Exotic Fruits"
+                            />
+                        </div>
+                        <div className="carousel-item relative float-left w-full">
+                            <img
+                                src="https://cse.mait.ac.in/images/HwM_Day1_-1.jpeg"
+                                className="block w-full"
+                                alt="Exotic Fruits"
+                            />
+                        </div>
+                        <div className="carousel-item relative float-left w-full">
+                            <img
+                                src="https://cse.mait.ac.in/images/HwM_Day2_-5.jpeg"
+                                className="block w-full"
+                                alt="Exotic Fruits"
+                            />
+                        </div>
+                        <div className="carousel-item relative float-left w-full">
+                            <img
+                                src="https://cse.mait.ac.in/images/HackwithMAIT.jpg"
                                 className="block w-full"
                                 alt="Exotic Fruits"
                             />
