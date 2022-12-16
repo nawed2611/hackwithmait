@@ -54,7 +54,7 @@ const Tracks = () => {
         )
     }
     return (
-        <div className='flex flex-col Tracks items-center min-h-screen'>
+        <div className='flex flex-col Tracks items-center min-h-screen '>
             <div className='flex flex-col sm:flex-row items-center sm:items-baseline w-full space-x-4 px-20 mt-8'>
                 <div className='text-white font-semibold text-2xl'>
                     Hackathon Tracks
@@ -62,7 +62,7 @@ const Tracks = () => {
                 <div className='bg-gradient-to-r from-white to-transparent sm:w-[80%] w-full h-2 mt-4'>
                 </div>
             </div>
-            <img src={trackssvg} className='absolute object-cover w-screen h-screen -z-10' alt='Tracks' />
+            <div className='radial-bg-2 w-[98vw] h-screen absolute'></div>
             <div className={`flex flex-1 items-center justify-center flex-wrap mt-4 ` + (selectedId && ' blur-lg')}>
                 {
                     Object.keys(items).map((id) => (
@@ -76,7 +76,8 @@ const Tracks = () => {
             </div>
             <AnimatePresence>
                 {selectedId && (
-                    <motion.div className='bg-white rounded-md drop-shadow-md border border-blue-800 p-4 absolute sm:mt-64 mt-32 w-[90vw] sm:w-[45vw] sm:min-h-[35vh]' layoutId={selectedId}>
+
+                    <motion.div className='bg-[#1e1e1e] text-white rounded-md drop-shadow-md border border-blue-800 p-4 absolute sm:mt-64 mt-32 w-[90vw] sm:w-[45vw] sm:min-h-[35vh]' layoutId={selectedId}>
                         <div className='flex items-center justify-between my-4 px-4'>
                             <motion.h1 className='font-bold text-2xl'>{items[selectedId].header}</motion.h1>
                             <motion.button className='flex items-end' onClick={() => setSelectedId(null)}>
@@ -88,6 +89,7 @@ const Tracks = () => {
                             <motion.img src={items[selectedId].imageUrl} className='w-32 h-32 border object-cover rounded-lg' alt='Tracks' />
                         </div>
                     </motion.div>
+
 
                 )}
             </AnimatePresence>

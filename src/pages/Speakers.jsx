@@ -29,7 +29,7 @@ const Speakers = () => {
         }
     }
     return (
-        <div className='flex Speakers carousel-bg p-6 text-white flex-col items-center min-h-screen'>
+        <div className='flex Speakers pt-6 text-white flex-col items-center min-h-screen'>
             <div className='flex flex-col sm:flex-row w-full space-x-4 sm:px-20 items-center p-2 mt-6'>
                 <p className='font-bold text-2xl'>
                     Speakers
@@ -37,8 +37,10 @@ const Speakers = () => {
                 <div className='bg-gradient-to-r from-white to-transparent w-[90%] sm:w-[80%] h-2 mt-4'>
                 </div>
             </div>
+            <div className='radial-bg-2 w-[98vw] h-screen'>
+            </div>
 
-            <div className='flex flex-1 text-black gap-4 gap-x-6 pb-4 mx-auto sm:w-[80%] items-center flex-wrap mt-12 p-2 sm:flex-row justify-center'>
+            <div className='flex flex-1 gap-6 pb-4 mx-auto sm:w-[80%] items-center flex-wrap pt-6 mt-6 p-2 sm:flex-row justify-center'>
                 <SpeakerCard img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRqR0Lpuzd59CDB5CoFPf-z2i9jQmgrD2nKkwma4No2iFwum32ZNbwDz2yowhhmjEx0Rc&usqp=CAU" linkedin="#" name="Name" role="role" />
                 <SpeakerCard img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRqR0Lpuzd59CDB5CoFPf-z2i9jQmgrD2nKkwma4No2iFwum32ZNbwDz2yowhhmjEx0Rc&usqp=CAU" linkedin="#" name="Name" role="role" />
                 <SpeakerCard img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRqR0Lpuzd59CDB5CoFPf-z2i9jQmgrD2nKkwma4No2iFwum32ZNbwDz2yowhhmjEx0Rc&usqp=CAU" linkedin="#" name="Name" role="role" />

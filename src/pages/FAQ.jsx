@@ -20,7 +20,7 @@ const FAQ = () => {
         }
     }
     return (
-        <div className='flex carousel-bg  flex-col FAQs'>
+        <div className='flex carousel-bg flex-col FAQs'>
             <div className='flex flex-col sm:flex-row items-center sm:items-baseline space-x-4 px-20 mt-14'>
                 <div className='text-white font-semibold text-2xl'>
                     FAQs

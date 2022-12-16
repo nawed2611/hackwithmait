@@ -3,8 +3,8 @@ import location from '../assets/location.svg';
 
 const Schedule = () => {
     return (
-        <div className='flex flex-col h-screen Timeline'>
-            <div className='flex flex-col sm:flex-row items-center sm:items-baseline w-full space-x-4 mt-6 px-20'>
+        <div className='flex flex-col h-screen text-white Timeline'>
+            <div className='flex flex-col  sm:flex-row items-center sm:items-baseline w-full space-x-4 mt-6 px-20'>
                 <div className='font-bold text-2xl'>
                     Schedule
                 </div>
@@ -16,7 +16,7 @@ const Schedule = () => {
                 <div className='flex items-center'>
                     <div className='box rounded-l-lg p-4 bg-gradient-to-r from-red-700 to-rose-400 w-[10%]' style={{ 'marginRight': '-2.5vw' }}>
                     </div>
-                    <div className='box p-3 bg-white w-[6%]' style={{ 'borderRadius': '2.5vw 2.5vw 2.5vw 2.5vw', 'zIndex': '1', }}>
+                    <div className='box p-3 w-[6%]' style={{ 'borderRadius': '2.5vw 2.5vw 2.5vw 2.5vw', 'zIndex': '1', }}>
                         <img src={location} alt='location' className='relative hover:-top-8 transition-all -top-6' />
                         <div className='absolute mt-2 ml-6'>
                             <p className='font-bold text-xl'>1. Lorem Ipsum Dolor</p>
@@ -24,7 +24,7 @@ const Schedule = () => {
                     </div>
                     <div className='box p-4 bg-gradient-to-r from-rose-600 to-orange-600 w-[40%]' style={{ 'marginLeft': '-2.5vw', 'marginRight': '-2.5vw' }}>
                     </div>
-                    <div className='box p-3 bg-white w-[6%]' style={{ 'borderRadius': '2.5vw 2.5vw 2.5vw 2.5vw', 'zIndex': '1' }}>
+                    <div className='box p-3 w-[6%]' style={{ 'borderRadius': '2.5vw 2.5vw 2.5vw 2.5vw', 'zIndex': '1' }}>
                         <img src={location} alt='location' className='relative hover:-top-8 transition-all -top-6' />
                         <div className='absolute mt-2 ml-6'>
                             <p className='font-bold text-xl'>1. Lorem Ipsum Dolor</p>
@@ -32,7 +32,7 @@ const Schedule = () => {
                     </div>
                     <div className='box p-4 bg-gradient-to-r  from-orange-600 to-orange-500 w-[40%]' style={{ 'marginRight': '-2.5vw', 'marginLeft': '-2.5vw' }}>
                     </div>
-                    <div className='box p-3 bg-white w-[6%]' style={{ 'borderRadius': '2.5vw 2.5vw 2.5vw 2.5vw', 'zIndex': '1' }}>
+                    <div className='box p-3 w-[6%]' style={{ 'borderRadius': '2.5vw 2.5vw 2.5vw 2.5vw', 'zIndex': '1' }}>
                         <img src={location} alt='location' className='relative hover:-top-8 transition-all -top-6' />
                         <div className='absolute mt-2 ml-6'>
                             <p className='font-bold text-xl'>1. Lorem Ipsum Dolor</p>
@@ -61,7 +61,7 @@ const Schedule = () => {
                 <div className='flex items-center -mt-6'>
                     <div className='box rounded-tl-full p-4 bg-gradient-to-l from-cyan-400 to-cyan-400 w-[10%]' style={{ 'marginRight': '-2.5vw' }}>
                     </div>
-                    <div className='box p-3 bg-white w-[6%]' style={{ 'borderRadius': '2.5vw 2.5vw 2.5vw 2.5vw', 'zIndex': '1' }}>
+                    <div className='box p-3 w-[6%]' style={{ 'borderRadius': '2.5vw 2.5vw 2.5vw 2.5vw', 'zIndex': '1' }}>
                         <img src={location} alt='location' className='relative hover:-top-8 transition-all -top-6' />
                         <div className='absolute mt-2 ml-6'>
                             <p className='font-bold text-xl'>1. Lorem Ipsum Dolor</p>
@@ -69,7 +69,7 @@ const Schedule = () => {
                     </div>
                     <div className='box p-4 bg-gradient-to-l from-green-300 to-cyan-400 w-[40%]' style={{ 'marginLeft': '-2.5vw', 'marginRight': '-2.5vw' }}>
                     </div>
-                    <div className='box p-3 bg-white w-[6%]' style={{ 'borderRadius': '2.5vw 2.5vw 2.5vw 2.5vw', 'zIndex': '1' }}>
+                    <div className='box p-3 w-[6%]' style={{ 'borderRadius': '2.5vw 2.5vw 2.5vw 2.5vw', 'zIndex': '1' }}>
                         <img src={location} alt='location' className='relative hover:-top-8 transition-all -top-6' />
                         <div className='absolute mt-2 ml-6'>
                             <p className='font-bold text-xl'>1. Lorem Ipsum Dolor</p>
@@ -77,7 +77,7 @@ const Schedule = () => {
                     </div>
                     <div className='box p-4 bg-gradient-to-l from-yellow-200 to-green-300 w-[40%]' style={{ 'marginRight': '-2.5vw', 'marginLeft': '-2.5vw' }}>
                     </div>
-                    <div className='box p-3 bg-white w-[6%]' style={{ 'borderRadius': '2.5vw 2.5vw 2.5vw 2.5vw', 'zIndex': '1' }}>
+                    <div className='box p-3 w-[6%]' style={{ 'borderRadius': '2.5vw 2.5vw 2.5vw 2.5vw', 'zIndex': '1' }}>
                         <img src={location} alt='location' className='relative hover:-top-8 transition-all -top-6' />
                         <div className='absolute mt-2 ml-6'>
                             <p className='font-bold text-xl'>1. Lorem Ipsum Dolor</p>
@@ -104,7 +104,7 @@ const Schedule = () => {
                 <div className='flex -mt-6 items-center'>
                     <div className='box rounded-bl-full p-4 bg-gradient-to-r from-blue-300 to-blue-300 w-[10%]' style={{ 'marginRight': '-2.5vw' }}>
                     </div>
-                    <div className='box p-3 bg-white w-[6%]' style={{ 'borderRadius': '2.5vw 2.5vw 2.5vw 2.5vw', 'zIndex': '1' }}>
+                    <div className='box p-3 w-[6%]' style={{ 'borderRadius': '2.5vw 2.5vw 2.5vw 2.5vw', 'zIndex': '1' }}>
                         <img src={location} alt='location' className='relative hover:-top-8 transition-all -top-6' />
                         <div className='absolute mt-2 ml-6'>
                             <p className='font-bold text-xl'>1. Lorem Ipsum Dolor</p>
@@ -112,7 +112,7 @@ const Schedule = () => {
                     </div>
                     <div className='box p-4 bg-gradient-to-r from-blue-300 to-purple-300 w-[40%]' style={{ 'marginLeft': '-2.5vw', 'marginRight': '-2.5vw' }}>
                     </div>
-                    <div className='box p-3 bg-white w-[6%] ' style={{ 'borderRadius': '2.5vw 2.5vw 2.5vw 2.5vw', 'zIndex': '1' }}>
+                    <div className='box p-3 w-[6%] ' style={{ 'borderRadius': '2.5vw 2.5vw 2.5vw 2.5vw', 'zIndex': '1' }}>
                         <img src={location} alt='location' className='relative hover:-top-8 transition-all -top-6' />
                         <div className='absolute mt-2 ml-6'>
                             <p className='font-bold text-xl'>1. Lorem Ipsum Dolor</p>
@@ -120,7 +120,7 @@ const Schedule = () => {
                     </div>
                     <div className='box p-4 bg-gradient-to-r from-purple-300 to-purple-500 w-[40%]' style={{ 'marginRight': '-2.5vw', 'marginLeft': '-2.5vw' }}>
                     </div>
-                    <div className='box p-3 bg-white w-[6%] ' style={{ 'borderRadius': '2.5vw 2.5vw 2.5vw 2.5vw', 'zIndex': '1' }}>
+                    <div className='box p-3 w-[6%] ' style={{ 'borderRadius': '2.5vw 2.5vw 2.5vw 2.5vw', 'zIndex': '1' }}>
                         <img src={location} alt='location' className='relative hover:-top-8 transition-all -top-6' />
                         <div className='absolute mt-2 ml-6'>
                             <p className='font-bold text-xl'>1. Lorem Ipsum Dolor</p>

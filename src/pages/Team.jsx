@@ -189,20 +189,22 @@ const Team = () => {
 
     const Card = ({ img, linkedin, onClick, name, role }) => {
         return (
-            <motion.div onClick={onClick} className='w-44 cursor-pointer sm:w-[16vw] drop-shadow-lg hover:scale-105 transition-all p-2 text-black bg-white flex flex-col items-center rounded-lg'>
-                <img src={img} alt="photo" className='rounded-full h-32 w-32 object-cover mx-auto my-2' />
-                <p className=' font-semibold text-xl'>{name}</p>
-                <p className=' font-light text-lg'>{role}</p>
-                <div>
-                    <a href={linkedin}><ImLinkedin className=' w-6 h-6 mb-1 mt-1' /></a>
-                </div>
+            <motion.div className='card-bg p-[1.6px] rounded-md'>
+                <motion.div onClick={onClick} className='w-44 cursor-pointer sm:w-[16vw] drop-shadow-lg hover:scale-105 transition-all p-2 text-white bg-[#1e1e1e] flex flex-col items-center rounded-lg'>
+                    <img src={img} alt="photo" className='rounded-full h-32 w-32 object-cover mx-auto my-2' />
+                    <p className=' font-semibold text-xl'>{name}</p>
+                    <p className=' font-light text-lg'>{role}</p>
+                    <div>
+                        <a href={linkedin}><ImLinkedin className=' w-6 h-6 mb-1 mt-1' /></a>
+                    </div>
+                </motion.div>
             </motion.div>
         )
     }
 
     return (
         <div className='flex flex-col sm:p-6 carousel-bg min-h-screen Team Members' >
-            <div className='flex  w-full flex-col sm:flex-row items-center sm:items-baseline space-x-4 text-white px-20 my-6'>
+            <div className='flex w-full flex-col sm:flex-row items-center sm:items-baseline space-x-4 text-white px-20 my-6'>
                 <div className='font-bold text-2xl'>
                     Team Members
                 </div>
@@ -224,8 +226,12 @@ const Team = () => {
             <AnimatePresence>
                 {
                     selectedId && (
-                        <motion.div className='bg-white rounded-md sm:ml-72 ml-4 drop-shadow-md border border-blue-800 p-4 absolute mt-32 w-[90vw] sm:w-[45vw] sm:min-h-[50vh]'
-                            
+                        <motion.div className='bg-[#1e1e1e] text-white rounded-md sm:ml-72 ml-4 drop-shadow-md border border-blue-800 p-4 absolute mt-32 w-[90vw] sm:w-[45vw] sm:min-h-[50vh]'
+                            initial={{ opacity: 0, y: 100 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: 100 }}
+                            transition={{ duration: 0.5 }}
+
                             layoutId={selectedId}
                         >
                             <motion.button
@@ -235,7 +241,8 @@ const Team = () => {
                                 <AiOutlineCloseCircle size={22} />
                             </motion.button>
                             <motion.div className='rounded-md flex justify-between w-full'>
-                                <motion.div>
+                                <motion.div
+                                >
                                     {selectedId === 1 &&
                                         <motion.div className="flex gap-x-12 justify-between w-full">
                                             <motion.div className='flex flex-col items-center justify-center '>
