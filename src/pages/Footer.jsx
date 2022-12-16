@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className='flex flex-wrap flex-col' id='boxes'>
                     <div className='flex flex-col'>
                         <h1 className='text-4xl'>Date</h1>
-                        <p className='text-xl'>14th, 15th, 16th November 2022</p>
+                        <p className='text-xl'>22nd & 23rd December 2022</p>
                     </div> &nbsp;
                     <div className='flex flex-col'>
                         <h1 className='text-4xl'>Venue</h1>
