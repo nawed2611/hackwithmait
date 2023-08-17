@@ -61,21 +61,21 @@ const Hero = () => {
                 animate={{ y: -20 }}
                 transition={{ type: "spring" }}
                 className={'flex bg-clip-text flex-col items-center mt-4 sm:mt-24 justify-center' + (isOpen && ' blur-xl')}>
-                <h1 className='font-[800] text-center text-8xl text-wrapper'>Hack with MAIT <strong className='hero-text font-[800]'>3.0</strong></h1>
+                <h1 className='font-[800] text-center text-8xl text-wrapper'>Hack with MAIT <strong className='hero-text font-[800]'>4.0</strong></h1>
                 <div className='svg-wrapper'>
                     <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
                         <rect className="shape" height="60" width="320" />
                     </svg>
                     <p className='text-2xl mt-16 sm:mt-16'>Towards a better world through tech</p>
                 </div>
-                <div className='flex text-xl items-center justify-center sm:mt-4'><BsCalendar3 size={18} className='mx-2' />{' '} <p>22nd-23rd December 2022</p></div>
+                <div className='flex text-xl items-center justify-center sm:mt-4'><BsCalendar3 size={18} className='mx-2' />{' '} <p>22nd-23rd November 2023</p></div>
                 <div className='flex flex-col sm:flex-row gap-x-6'>
                     <motion.a
                         href='https://forms.gle/6Z7Z1Z1Z1Z1Z1Z1Z6'
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 1 }}
-                        className='mt-6 sm:mt-12 flex items-center text-2xl  justify-center px-4 p-2 button-bg  rounded-xl'>
-                        <BiUserPlus size={24} className='mr-2' />{' '}<p>Register Here</p></motion.a>
+                        className='mt-6 sm:mt-12 flex items-center text-2xl  justify-center px-4 p-2 button-bg rounded-xl'>
+                        <BiUserPlus size={24} className='mr-2' />{' '}<p>Coming Soon!</p></motion.a>
                     <motion.a
                         href='https://discord.gg/xrubKyn7'
                         whileHover={{ scale: 1.1 }}

@@ -16,10 +16,10 @@ function App() {
       <Hero />
       <About />
       <CarouselScreen />
-      <Speakers />
-      <Tracks />
-      <Schedule />
-      <Sponsors />
+      {/* <Speakers /> */}
+      {/* <Tracks /> */}
+      {/* <Schedule /> */}
+      {/* <Sponsors /> */}
       <Team />
       <FAQ />
       <Footer />
