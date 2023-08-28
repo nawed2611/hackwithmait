@@ -81,7 +81,7 @@ const Hero = () => {
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 1 }}
                         className='mt-6 sm:mt-12 flex items-center text-2xl  justify-center px-4 p-2 button-bg  rounded-xl'>
-                        <FaDiscord size={24} className='mr-2' />{' '}<p>Join Our Discord</p></motion.a>
+                        <FaDiscord size={24} className='mr-2' />{' '}<p>Join Our Discord!</p></motion.a>
                 </div>
             </motion.div>
         </div >
