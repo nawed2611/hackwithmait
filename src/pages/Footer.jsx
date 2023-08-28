@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div className='flex content-center Contact Us'>
             <div className="radial-bg-2 w-[98vw] h-[30vh] absolute"></div>
-            <div className='flex flex-wrap  mx-auto shrink justify-evenly'
+            <div className='flex flex-wrap  mx-auto shrink justify-between w-full sm:px-24'
                 style={{
                     'color': 'white',
                     'minHeight': '0',
@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className='flex flex-wrap flex-col' id='boxes'>
                     <div className='flex flex-col'>
                         <h1 className='text-4xl'>Date</h1>
-                        <p className='text-xl'>22nd & 23rd December 2022</p>
+                        <p className='text-xl'>22nd & 23rd November 2023</p>
                     </div> &nbsp;
                     <div className='flex flex-col'>
                         <h1 className='text-4xl'>Venue</h1>
@@ -38,11 +38,6 @@ const Footer = () => {
                             <a href='https://in.linkedin.com/company/techcommait' ><img className='invert' src='https://img.icons8.com/ios/512/linkedin.png' style={{ 'maxWidth': '30px' }} /></a>
                         </div>
                     </div>
-                </div>
-                <div className='flex flex-col' id='boxes'>
-                    <h1 className='text-4xl'>Resources</h1>
-                    <p className='text-xl'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum earum rem sed, ut tenetur iure commodi minus, sapiente maiores odio alias non est vitae, accusantium nemo. Voluptate, repudiandae. Error, in.
-                    </p>
                 </div>
             </div>
 

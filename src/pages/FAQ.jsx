@@ -127,26 +127,6 @@ const FAQ = () => {
                     </div>
                 </div>
 
-                <hr className='bg-emerald-400 w-[100%] h-1 mt-4 mb-2' />
-
-                <div className='w-full '>
-                    {/* HEAD */}
-                    <div className='transition-all duration-1000 flex justify-between items-center  px-2'>
-                        <h1 className='font-bold text-xl py-2'>Accordion 1</h1>
-                        <button className='p-3 text-2xl text-black bg-white  rounded-full hover:bg-emerald-400 shadow-2xl border' style={{ 'transform': 'rotate(0deg)', 'transitionDuration': '1s' }} onClick={() => view('6')} id='6'>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                            </svg>
-                        </button>
-
-                    </div>
-                    {/* CONTENT */}
-                    <div className='max-h-0 transition-all duration-1000 overflow-hidden' id='6c'>
-                        <p className='font-semibold p-2 text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea incidunt molestiae magnam ab, unde facilis ipsam laborum repellat, doloremque quasi autem at voluptatibus labore nisi dolor dolore temporibus ipsa praesentium.
-                        </p>
-                    </div>
-                </div>
-
                 <hr className='bg-emerald-400 w-[100%] h-1 mt-4' />
             </div>
         </div>
