@@ -71,7 +71,6 @@ const Hero = () => {
                 <div className='flex text-xl items-center justify-center sm:mt-4'><BsCalendar3 size={18} className='mx-2' />{' '} <p>22nd-23rd November 2023</p></div>
                 <div className='flex flex-col sm:flex-row gap-x-6'>
                     <motion.a
-                        href='https://forms.gle/6Z7Z1Z1Z1Z1Z1Z1Z6'
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 1 }}
                         className='mt-6 sm:mt-12 flex items-center text-2xl  justify-center px-4 p-2 button-bg rounded-xl'>
