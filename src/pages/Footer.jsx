@@ -28,10 +28,10 @@ const Footer = () => {
                 <div className='flex flex-col justify-between' id='boxes'>
                     <div>
                         <h1 className='text-4xl'>Contact Details</h1>
-                        <p className='text-xl mt-2'>Prakhar Sharma: +91 95991 79794</p>
+                        <p className='text-xl mt-2'>Nawed Ali - <a href='https://www.x.com/nawed2611'>@nawed2611</a></p>
                     </div>
                     <div className='flex flex-col'>
-                        <h1 className='text-4xl'>Social Media</h1>
+                        <h1 className='text-4xl'>Contact Us</h1>
                         <div className='flex p-2 '>
                             <a href='https://www.instagram.com/techcom_mait/?hl=en' ><img className='invert' src='https://img.icons8.com/ios/512/instagram-new--v1.png' style={{ 'maxWidth': '30px' }} /></a>
                             <a href='https://www.facebook.com/techcommait/' ><img className='invert' src='https://img.icons8.com/ios/512/facebook--v1.png' style={{ 'maxWidth': '30px' }} /></a>

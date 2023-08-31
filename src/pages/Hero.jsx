@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import Logo from '../assets/logo.jpg';
 import HeroBG from '../assets/hero.svg';
 import { BsCalendar3 } from 'react-icons/bs';
-import { BiUserPlus } from 'react-icons/bi';
+import { BiMoney, BiUserPlus } from 'react-icons/bi';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiFillCloseCircle } from 'react-icons/ai';
-import { FaDiscord } from 'react-icons/fa';
+import { FaDiscord, FaMoneyBill, FaMoneyBillWave } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import { motion } from "framer-motion"
 
@@ -71,15 +71,16 @@ const Hero = () => {
                 <div className='flex text-xl items-center justify-center sm:mt-4'><BsCalendar3 size={18} className='mx-2' />{' '} <p>22nd-23rd November 2023</p></div>
                 <div className='flex flex-col sm:flex-row gap-x-6'>
                     <motion.a
-                        whileHover={{ scale: 1.1 }}
+                        href='https://docs.google.com/forms/d/e/1FAIpQLSdfU7NMvTDDVi-WfmwIlJwd04pMEdUIvgHU2HX6pcxZgMpB4Q/viewform'
+                        whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 1 }}
                         className='mt-6 sm:mt-12 flex items-center text-2xl  justify-center px-4 p-2 button-bg rounded-xl'>
-                        <BiUserPlus size={24} className='mr-2' />{' '}<p>Coming Soon!</p></motion.a>
+                        <FaMoneyBillWave size={24} className='mr-2' />{' '}<p>Call for Sponsors</p></motion.a>
                     <motion.a
-                        href='https://discord.gg/xrubKyn7'
-                        whileHover={{ scale: 1.1 }}
+                        href='https://discord.gg/A385NNEHKD'
+                        whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 1 }}
-                        className='mt-6 sm:mt-12 flex items-center text-2xl  justify-center px-4 p-2 button-bg  rounded-xl'>
+                        className='mt-6 sm:mt-12 flex items-center text-2xl  justify-center px-4 p-2 button-bg rounded-xl'>
                         <FaDiscord size={24} className='mr-2' />{' '}<p>Join Our Discord</p></motion.a>
                 </div>
             </motion.div>

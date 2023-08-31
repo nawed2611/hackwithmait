@@ -18,10 +18,10 @@ function App() {
       <About />
       <CarouselScreen />
       {/* <Speakers /> */}
-      {/* <Tracks /> */}
+      <Tracks />
       {/* <Schedule /> */}
       {/* <Sponsors /> */}
-      <Team />
+      {/* <Team /> */}
       <FAQ />
       <Footer />
     </div>
