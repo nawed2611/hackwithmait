@@ -12,7 +12,7 @@ import Footer from './pages/Footer';
 
 function App() {
   return (
-
+    
     <div className="flex flex-col overflow-x-hidden ">
       <Hero />
       <About />
