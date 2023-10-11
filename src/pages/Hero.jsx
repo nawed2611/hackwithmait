@@ -8,6 +8,9 @@ import { AiFillCloseCircle } from 'react-icons/ai';
 import { FaDiscord, FaJoint, FaMoneyBill, FaMoneyBillWave, FaUser } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import { motion } from "framer-motion"
+import devfolioimg from '../assets/Sponsors/Devfolio.png'
+import replitimg from '../assets/Sponsors/Replit.png'
+import polygonimg from '../assets/Sponsors/Polygon.png'
 
 const variants = {
     open: { opacity: 10, x: 0 },
@@ -70,11 +73,11 @@ const Hero = () => {
                 </div>
                 <div className='flex text-xl items-center justify-center sm:mt-4'><BsCalendar3 size={18} className='mx-2' />{' '} <p>22nd-23rd November 2023</p></div>
                 <motion.a
-                        href='https://discord.gg/A385NNEHKD'
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 1 }}
-                        className='mt-6 sm:mt-12 flex items-center text-2xl  justify-center px-4 p-2 button-bg rounded-xl'>
-                        <FaUser size={24} className='mr-2' />{' '}<p>Apply with Devfolio</p></motion.a>
+                    href='https://discord.gg/A385NNEHKD'
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 1 }}
+                    className='mt-6 sm:mt-12 flex items-center text-2xl  justify-center px-4 p-2 button-bg rounded-xl'>
+                    <FaUser size={24} className='mr-2' />{' '}<p>Apply with Devfolio</p></motion.a>
                 <div className='flex flex-col sm:flex-row gap-x-6'>
                     <motion.a
                         href='https://docs.google.com/forms/d/e/1FAIpQLSdfU7NMvTDDVi-WfmwIlJwd04pMEdUIvgHU2HX6pcxZgMpB4Q/viewform'
@@ -90,6 +93,18 @@ const Hero = () => {
                         <FaDiscord size={24} className='mr-2' />{' '}<p>Join Our Discord</p></motion.a>
                 </div>
             </motion.div>
+                <div className='flex flex-wrap justify-center items-center'>
+                    <p className='text-4xl font-mono'>Sponsored By:</p>
+                    <div className='flex px-12 mt-5 space-x-3 items-center justify-center mx-10'>
+                        <img src={devfolioimg} alt="" className=' h-16' />
+                    </div>
+                    <div className='flex px-12 mt-5 space-x-3 items-center justify-center mx-10'>
+                        <img src={polygonimg} alt="" className=' h-16' />
+                    </div>
+                    <div className='flex px-12 mt-5 space-x-3 items-center justify-center mx-10'>
+                        <img src={replitimg} alt="" className=' h-16' />
+                    </div>
+                </div>
         </div >
     )
 }
