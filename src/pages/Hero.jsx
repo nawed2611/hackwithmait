@@ -5,7 +5,7 @@ import { BsCalendar3 } from 'react-icons/bs';
 import { BiMoney, BiUserPlus } from 'react-icons/bi';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiFillCloseCircle } from 'react-icons/ai';
-import { FaDiscord, FaMoneyBill, FaMoneyBillWave } from 'react-icons/fa';
+import { FaDiscord, FaJoint, FaMoneyBill, FaMoneyBillWave, FaUser } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import { motion } from "framer-motion"
 
@@ -69,6 +69,12 @@ const Hero = () => {
                     <p className='text-2xl mt-16 sm:mt-16'>Towards a better world through tech</p>
                 </div>
                 <div className='flex text-xl items-center justify-center sm:mt-4'><BsCalendar3 size={18} className='mx-2' />{' '} <p>22nd-23rd November 2023</p></div>
+                <motion.a
+                        href='https://discord.gg/A385NNEHKD'
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 1 }}
+                        className='mt-6 sm:mt-12 flex items-center text-2xl  justify-center px-4 p-2 button-bg rounded-xl'>
+                        <FaUser size={24} className='mr-2' />{' '}<p>Apply with Devfolio</p></motion.a>
                 <div className='flex flex-col sm:flex-row gap-x-6'>
                     <motion.a
                         href='https://docs.google.com/forms/d/e/1FAIpQLSdfU7NMvTDDVi-WfmwIlJwd04pMEdUIvgHU2HX6pcxZgMpB4Q/viewform'

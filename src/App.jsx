@@ -20,7 +20,7 @@ function App() {
       {/* <Speakers /> */}
       <Tracks />
       {/* <Schedule /> */}
-      {/* <Sponsors /> */}
+      <Sponsors />
       {/* <Team /> */}
       <FAQ />
       <Footer />
