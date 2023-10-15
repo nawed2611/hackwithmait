@@ -36,7 +36,7 @@ const Tracks = () => {
         },
         6: {
             header: "Open Innovation",
-            content: "Open innovation involves involving people outside a company or organization in the development of new ideas and technologies. hackwithMAIT3.0 offers an open innovation track for participants to explore and develop their own solutions. Participants will have the opportunity to learn about open innovation technologies and practices and to use their skills and creativity to make a difference.",
+            content: "Open innovation involves involving people outside a company or organization in the development of new ideas and technologies. HackwithMAIT 4.0 offers an open innovation track for participants to explore and develop their own solutions. Participants will have the opportunity to learn about open innovation technologies and practices and to use their skills and creativity to make a difference.",
             imageUrl: "https://img.freepik.com/free-vector/business-team-meeting-office-co-working-space_74855-6913.jpg?w=1060&t=st=1671132595~exp=1671133195~hmac=6f1b9412ee3f34dd1bcfb198a3103d0c6a35b20b31c78aca3584e4e246977156"
         }
     }

@@ -62,7 +62,7 @@ const FAQ = () => {
                     </div>
                     {/* CONTENT */}
                     <div className='max-h-0 transition-all duration-1000 overflow-hidden' id='2c'>
-                        <p className='font-semibold p-2 text-justify'>Nothing. Attending Hack with MAIT 3.0 is free.
+                        <p className='font-semibold p-2 text-justify'>Nothing. Attending Hack with MAIT 4.0 is free.
                         </p>
                     </div>
                 </div>

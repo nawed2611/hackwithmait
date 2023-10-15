@@ -95,7 +95,6 @@ const Hero = () => {
                 </div>
                 <div className='flex text-xl items-center justify-center sm:mt-4'><BsCalendar3 size={18} className='mx-2' />{' '} <p>22nd-23rd November 2023</p></div>
                 <div
-                    class="apply-button"
                     data-hackathon-slug="hackwithmait4"
                     data-button-theme="light"
                 >
