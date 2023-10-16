@@ -11,8 +11,8 @@ import { motion } from "framer-motion"
 import devfolioimg from '../assets/Sponsors/Devfolio.png'
 import replitimg from '../assets/Sponsors/Replit.png'
 import polygonimg from '../assets/Sponsors/Polygon.png'
-import Maitlogo from '../assets/sponsors/MAITLogo_white.png'
-import hwmlogo from '../assets/sponsors/HWM_LOGO.jpeg'
+import Maitlogo from '../assets/Sponsors/MAITLogo_white.png'
+import hwmlogo from '../assets/Sponsors/HWM_LOGO.jpeg'
 
 const variants = {
     open: { opacity: 10, x: 0 },

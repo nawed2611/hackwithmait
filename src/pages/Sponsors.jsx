@@ -3,15 +3,15 @@ import sponsorBg from '../assets/sponsors.svg'
 import devfolioimg from '../assets/Sponsors/Devfolio.png'
 import replitimg from '../assets/Sponsors/Replit.png'
 import polygonimg from '../assets/Sponsors/Polygon.png'
-import hwmlogo from '../assets/sponsors/HWM_LOGO.jpeg'
-import Tezos from '../assets/sponsors/Tezos.png'
-import Kwikpic from '../assets/sponsors/Kwikpic.png'
-import Prism from '../assets/sponsors/Prism.png'
+import hwmlogo from '../assets/Sponsors/HWM_LOGO.jpeg'
+import Tezos from '../assets/Sponsors/Tezos.png'
+import Kwikpic from '../assets/Sponsors/Kwikpic.png'
+import Prism from '../assets/Sponsors/Prism.png'
 import Maitlogo from '../assets/sponsors/MAITLogo_white.png'
 import ComSoc from '../assets/sponsors/IEEE ComSoc.png'
-import AfreeBug from '../assets/sponsors/AfreeBug.jpeg'
-import wolfram3 from '../assets/sponsors/wolfram3.png'
-import MonkHood from '../assets/sponsors/Monkhood.jpeg'
+import AfreeBug from '../assets/Sponsors/AfreeBug.jpeg'
+import wolfram3 from '../assets/Sponsors/wolfram3.png'
+import MonkHood from '../assets/Sponsors/Monkhood.jpeg'
 
 const Sponsors = () => {
     return (
@@ -52,7 +52,7 @@ const Sponsors = () => {
 
                 <div className='flex px-12 my-5 gap-3 items-center justify-evenly w-full mx-10'>
                     <img src={wolfram3} alt="" className='rounded h-24' />
-                    <img src={MonkHood} alt="" className='rounded h-24' />
+                    <img src={MonkHood} alt="" className='roundeS h-24' />
                 </div>
             </div>
 
