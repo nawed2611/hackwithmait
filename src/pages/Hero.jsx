@@ -20,6 +20,17 @@ const variants = {
 const navLinks = ['About Us', 'Speakers', 'Tracks', 'Timeline', 'Sponsors', 'Team Members', 'FAQs', 'Contact Us'];
 
 const Hero = () => {
+    React.useEffect(() => {
+        const script = document.createElement('script');
+        script.src = 'https://apply.devfolio.co/v2/sdk.js';
+        script.async = true;
+        script.defer = true;
+        document.body.appendChild(script);
+        return () => {
+            document.body.removeChild(script);
+        }
+    }, []);
+
     const [isOpen, setIsOpen] = useState(false);
     return (
         <div className='flex flex-col min-h-screen overflow-x-hidden text-white'>
@@ -64,6 +75,17 @@ const Hero = () => {
                 animate={{ y: -20 }}
                 transition={{ type: "spring" }}
                 className={'flex bg-clip-text flex-col items-center mt-4 sm:mt-24 justify-center' + (isOpen && ' blur-xl')}>
+                <div className='flex justify-center items-center gap-6'>
+                    <div>
+                        <img src={devfolioimg} alt="Devfolio Sponsor" className='h-12' />
+                    </div>
+                    <div>
+                        <img src={polygonimg} alt="Polygon Sponsor" className='h-12' />
+                    </div>
+                    <div>
+                        <img src={replitimg} alt="Replit Sponsor" className='h-12' />
+                    </div>
+                </div>
                 <h1 className='font-[800] text-center text-8xl text-wrapper'>Hack with MAIT <strong className='hero-text font-[800]'>4.0</strong></h1>
                 <div className='svg-wrapper'>
                     <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
@@ -72,12 +94,17 @@ const Hero = () => {
                     <p className='text-2xl mt-16 sm:mt-16'>Towards a better world through tech</p>
                 </div>
                 <div className='flex text-xl items-center justify-center sm:mt-4'><BsCalendar3 size={18} className='mx-2' />{' '} <p>22nd-23rd November 2023</p></div>
-                <motion.a
-                    href='https://discord.gg/A385NNEHKD'
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 1 }}
-                    className='mt-6 sm:mt-12 flex items-center text-2xl  justify-center px-4 p-2 button-bg rounded-xl'>
-                    <FaUser size={24} className='mr-2' />{' '}<p>Apply with Devfolio</p></motion.a>
+                <div
+                    class="apply-button"
+                    data-hackathon-slug="hackwithmait4"
+                    data-button-theme="light"
+                >
+                    <motion.button
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 1 }}
+                        className='mt-6 sm:mt-12 flex items-center ring text-2xl  justify-center px-4 p-2 button-bg rounded-xl'>
+                        <p>Apply with Devfolio</p></motion.button>
+                </div>
                 <div className='flex flex-col sm:flex-row gap-x-6'>
                     <motion.a
                         href='https://docs.google.com/forms/d/e/1FAIpQLSdfU7NMvTDDVi-WfmwIlJwd04pMEdUIvgHU2HX6pcxZgMpB4Q/viewform'
@@ -93,18 +120,6 @@ const Hero = () => {
                         <FaDiscord size={24} className='mr-2' />{' '}<p>Join Our Discord</p></motion.a>
                 </div>
             </motion.div>
-                <div className='flex flex-wrap justify-center items-center'>
-                    <p className='text-4xl font-mono'>Sponsored By:</p>
-                    <div className='flex px-12 mt-5 space-x-3 items-center justify-center mx-10'>
-                        <img src={devfolioimg} alt="" className=' h-16' />
-                    </div>
-                    <div className='flex px-12 mt-5 space-x-3 items-center justify-center mx-10'>
-                        <img src={polygonimg} alt="" className=' h-16' />
-                    </div>
-                    <div className='flex px-12 mt-5 space-x-3 items-center justify-center mx-10'>
-                        <img src={replitimg} alt="" className=' h-16' />
-                    </div>
-                </div>
         </div >
     )
 }
