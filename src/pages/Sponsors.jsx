@@ -3,13 +3,13 @@ import sponsorBg from '../assets/sponsors.svg'
 import devfolioimg from '../assets/Sponsors/Devfolio.png'
 import replitimg from '../assets/Sponsors/Replit.png'
 import polygonimg from '../assets/Sponsors/Polygon.png'
-// import hwmlogo from '../assets/sponsors/HWM_LOGO.jpeg'
+import hwmlogo from '../assets/sponsors/HWM_LOGO.jpeg'
 import Tezos from '../assets/sponsors/Tezos.png'
 import Kwikpic from '../assets/sponsors/Kwikpic.png'
 import Prism from '../assets/sponsors/Prism.png'
 import Maitlogo from '../assets/sponsors/MAITLogo_white.png'
 import ComSoc from '../assets/sponsors/IEEE ComSoc.png'
-// import AfreeBug from '../assets/sponsors/AfreeBug.jpeg'
+import AfreeBug from '../assets/sponsors/AfreeBug.jpeg'
 import wolfram3 from '../assets/sponsors/wolfram3.png'
 import MonkHood from '../assets/sponsors/Monkhood.jpeg'
 
@@ -30,51 +30,39 @@ const Sponsors = () => {
             {/* sponsors row 1 */}
             <div className='flex flex-wrap'>
 
-                <div className='flex px-12 mt-5 space-x-3 items-center justify-center mx-10'>
+                <div className='flex px-12 my-5 gap-3 items-center justify-center mx-10'>
                     <img src={devfolioimg} alt="" className=' h-24' />
                 </div>
-                <div className='flex px-12 mt-5 space-x-3 items-center justify-center mx-10'>
+                <div className='flex px-12 my-5 gap-3 items-center justify-center mx-10'>
                     <img src={polygonimg} alt="" className=' h-24' />
                 </div>
-                <div className='flex px-12 mt-5 space-x-3 items-center justify-center mx-10'>
+                <div className='flex px-12 my-5 gap-3 items-center justify-center mx-10'>
                     <img src={replitimg} alt="" className=' h-24' />
                 </div>
-                <div className='flex px-12 mt-5 space-x-3 items-center justify-center mx-10'>
-                    <img src={hwmlogo} alt="" className=' h-24' />
+                <div className='flex px-12 my-5 gap-3 items-center justify-evenly w-full mx-10'>
+                    <img src={hwmlogo} alt="" className='rounded h-24' />
+                    <img src={Tezos} alt="" className='rounded h-24' />
+                    <img src={Kwikpic} alt="" className='rounded h-24' />
                 </div>
-                <div className='flex px-12 mt-5 space-x-3 items-center justify-center mx-10'>
-                    <img src={Tezos} alt="" className=' h-24' />
+                <div className='flex px-12 my-5 gap-3 items-center justify-evenly w-full mx-10'>
+                    <img src={Prism} alt="" className='rounded h-24' />
+                    <img src="https://r10.ieee.org/delhi-com/wp-content/uploads/sites/50/ieee-comsoc-delhi-logo-resized.jpg" alt="" className='rounded h-24' />
+                    <img src={AfreeBug} alt="" className='rounded h-24' />
                 </div>
-                <div className='flex px-12 mt-5 space-x-3 items-center justify-center mx-10'>
-                    <img src={Kwikpic} alt="" className=' h-24' />
-                </div>
-                <div className='flex px-12 mt-5 space-x-3 items-center justify-center mx-10'>
-                    <img src={Prism} alt="" className=' h-24' />
-                </div>
-                <div className='flex px-12 mt-5 space-x-3 items-center justify-center mx-10'>
-                    <img src={Maitlogo} alt="" className=' h-24' />
-                </div>
-                <div className='flex px-12 mt-5 space-x-3 items-center justify-center mx-10'>
-                    <img src={ComSoc} alt="" className=' h-24' />
-                </div>
-                <div className='flex px-12 mt-5 space-x-3 items-center justify-center mx-10'>
-                    <img src={AfreeBug} alt="" className=' h-24' />
-                </div>
-                <div className='flex px-12 mt-5 space-x-3 items-center justify-center mx-10'>
-                    <img src={wolfram3} alt="" className=' h-24' />
-                </div>
-                <div className='flex px-12 mt-5 space-x-3 items-center justify-center mx-10'>
-                    <img src={MonkHood} alt="" className=' h-24' />
+
+                <div className='flex px-12 my-5 gap-3 items-center justify-evenly w-full mx-10'>
+                    <img src={wolfram3} alt="" className='rounded h-24' />
+                    <img src={MonkHood} alt="" className='rounded h-24' />
                 </div>
             </div>
 
-            {/*<div className='hidden md:flex lg:hidden px-12 mt-5 space-x-3 items-center justify-center mx-10'>
+            {/*<div className='hidden md:flex lg:hidden px-12 my-5 gap-3 items-center justify-center mx-10'>
                 <img src="https://miro.medium.com/max/1400/0*c43pw7UiQgpfjDCl.jpg" alt="" className='w-44 h-24' />
                 <img src="https://miro.medium.com/max/1400/0*c43pw7UiQgpfjDCl.jpg" alt="" className='w-44 h-24' />
                 <img src="https://miro.medium.com/max/1400/0*c43pw7UiQgpfjDCl.jpg" alt="" className='w-44 h-24' />
                 <img src="https://miro.medium.com/max/1400/0*c43pw7UiQgpfjDCl.jpg" alt="" className=' w-44 h-24' />
             </div>
-            <div className='hidden lg:flex px-12 mt-5 space-x-10 items-center justify-center mx-10'>
+            <div className='hidden lg:flex px-12 my-5 gap-10 items-center justify-center mx-10'>
                 <img src="https://miro.medium.com/max/1400/0*c43pw7UiQgpfjDCl.jpg" alt="" className='w-56 lg:h-32' />
                 <img src="https://miro.medium.com/max/1400/0*c43pw7UiQgpfjDCl.jpg" alt="" className='w-56 lg:h-32' />
                 <img src="https://miro.medium.com/max/1400/0*c43pw7UiQgpfjDCl.jpg" alt="" className='w-56 lg:h-32' />
@@ -82,19 +70,19 @@ const Sponsors = () => {
             </div>
 
             {/* sponsors row 2 */}
-            {/* <div className='flex sm:hidden px-12 mt-5 space-x-3 items-center justify-center mx-10'>
+            {/* <div className='flex sm:hidden px-12 my-5 gap-3 items-center justify-center mx-10'>
                 <img src="https://miro.medium.com/max/1400/0*c43pw7UiQgpfjDCl.jpg" alt="" className='w-44 h-24' />
                 <img src="https://miro.medium.com/max/1400/0*c43pw7UiQgpfjDCl.jpg" alt="" className='w-44 h-24' />
             </div>
-            <div className='flex sm:hidden px-12 mt-5 space-x-3 items-center justify-center mx-10'>
+            <div className='flex sm:hidden px-12 my-5 gap-3 items-center justify-center mx-10'>
                 <img src="https://miro.medium.com/max/1400/0*c43pw7UiQgpfjDCl.jpg" alt="" className='w-44 h-24' />
                 <img src="https://miro.medium.com/max/1400/0*c43pw7UiQgpfjDCl.jpg" alt="" className='w-44 h-24' />
             </div>
-            <div className='hidden sm:flex md:hidden px-12 mt-5 space-x-3 items-center justify-center mx-10'>
+            <div className='hidden sm:flex md:hidden px-12 my-5 gap-3 items-center justify-center mx-10'>
                 <img src="https://miro.medium.com/max/1400/0*c43pw7UiQgpfjDCl.jpg" alt="" className='w-44 h-24' />
                 <img src="https://miro.medium.com/max/1400/0*c43pw7UiQgpfjDCl.jpg" alt="" className='w-44 h-24' />
             </div>
-            <div className='hidden md:flex lg:hidden px-12 mt-5 space-x-3 items-center justify-center mx-10'>
+            <div className='hidden md:flex lg:hidden px-12 my-5 gap-3 items-center justify-center mx-10'>
                 <img src="https://miro.medium.com/max/1400/0*c43pw7UiQgpfjDCl.jpg" alt="" className='w-44 h-24' />
                 <img src="https://miro.medium.com/max/1400/0*c43pw7UiQgpfjDCl.jpg" alt="" className='w-44 h-24' />
                 <img src="https://miro.medium.com/max/1400/0*c43pw7UiQgpfjDCl.jpg" alt="" className='w-44 h-24' />

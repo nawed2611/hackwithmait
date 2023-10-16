@@ -11,6 +11,8 @@ import { motion } from "framer-motion"
 import devfolioimg from '../assets/Sponsors/Devfolio.png'
 import replitimg from '../assets/Sponsors/Replit.png'
 import polygonimg from '../assets/Sponsors/Polygon.png'
+import Maitlogo from '../assets/sponsors/MAITLogo_white.png'
+import hwmlogo from '../assets/sponsors/HWM_LOGO.jpeg'
 
 const variants = {
     open: { opacity: 10, x: 0 },
@@ -36,7 +38,10 @@ const Hero = () => {
         <div className='flex flex-col min-h-screen overflow-x-hidden text-white'>
             <motion.div
                 className='flex items-center justify-between mx-4 sm:mx-8 pl-8 pr-2 h-[15vh] border-black'>
-                <img src={Logo} alt='React Logo' className='w-52 h-52' />
+                <div className='flex items-center mt-12 gap-x-8'>
+                    <img src={Maitlogo} alt="" className=' h-24' />
+                    <img src={hwmlogo} alt='React Logo' className='h-32' />
+                </div>
                 <nav className=''>
                     <ul className='invisible sm:visible px-4 py-2 ring rounded-md glass flex text-lg gap-8'>
                         {
