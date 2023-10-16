@@ -38,7 +38,6 @@ const Sponsors = () => {
                     <img src={replitimg} alt="" className=' h-24' />
                 </div>
                 <div className='flex px-12 my-5 gap-3 items-center justify-evenly w-full mx-10'>
-                    <img src={hwmlogo} alt="" className='rounded h-24' />
                     <img src={Tezos} alt="" className='rounded h-24' />
                     <img src={Kwikpic} alt="" className='rounded h-24' />
                 </div>
