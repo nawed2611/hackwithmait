@@ -2,13 +2,6 @@ import React from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ImLinkedin } from 'react-icons/im';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
-import Anupam from '../assets/Team_Pics/Anupam.jpeg';
-import Khushboo from '../assets/Team_Pics/Khushboo.jpeg';
-import Kunal from '../assets/Team_Pics/Kunal.jpg';
-import Megha from '../assets/Team_Pics/Megha.jpeg';
-import Prakhar from '../assets/Team_Pics/Prakhar.jpeg';
-import Reeha from '../assets/Team_Pics/Reeha.jpeg';
-import Rishabh from '../assets/Team_Pics/Rishabh.jpg';
 
 const Team = () => {
     const [selectedId, setSelectedId] = React.useState(null);
