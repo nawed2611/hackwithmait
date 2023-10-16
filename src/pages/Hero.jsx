@@ -77,13 +77,13 @@ const Hero = () => {
                 className={'flex bg-clip-text flex-col items-center mt-4 sm:mt-24 justify-center' + (isOpen && ' blur-xl')}>
                 <div className='flex justify-center items-center gap-6'>
                     <div>
-                        <img src={devfolioimg} alt="Devfolio Sponsor" className='h-12' />
+                        <img src={devfolioimg} alt="DEVFOLIO LOGO" className='h-12' />
                     </div>
                     <div>
-                        <img src={polygonimg} alt="Polygon Sponsor" className='h-12' />
+                        <img src={polygonimg} alt="POLYGON LOGO" className='h-12' />
                     </div>
                     <div>
-                        <img src={replitimg} alt="Replit Sponsor" className='h-12' />
+                        <img src={replitimg} alt="REPLIT LOGO" className='h-12' />
                     </div>
                 </div>
                 <h1 className='font-[800] text-center text-8xl text-wrapper'>Hack with MAIT <strong className='hero-text font-[800]'>4.0</strong></h1>
