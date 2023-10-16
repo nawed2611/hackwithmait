@@ -3,6 +3,15 @@ import sponsorBg from '../assets/sponsors.svg'
 import devfolioimg from '../assets/Sponsors/Devfolio.png'
 import replitimg from '../assets/Sponsors/Replit.png'
 import polygonimg from '../assets/Sponsors/Polygon.png'
+import hwmlogo from '../assets/sponsors/HWM_LOGO.jpeg'
+import Tezos from '../assets/sponsors/Tezos.png'
+import Kwikpic from '../assets/sponsors/Kwikpic.png'
+import Prism from '../assets/sponsors/Prism.png'
+import Maitlogo from '../assets/sponsors/MAITLogo_white.png'
+import ComSoc from '../assets/sponsors/IEEE ComSoc.png'
+import AfreeBug from '../assets/sponsors/AfreeBug.jpeg'
+import wolfram3 from '../assets/sponsors/wolfram3.png'
+import  MonkHood from '../assets/sponsors/Monkhood.jpeg'
 
 const Sponsors = () => {
     return (
@@ -29,6 +38,33 @@ const Sponsors = () => {
             </div>
             <div className='flex px-12 mt-5 space-x-3 items-center justify-center mx-10'>
                 <img src= {replitimg} alt="" className=' h-24' />
+            </div>
+            <div className='flex px-12 mt-5 space-x-3 items-center justify-center mx-10'>
+                <img src= {hwmlogo} alt="" className=' h-24' />
+            </div>
+            <div className='flex px-12 mt-5 space-x-3 items-center justify-center mx-10'>
+                <img src= {Tezos} alt="" className=' h-24' />
+            </div>
+            <div className='flex px-12 mt-5 space-x-3 items-center justify-center mx-10'>
+                <img src= {Kwikpic} alt="" className=' h-24' />
+            </div>
+            <div className='flex px-12 mt-5 space-x-3 items-center justify-center mx-10'>
+                <img src= {Prism} alt="" className=' h-24' />
+            </div>
+            <div className='flex px-12 mt-5 space-x-3 items-center justify-center mx-10'>
+                <img src= {Maitlogo} alt="" className=' h-24' />
+            </div>
+            <div className='flex px-12 mt-5 space-x-3 items-center justify-center mx-10'>
+                <img src= {ComSoc} alt="" className=' h-24' />
+            </div>
+            <div className='flex px-12 mt-5 space-x-3 items-center justify-center mx-10'>
+                <img src= {AfreeBug} alt="" className=' h-24' />
+            </div>
+            <div className='flex px-12 mt-5 space-x-3 items-center justify-center mx-10'>
+                <img src= {wolfram3} alt="" className=' h-24' />
+            </div>
+            <div className='flex px-12 mt-5 space-x-3 items-center justify-center mx-10'>
+                <img src= {MonkHood} alt="" className=' h-24' />
             </div>
             </div>
 
