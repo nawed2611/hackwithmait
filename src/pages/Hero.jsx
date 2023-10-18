@@ -11,6 +11,8 @@ import { motion } from "framer-motion"
 import devfolioimg from '../assets/Sponsors/Devfolio.png'
 import replitimg from '../assets/Sponsors/Replit.png'
 import polygonimg from '../assets/Sponsors/Polygon.png'
+import Maitlogo from '../assets/Sponsors/MAITLogo_white.png'
+import hwmlogo from '../assets/Sponsors/HWM_LOGO.jpeg'
 
 const variants = {
     open: { opacity: 10, x: 0 },
@@ -36,7 +38,10 @@ const Hero = () => {
         <div className='flex flex-col min-h-screen overflow-x-hidden text-white'>
             <motion.div
                 className='flex items-center justify-between mx-4 sm:mx-8 pl-8 pr-2 h-[15vh] border-black'>
-                <img src={Logo} alt='React Logo' className='w-52 h-52' />
+                <div className='flex items-center mt-12 gap-x-8'>
+                    <img src={Maitlogo} alt="MAIT Logo" className=' h-24' />
+                    <img src={hwmlogo} alt='HackwithMAIT 4.0 Logo' className='h-32' />
+                </div>
                 <nav className=''>
                     <ul className='invisible sm:visible px-4 py-2 ring rounded-md glass flex text-lg gap-8'>
                         {
@@ -77,13 +82,13 @@ const Hero = () => {
                 className={'flex bg-clip-text flex-col items-center mt-4 sm:mt-24 justify-center' + (isOpen && ' blur-xl')}>
                 <div className='flex justify-center items-center gap-6'>
                     <div>
-                        <img src={devfolioimg} alt="Devfolio Sponsor" className='h-12' />
+                        <img src={devfolioimg} alt="DEVFOLIO LOGO" className='h-12' />
                     </div>
                     <div>
-                        <img src={polygonimg} alt="Polygon Sponsor" className='h-12' />
+                        <img src={polygonimg} alt="POLYGON LOGO" className='h-12' />
                     </div>
                     <div>
-                        <img src={replitimg} alt="Replit Sponsor" className='h-12' />
+                        <img src={replitimg} alt="REPLIT LOGO" className='h-12' />
                     </div>
                 </div>
                 <h1 className='font-[800] text-center text-8xl text-wrapper'>Hack with MAIT <strong className='hero-text font-[800]'>4.0</strong></h1>
