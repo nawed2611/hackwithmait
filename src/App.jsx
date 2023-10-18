@@ -9,18 +9,21 @@ import Sponsors from './pages/Sponsors';
 import FAQ from './pages/FAQ';
 import Team from './pages/Team';
 import Footer from './pages/Footer';
+import SponsorTracks from './pages/SponsorTracks';
 
 function App() {
   return (
-    
+
     <div className="flex flex-col overflow-x-hidden ">
       <Hero />
       <About />
       <CarouselScreen />
       {/* <Speakers /> */}
       <Tracks />
+      <SponsorTracks />
       {/* <Schedule /> */}
       <Sponsors />
+
       {/* <Team /> */}
       <FAQ />
       <Footer />
