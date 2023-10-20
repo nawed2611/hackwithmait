@@ -4,7 +4,7 @@ import PageHeading from '../components/PageHeading';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { AnimatePresence, motion } from 'framer-motion';
 import fintech from '../assets/tracks/Fintech.jpg'
-import sus_dev from '../assets/tracks/Sus_dev.jpg'
+import sus_dev from '../assets/tracks/susdev.jpg'
 import comm from '../assets/tracks/communication.jpg'
 import edtech from '../assets/tracks/edtech.jpg'
 import healthcare from '../assets/tracks/healthcare.jpg'
