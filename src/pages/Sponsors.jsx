@@ -28,15 +28,16 @@ const Sponsors = () => {
             {/* sponsors row 1 */}
             <div className='flex flex-wrap'>
 
-                <div className='flex px-12 my-5 gap-3 items-center justify-center mx-10'>
+                <div className='flex px-12 my-5 gap-3 items-center justify-center mx-10 max-md:p-0 max-md:my-3'>
                     <img src={devfolioimg} alt="" className=' h-24' />
                 </div>
-                <div className='flex px-12 my-5 gap-3 items-center justify-center mx-10'>
+                <div className='flex px-12 my-5 gap-3 items-center justify-center mx-10 max-md:p-0 max-md:my-3'>
                     <img src={polygonimg} alt="" className=' h-24' />
                 </div>
-                <div className='flex px-12 my-5 gap-3 items-center justify-center mx-10'>
+                <div className='flex px-12 my-5 gap-3 items-center justify-center mx-10 max-md:p-0 max-md:my-3'>
                     <img src={replitimg} alt="" className=' h-24' />
                 </div>
+
                 <div className='flex px-12 my-5 gap-3 items-center justify-evenly w-full mx-10'>
                     <img src={Tezos} alt="" className='rounded h-24' />
                     <img src={Kwikpic} alt="" className='rounded h-24' />
