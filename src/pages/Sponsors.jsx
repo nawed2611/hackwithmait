@@ -37,9 +37,9 @@ const Sponsors = () => {
                 <div className='flex px-12 my-5 gap-3 items-center justify-center mx-10 max-md:p-0 max-md:my-3'>
                     <img src={replitimg} alt="" className=' h-24' />
                 </div>
-                <div className='flex px-12 my-5 gap-3 items-center justify-evenly w-full mx-10 max-md:flex-col max-md:p-0 max-md:my-3'>
-                    <img src={hwmlogo} alt="" className='rounded h-24 max-md:my-1' />
-                    <img src={Tezos} alt="" className='rounded h-24 max-md:my-1' />
+
+                <div className='flex px-12 my-5 gap-3 items-center justify-evenly w-full mx-10'>
+                    <img src={Tezos} alt="" className='rounded h-24' />
                     <img src={Kwikpic} alt="" className='rounded h-24' />
                 </div>
                 <div className='flex px-12 my-5 gap-3 items-center justify-evenly w-full mx-10'>

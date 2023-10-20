@@ -9,6 +9,7 @@ import Sponsors from './pages/Sponsors';
 import FAQ from './pages/FAQ';
 import Team from './pages/Team';
 import Footer from './pages/Footer';
+
 import Timeline from './pages/Timeline';
 function App() {
   return (
