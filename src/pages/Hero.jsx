@@ -37,13 +37,13 @@ const Hero = () => {
     return (
         <div className='flex flex-col min-h-screen overflow-x-hidden text-white'>
             <motion.div
-                className='flex items-center justify-between mx-4 sm:mx-8 pl-8 pr-2 h-[15vh]  border-black max-md:bg-black max-md: max-md:m-0 max-md:p-0'>
-                <div className='flex items-center mt-12 gap-x-8 max-md:mb-10 max-md:gap-x-16 max-md:p-0'>
-                    <img src={Maitlogo} alt="MAIT Logo" className=' h-24 max-md:h-12' />
-                    <img src={hwmlogo} alt='HackwithMAIT 4.0 Logo' className='h-32 max-md:h-20 ' />
+                className='flex items-center justify-between mx-4 sm:mx-8 pl-8 pr-2 h-[15vh]  border-black max-md:bg-black max-md:mb-4  max-md:h-16 max-md:m-0 max-md:pl-2'>
+                <div className='flex items-center mt-12 gap-x-8 max-md:mb-10 max-md:gap-x-0 max-md:p-0'>
+                    <img src={Maitlogo} alt="MAIT Logo" className=' h-24 max-md:h-10 max-md:mx-2' />
+                    <img src={hwmlogo} alt='HackwithMAIT 4.0 Logo' className='h-32 max-md:h-10' />
                 </div>
                 <nav className=''>
-                    <ul className='invisible sm:visible px-4 py-2 ring rounded-md glass flex text-lg gap-8'>
+                    <ul className='invisible sm:visible px-4 py-2 ring rounded-md glass flex text-lg gap-8 max-md:w-0'>
                         {
                             navLinks.map((link, index) => {
                                 if (link === 'About Us')
@@ -54,7 +54,7 @@ const Hero = () => {
                             })
                         }
                     </ul>
-                    <button onClick={() => setIsOpen(isOpen => !isOpen)} className="visible sm:invisible absolute top-10 right-10 max-md:right-16 max-md:top-16"><GiHamburgerMenu size={20} /></button>
+                    <button onClick={() => setIsOpen(isOpen => !isOpen)} className="visible sm:invisible absolute top-10 right-10 max-md:right-6 max-md:top-6"><GiHamburgerMenu size={20} /></button>
                     <motion.ul
                         className='absolute top-0 left-0 w-screen h-screen bg-black z-200 flex flex-col items-center justify-center gap-8'
                         animate={isOpen ? "open" : "closed"}
@@ -78,15 +78,15 @@ const Hero = () => {
                 animate={{ y: -20 }}
                 transition={{ type: "spring" }}
                 className={'flex bg-clip-text flex-col items-center mt-4 sm:mt-24 justify-center' + (isOpen && ' blur-xl')}>
-                <div className='flex justify-center items-center max-md:gap-1 gap-6'>
+                <div className='flex justify-center items-center max-md:gap-2 gap-6 max-md:px-4'>
                     <div>
-                        <img src={devfolioimg} alt="DEVFOLIO LOGO" className='h-12' />
+                        <img src={devfolioimg} alt="DEVFOLIO LOGO" className='h-12 max-md:h-8' />
                     </div>
                     <div>
-                        <img src={polygonimg} alt="POLYGON LOGO" className='h-12' />
+                        <img src={polygonimg} alt="POLYGON LOGO" className='h-12 max-md:h-8' />
                     </div>
                     <div>
-                        <img src={replitimg} alt="REPLIT LOGO" className='h-12' />
+                        <img src={replitimg} alt="REPLIT LOGO" className='h-12 max-md:h-8' />
                     </div>
                 </div>
                 <h1 className='font-[800] text-center text-8xl text-wrapper'>Hack with MAIT <strong className='hero-text font-[800]'>4.0</strong></h1>
