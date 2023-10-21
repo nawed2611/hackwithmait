@@ -1,45 +1,54 @@
 import React, { useState } from 'react';
-import trackssvg from '../assets/tracks.svg';
-import PageHeading from '../components/PageHeading';
-import { AiOutlineCloseCircle } from 'react-icons/ai';
-import { AnimatePresence, motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
+// import trackssvg from '../assets/tracks.svg';
+// import PageHeading from '../components/PageHeading';
+// import { AiOutlineCloseCircle } from 'react-icons/ai';
+// import { AnimatePresence, motion } from 'framer-motion';
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import Table from './table'
 
 const Tracks = () => {
-    const [selectedId, setSelectedId] = useState(null);
-    const items = {
-        1: {
-            header: "FinTech",
-            content: "The rapid growth of fintech has created a wealth of career opportunities in this field. As more consumers turn to mobile payments and internet banking, the demand for skilled fintech professionals is on the rise. Participants in the fintech track will have the opportunity to explore this dynamic field and develop their own solutions.",
-            imageUrl: "https://img.freepik.com/free-vector/fintech-business-related_24908-57041.jpg?w=740&t=st=1671131881~exp=1671132481~hmac=4fec8120e2ed4eb70de1e0004eebb0d4f12ee391fa3c880f1859d4187e26f390"
-        },
-        2: {
-            header: "HealthCare",
-            content: "The rising number of patients has led to a decrease in the number of doctors per patient, resulting in a vicious cycle where ignored or delayed diagnoses make patients more dependent on doctors' check-ups. Some patients cannot afford to visit a doctor, exacerbating the problem. This situation has created a need for innovative solutions that can improve access to healthcare and reduce the reliance on in-person doctor's visits.",
-            imageUrl: "https://img.freepik.com/free-vector/medical-workers-analyzing-electronic-record_1262-19834.jpg?w=1060&t=st=1671132454~exp=1671133054~hmac=12d437b01b7d97962f37ff50646220a6c282a9d6cfae3a210f36028e25669d0e"
-        },
-        3: {
-            header: "Sustainable Development",
-            content: "The demand for natural resources and the impact of human activities on the environment have raised concerns about sustainable development. HackwithMAIT3.0 offers a sustainability track for participants to explore and develop solutions that support economic growth without harming the planet. Participants will have the opportunity to learn about sustainability technologies and practices and to use their skills and creativity to make a difference.",
-            imageUrl: "https://img.freepik.com/free-vector/illustration-human-avatar-with-environment_53876-17627.jpg?w=1060&t=st=1671132491~exp=1671133091~hmac=8185b524e3750c928c4d6065c422fb5f26c52027dd8ce80d51782c7c4a12e17b"
-        },
-        4: {
-            header: "EdTech",
-            content: "Edtech involves using technology to enhance and support teaching and learning. In this track, participants will have the opportunity to learn about the latest edtech technologies and practices and to use their skills and creativity to develop innovative solutions and make a difference in the field of education.",
-            imageUrl: "https://img.freepik.com/free-vector/illustration-human-avatar-with-environment_53876-17627.jpg?w=1060&t=st=1671132491~exp=1671133091~hmac=8185b524e3750c928c4d6065c422fb5f26c52027dd8ce80d51782c7c4a12e17b"
-        },
-        5: {
-            header: "Communication",
-            content: "Communication technology is a broad field that encompasses a range of tools and approaches for facilitating communication and information sharing. This includes everything from messaging and video conferencing to social media and online collaboration tools. In communication track, participants will have the chance to learn about the latest technologies and practices in communication technology and to use their skills and creativity to make a difference.",
-            imageUrl: "https://img.freepik.com/free-vector/people-communicating-via-social-media_74855-5551.jpg?w=1380&t=st=1671132559~exp=1671133159~hmac=b0665e05b3d655d98ba7774f6d0a1dceab50745befb50c67baaeb86abb7d955f"
-
-        },
-        6: {
-            header: "Open Innovation",
-            content: "Open innovation involves involving people outside a company or organization in the development of new ideas and technologies. HackwithMAIT 4.0 offers an open innovation track for participants to explore and develop their own solutions. Participants will have the opportunity to learn about open innovation technologies and practices and to use their skills and creativity to make a difference.",
-            imageUrl: "https://img.freepik.com/free-vector/business-team-meeting-office-co-working-space_74855-6913.jpg?w=1060&t=st=1671132595~exp=1671133195~hmac=6f1b9412ee3f34dd1bcfb198a3103d0c6a35b20b31c78aca3584e4e246977156"
+    const navigate = useNavigate();
+    const redirectToPage=(page)=>{
+        if (page===1){
+            navigate('/table');
         }
     }
+    // const [selectedId, setSelectedId] = useState(null);
+    // const items = {
+    //     1: {
+    //         header: "FinTech",
+    //         content: "The rapid growth of fintech has created a wealth of career opportunities in this field. As more consumers turn to mobile payments and internet banking, the demand for skilled fintech professionals is on the rise. Participants in the fintech track will have the opportunity to explore this dynamic field and develop their own solutions.",
+    //         imageUrl: "https://img.freepik.com/free-vector/fintech-business-related_24908-57041.jpg?w=740&t=st=1671131881~exp=1671132481~hmac=4fec8120e2ed4eb70de1e0004eebb0d4f12ee391fa3c880f1859d4187e26f390"
+    //     },
+    //     2: {
+    //         header: "HealthCare",
+    //         content: "The rising number of patients has led to a decrease in the number of doctors per patient, resulting in a vicious cycle where ignored or delayed diagnoses make patients more dependent on doctors' check-ups. Some patients cannot afford to visit a doctor, exacerbating the problem. This situation has created a need for innovative solutions that can improve access to healthcare and reduce the reliance on in-person doctor's visits.",
+    //         imageUrl: "https://img.freepik.com/free-vector/medical-workers-analyzing-electronic-record_1262-19834.jpg?w=1060&t=st=1671132454~exp=1671133054~hmac=12d437b01b7d97962f37ff50646220a6c282a9d6cfae3a210f36028e25669d0e"
+    //     },
+    //     3: {
+    //         header: "Sustainable Development",
+    //         content: "The demand for natural resources and the impact of human activities on the environment have raised concerns about sustainable development. HackwithMAIT3.0 offers a sustainability track for participants to explore and develop solutions that support economic growth without harming the planet. Participants will have the opportunity to learn about sustainability technologies and practices and to use their skills and creativity to make a difference.",
+    //         imageUrl: "https://img.freepik.com/free-vector/illustration-human-avatar-with-environment_53876-17627.jpg?w=1060&t=st=1671132491~exp=1671133091~hmac=8185b524e3750c928c4d6065c422fb5f26c52027dd8ce80d51782c7c4a12e17b"
+    //     },
+    //     4: {
+    //         header: "EdTech",
+    //         content: "Edtech involves using technology to enhance and support teaching and learning. In this track, participants will have the opportunity to learn about the latest edtech technologies and practices and to use their skills and creativity to develop innovative solutions and make a difference in the field of education.",
+    //         imageUrl: "https://img.freepik.com/free-vector/illustration-human-avatar-with-environment_53876-17627.jpg?w=1060&t=st=1671132491~exp=1671133091~hmac=8185b524e3750c928c4d6065c422fb5f26c52027dd8ce80d51782c7c4a12e17b"
+    //     },
+    //     5: {
+    //         header: "Communication",
+    //         content: "Communication technology is a broad field that encompasses a range of tools and approaches for facilitating communication and information sharing. This includes everything from messaging and video conferencing to social media and online collaboration tools. In communication track, participants will have the chance to learn about the latest technologies and practices in communication technology and to use their skills and creativity to make a difference.",
+    //         imageUrl: "https://img.freepik.com/free-vector/people-communicating-via-social-media_74855-5551.jpg?w=1380&t=st=1671132559~exp=1671133159~hmac=b0665e05b3d655d98ba7774f6d0a1dceab50745befb50c67baaeb86abb7d955f"
+
+    //     },
+    //     6: {
+    //         header: "Open Innovation",
+    //         content: "Open innovation involves involving people outside a company or organization in the development of new ideas and technologies. HackwithMAIT 4.0 offers an open innovation track for participants to explore and develop their own solutions. Participants will have the opportunity to learn about open innovation technologies and practices and to use their skills and creativity to make a difference.",
+    //         imageUrl: "https://img.freepik.com/free-vector/business-team-meeting-office-co-working-space_74855-6913.jpg?w=1060&t=st=1671132595~exp=1671133195~hmac=6f1b9412ee3f34dd1bcfb198a3103d0c6a35b20b31c78aca3584e4e246977156"
+    //     }
+    // }
     function ToggleContent({ header, id }) {
         return (
             <motion.div
@@ -54,7 +63,49 @@ const Tracks = () => {
         )
     }
     return (
-        <div className='flex flex-col Tracks items-center min-h-screen '>
+        // <div className='flex flex-col Tracks items-center min-h-screen '>
+        //     <div className='flex flex-col sm:flex-row items-center sm:items-baseline w-full space-x-4 px-20 mt-8'>
+        //         <div className='text-white font-semibold text-2xl'>
+        //             Hackathon Tracks
+        //         </div>
+        //         <div className='bg-gradient-to-r from-white to-transparent sm:w-[80%] w-full h-2 mt-4'>
+        //         </div>
+        //     </div>
+        //     <div className='radial-bg-2 w-[98vw] h-screen absolute'></div>
+        //     <div className={`flex flex-1 items-center justify-center flex-wrap mt-4 ` + (selectedId && ' blur-lg')}>
+        //         {
+        //             Object.keys(items).map((id) => (
+        //                 <ToggleContent
+        //                     key={id}
+        //                     id={id}
+        //                     header={items[id].header}
+        //                 />
+        //             ))
+        //         }
+        //     </div>
+        //     <AnimatePresence>
+        //         {selectedId && (
+
+        //             <motion.div className='bg-[#1e1e1e] text-white rounded-md drop-shadow-md border border-blue-800 p-4 absolute sm:mt-64 mt-32 w-[90vw] sm:w-[45vw] sm:min-h-[35vh]' layoutId={selectedId}>
+        //                 <div className='flex items-center justify-between my-4 px-4'>
+        //                     <motion.h1 className='font-bold text-2xl'>{items[selectedId].header}</motion.h1>
+        //                     <motion.button className='flex items-end' onClick={() => setSelectedId(null)}>
+        //                         <AiOutlineCloseCircle size={22} />
+        //                     </motion.button>
+        //                 </div>
+        //                 <div className='flex items-center justify-between'>
+        //                     <motion.p className='text-lg m-1'>{items[selectedId].content}</motion.p>
+        //                     <motion.img src={items[selectedId].imageUrl} className='w-32 h-32 border object-cover rounded-lg' alt='Tracks' />
+        //                 </div>
+        //             </motion.div>
+
+
+        //         )}
+        //     </AnimatePresence>
+        // </div>
+        <>
+
+        <div className='flex flex-col Tracks items-center'>
             <div className='flex flex-col sm:flex-row items-center sm:items-baseline w-full space-x-4 px-20 mt-8'>
                 <div className='text-white font-semibold text-2xl'>
                     Hackathon Tracks
@@ -62,40 +113,12 @@ const Tracks = () => {
                 <div className='bg-gradient-to-r from-white to-transparent sm:w-[80%] w-full h-2 mt-4'>
                 </div>
             </div>
-            <div className='radial-bg-2 w-[98vw] h-screen absolute'></div>
-            <div className={`flex flex-1 items-center justify-center flex-wrap mt-4 ` + (selectedId && ' blur-lg')}>
-                {
-                    Object.keys(items).map((id) => (
-                        <ToggleContent
-                            key={id}
-                            id={id}
-                            header={items[id].header}
-                        />
-                    ))
-                }
-            </div>
-            <AnimatePresence>
-                {selectedId && (
-
-                    <motion.div className='bg-[#1e1e1e] text-white rounded-md drop-shadow-md border border-blue-800 p-4 absolute sm:mt-64 mt-32 w-[90vw] sm:w-[45vw] sm:min-h-[35vh]' layoutId={selectedId}>
-                        <div className='flex items-center justify-between my-4 px-4'>
-                            <motion.h1 className='font-bold text-2xl'>{items[selectedId].header}</motion.h1>
-                            <motion.button className='flex items-end' onClick={() => setSelectedId(null)}>
-                                <AiOutlineCloseCircle size={22} />
-                            </motion.button>
-                        </div>
-                        <div className='flex items-center justify-between'>
-                            <motion.p className='text-lg m-1'>{items[selectedId].content}</motion.p>
-                            <motion.img src={items[selectedId].imageUrl} className='w-32 h-32 border object-cover rounded-lg' alt='Tracks' />
-                        </div>
-                    </motion.div>
-
-
-                )}
-            </AnimatePresence>
-
-
         </div>
+            <div className='flex flex-grow gap-x-4 items-center min-w-full justify-center my-8  md:gap-x-8 max-md:flex-col'>
+            <button type="button" class="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg px-5 py-2.5 text-center mr-2 mb-2 text-4xl max-md:mb-10" onClick={() => redirectToPage(1)}>Innovative Tracks</button>
+            <button type="button" class="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg px-5 py-2.5 text-center mr-2 mb-2 text-4xl " onClick={()=>redirectToPage(2)}>Sponsored Tracks</button>
+            </div>
+        </>
     )
 }
 
