@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import Table from './pages/Table'
+import Table from './pages/table'
 import './index.css'
 import 'tw-elements';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";

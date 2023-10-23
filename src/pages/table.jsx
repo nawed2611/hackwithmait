@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 import Footer from './Footer';
 
-const Table = () => {
+const table = () => {
     function ToggleContent({ header, id }) {
         return (
             <motion.div
@@ -84,4 +84,4 @@ const Table = () => {
     )
 }
 
-export default Table;
+export default table;
