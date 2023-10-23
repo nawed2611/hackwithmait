@@ -26,7 +26,7 @@ const Sponsors = () => {
             <div className='radial-bg w-[98vw] h-screen absolute -z-10'></div>
 
             {/* sponsors row 1 */}
-            <div className='flex flex-wrap'>
+            <div className='flex flex-wrap py-4'>
 
                 <div className='flex px-12 my-5 gap-3 items-center justify-center mx-10 max-md:p-0 max-md:my-3'>
                     <img src={devfolioimg} alt="" className=' h-24' />
@@ -37,19 +37,25 @@ const Sponsors = () => {
                 <div className='flex px-12 my-5 gap-3 items-center justify-center mx-10 max-md:p-0 max-md:my-3'>
                     <img src={replitimg} alt="" className=' h-24' />
                 </div>
-
-                <div className='flex px-12 my-5 gap-3 items-center justify-evenly w-full mx-10'>
+                <div className='flex px-12 my-5 gap-3 items-center justify-center mx-10 max-md:p-0 max-md:my-3'>
                     <img src={Tezos} alt="" className='rounded h-24' />
+                </div>
+                <div className='flex px-12 my-5 gap-3 items-center justify-center mx-10 max-md:p-0 max-md:my-3'>
                     <img src={Kwikpic} alt="" className='rounded h-24' />
                 </div>
-                <div className='flex px-12 my-5 gap-3 items-center justify-evenly w-full mx-10'>
-                    <img src={Prism} alt="" className='rounded h-24' />
+                <div className='flex px-12 my-5 gap-3 items-center justify-center mx-10 max-md:p-0 max-md:my-3'>
+                    <img src={Prism} alt="" className='rounded h-20' />
+                </div>
+                <div className='flex px-12 my-5 gap-3 items-center justify-center mx-10 max-md:p-0 max-md:my-3'>
                     <img src="https://r10.ieee.org/delhi-com/wp-content/uploads/sites/50/ieee-comsoc-delhi-logo-resized.jpg" alt="" className='rounded h-24' />
+                </div>
+                <div className='flex px-12 my-5 gap-3 items-center justify-center mx-10 max-md:p-0 max-md:my-3'>
                     <img src={AfreeBug} alt="" className='rounded h-24' />
                 </div>
-
-                <div className='flex px-12 my-5 gap-3 items-center justify-evenly w-full mx-10'>
-                    <img src={wolfram3} alt="" className='rounded h-24' />
+                <div className='flex px-12 my-5 gap-3 items-center justify-center mx-10 max-md:p-0 max-md:my-3'>
+                    <img src={wolfram3} alt="" className='rounded h-20' />
+                </div>
+                <div className='flex px-12 my-5 gap-3 items-center justify-center mx-10 max-md:p-0 max-md:my-3'>
                     <img src={MonkHood} alt="" className='roundeS h-24' />
                 </div>
             </div>

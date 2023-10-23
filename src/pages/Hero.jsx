@@ -39,8 +39,8 @@ const Hero = () => {
             <motion.div
                 className='flex items-center justify-between mx-4 sm:mx-8 pl-8 pr-2 h-[15vh]  border-black max-md:bg-black max-md:mb-4  max-md:h-16 max-md:m-0 max-md:pl-2'>
                 <div className='flex items-center mt-12 gap-x-8 max-md:mb-10 max-md:gap-x-0 max-md:p-0'>
-                    <img src={Maitlogo} alt="MAIT Logo" className=' h-24 max-md:h-10 max-md:mx-2' />
-                    <img src={hwmlogo} alt='HackwithMAIT 4.0 Logo' className='h-32 max-md:h-10' />
+                    <img src={Maitlogo} alt="MAIT Logo" className='h-20 max-md:h-10 max-md:mx-2' />
+                    <img src={hwmlogo} alt='HackwithMAIT 4.0 Logo' className='h-20 max-md:h-10' />
                 </div>
                 <nav className=''>
                     <ul className='invisible sm:visible px-4 py-2 ring rounded-md glass flex text-lg gap-8 max-md:w-0'>
