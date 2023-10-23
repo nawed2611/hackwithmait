@@ -88,7 +88,49 @@ const FAQ = () => {
                 </div>
 
                 <hr className='bg-emerald-400 w-[100%] h-1 mt-4 mb-2' />
+                <div className='w-full '>
+                    {/* HEAD */}
+                    <div className='transition-all duration-1000 flex justify-between items-center px-2'>
+                        <h1 className='font-bold text-2xl py-2'>Is it in offline or online mode?</h1>
 
+                    </div>
+                    {/* CONTENT */}
+                    <div className='transition-all duration-1000 overflow-hidden'>
+                        <p className='font-semibold p-2 text-justify'>It will be held in offline mode at Maharaja Agrasen Institute of Technology, on 22nd -23rd November, 2023</p>
+                    </div>
+                </div>
+
+                <hr className='bg-emerald-400 w-[100%] h-1 mt-4 mb-2' />
+                <div className='w-full '>
+                    {/* HEAD */}
+                    <div className='transition-all duration-1000 flex justify-between items-center px-2'>
+                        <h1 className='font-bold text-2xl py-2'>Do we provide accommodation?</h1>
+
+                    </div>
+                    {/* CONTENT */}
+                    <div className='transition-all duration-1000 overflow-hidden'>
+                        <p className='font-semibold p-2 text-justify'>No we don’t provide accommodation. Participants will be required to come at 9:00 am on both days and leave after 5:00 pm
+                        </p>
+                    </div>
+                </div>
+
+                <hr className='bg-emerald-400 w-[100%] h-1 mt-4 mb-2' />
+
+                <div className='w-full '>
+                    {/* HEAD */}
+                    <div className='transition-all duration-1000 flex justify-between items-center px-2'>
+                        <h1 className='font-bold text-2xl py-2'>Where do we register for HackwithMAIT 4.0?</h1>
+
+                    </div>
+                    {/* CONTENT */}
+                    <div className='transition-all duration-1000 overflow-hidden'>
+                        <p className='font-semibold p-2 text-justify'>Registrations for HackwithMAIT 4.0 are accepted through devfolio only <br />
+                            <a className="font-bold text-violet-200" href='https://hackwithmait4.devfolio.co'>Click here</a>
+                        </p>
+                    </div>
+                </div>
+
+                <hr className='bg-emerald-400 w-[100%] h-1 mt-4' />
                 <div className='w-full '>
                     {/* HEAD */}
                     <div className='transition-all duration-1000 flex justify-between items-center px-2'>
