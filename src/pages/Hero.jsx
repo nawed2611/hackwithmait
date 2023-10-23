@@ -78,6 +78,7 @@ const Hero = () => {
                 animate={{ y: -20 }}
                 transition={{ type: "spring" }}
                 className={'flex bg-clip-text flex-col items-center mt-4 sm:mt-24 justify-center' + (isOpen && ' blur-xl')}>
+
                 <div className='flex justify-center items-center max-md:gap-2 gap-6 max-md:px-4 max-md:my-5'>
                     <div>
                         <img src={devfolioimg} alt="DEVFOLIO LOGO" className='h-12 max-md:h-8' />
