@@ -3,19 +3,6 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 
 const table = () => { 
-    function ToggleContent({ header, id }) {
-        return (
-            <motion.div
-                layout
-                layoutId={id}
-                onClick={() => setSelectedId(id)}
-                className='flex z-10 flex-col justify-center items-center w-[40%] h-32 sm:w-[28vw] sm:h-[35vh] m-2 bg-white rounded-lg shadow-lg cursor-pointer max-md:my-4 max-md:h-1/5 max-md:w-3/4'
-            >
-                <motion.img src={items[id].imageUrl} className='w-full h-full object-fit rounded-lg hover:blur-md transition-all' alt='Tracks' />
-                <motion.h2 className='bg-white drop-shadow-sm p-2 rounded-md absolute font-bold  text-xs sm:text-xl' layout>{header}</motion.h2>
-            </motion.div>
-        )
-    }
     const items = {
         1: {
             header: "FinTech",
@@ -52,9 +39,9 @@ const table = () => {
   return (
     <>
     <div className='radial-bg-2 w-[98vw] h-screen absolute'></div>
-    <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 my-5">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg ">
+    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 my-5 max-md:my-0">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 max-md:invisible">
             <tr>
                 <th scope="col" class="px-6 py-3">
                     Track
@@ -66,8 +53,8 @@ const table = () => {
         </thead>
         {
             Object.keys(items).map((id) => (
-                <tr class="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-2xl">
+                <tr class="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700 max-md:flex max-md:flex-col">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white text-2xl ">
                     {items[id].header}
                 </th>
                 <td class="px-6 py-4 text-xl">
@@ -84,23 +71,3 @@ const table = () => {
 }
 
 export default table
-
-{/* <AnimatePresence>
-                {selectedId && (
-
-                    <motion.div className='bg-[#1e1e1e] text-white rounded-md drop-shadow-md border border-blue-800 p-4 absolute sm:mt-64 mt-32 w-[90vw] sm:w-[45vw] sm:min-h-[35vh]' layoutId={selectedId}>
-                        <div className='flex items-center justify-between my-4 px-4'>
-                            <motion.h1 className='font-bold text-2xl'>{items[selectedId].header}</motion.h1>
-                            <motion.button className='flex items-end' onClick={() => setSelectedId(null)}>
-                                <AiOutlineCloseCircle size={22} />
-                            </motion.button>
-                        </div>
-                        <div className='flex items-center justify-between'>
-                            <motion.p className='text-lg m-1'>{items[selectedId].content}</motion.p>
-                            <motion.img src={items[selectedId].imageUrl} className='w-32 h-32 border object-cover rounded-lg' alt='Tracks' />
-                        </div>
-                    </motion.div>
-
-
-                )}
-            </AnimatePresence> */}
