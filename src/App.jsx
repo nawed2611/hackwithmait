@@ -4,7 +4,6 @@ import About from './pages/About';
 import Tracks from './pages/Tracks';
 import CarouselScreen from './pages/Carousel';
 import Speakers from './pages/Speakers';
-import Schedule from './pages/Schedule';
 import Sponsors from './pages/Sponsors';
 import FAQ from './pages/FAQ';
 import Team from './pages/Team';
@@ -18,8 +17,8 @@ function App() {
       <About />
       <CarouselScreen />
       {/* <Speakers /> */}
-      <Tracks />
-      <Timeline/>
+      {/* <Tracks /> */}
+      {/* <Timeline/> */}
       {/* <Schedule /> */}
       <Sponsors />
       {/* <Team /> */}

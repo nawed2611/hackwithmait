@@ -10,9 +10,17 @@ import edtech from '../assets/tracks/edtech.jpg'
 import healthcare from '../assets/tracks/healthcare.jpg'
 import open_inn from '../assets/tracks/open_inn.jpg'
 import SponsorTracks from './SponsorTracks_trash';
+import { useNavigate } from 'react-router-dom';
 
 const Tracks = () => {
     const [selectedId, setSelectedId] = useState(null);
+    const navigate = useNavigate();
+    const redirectToPage = (page) => {
+        if (page === 1) {
+            navigate('/table');
+        }
+    }
+
     const items = {
         1: {
             header: "FinTech",
@@ -94,94 +102,55 @@ const Tracks = () => {
         )
     }
     return (
-        // <div className='flex flex-col Tracks items-center min-h-screen '>
-        //     <div className='flex flex-col sm:flex-row items-center sm:items-baseline w-full space-x-4 px-20 mt-8'>
-        //         <div className='text-white font-semibold text-2xl'>
-        //             Hackathon Tracks
-        //         </div>
-        //         <div className='bg-gradient-to-r from-white to-transparent sm:w-[80%] w-full h-2 mt-4'>
-        //         </div>
-        //     </div>
-        //     <div className='radial-bg-2 w-[98vw] h-screen absolute'></div>
-        //     <div className={`flex flex-1 items-center justify-center flex-wrap mt-4 ` + (selectedId && ' blur-lg')}>
-        //         {
-        //             Object.keys(items).map((id) => (
-        //                 <ToggleContent
-        //                     key={id}
-        //                     id={id}
-        //                     header={items[id].header}
-        //                 />
-        //             ))
-        //         }
-        //     </div>
-        //     <AnimatePresence>
-        //         {selectedId && (
 
-        //             <motion.div className='bg-[#1e1e1e] text-white rounded-md drop-shadow-md border border-blue-800 p-4 absolute sm:mt-64 mt-32 w-[90vw] sm:w-[45vw] sm:min-h-[35vh]' layoutId={selectedId}>
-        //                 <div className='flex items-center justify-between my-4 px-4'>
-        //                     <motion.h1 className='font-bold text-2xl'>{items[selectedId].header}</motion.h1>
-        //                     <motion.button className='flex items-end' onClick={() => setSelectedId(null)}>
-        //                         <AiOutlineCloseCircle size={22} />
-        //                     </motion.button>
-        //                 </div>
-        //                 <div className='flex items-center justify-between'>
-        //                     <motion.p className='text-lg m-1'>{items[selectedId].content}</motion.p>
-        //                     <motion.img src={items[selectedId].imageUrl} className='w-32 h-32 border object-cover rounded-lg' alt='Tracks' />
-        //                 </div>
-        //             </motion.div>
-
-
-        //         )}
-        //     </AnimatePresence>
-        // </div>
         <>
 
-        <div className='flex flex-col Tracks items-center'>
-            <div className='flex flex-col sm:flex-row items-center sm:items-baseline w-full space-x-4 px-20 mt-8'>
-                <div className='text-white font-semibold text-2xl'>
-                    Hackathon Tracks
+            <div className='flex flex-col Tracks items-center'>
+                <div className='flex flex-col sm:flex-row items-center sm:items-baseline w-full space-x-4 px-20 mt-8'>
+                    <div className='text-white font-semibold text-2xl'>
+                        Hackathon Tracks
+                    </div>
+                    <div className='bg-gradient-to-r from-white to-transparent sm:w-[80%] w-full h-2 mt-4'>
+                    </div>
                 </div>
-                <div className='bg-gradient-to-r from-white to-transparent sm:w-[80%] w-full h-2 mt-4'>
+                {/* <br />
+                <h1 className='text-white text-left font-semibold text-2xl border-2 p-2 border-white shadow-white shadow'> Innovative Tracks</h1>
+                <div className='radial-bg-2 w-[98vw] h-screen absolute'></div>
+                <div className={`flex flex-1 items-center justify-center flex-wrap mt-4 ` + (selectedId && ' blur-lg')}>
+                    {
+                        Object.keys(items).map((id) => (
+                            <ToggleContent
+                                key={id}
+                                id={id}
+                                header={items[id].header}
+                            />
+                        ))
+                    }
                 </div>
+                <AnimatePresence>
+                    {selectedId && (
+
+                        <motion.div className='bg-[#1e1e1e] text-white rounded-md drop-shadow-md border border-blue-800 p-4 absolute sm:mt-64 mt-32 w-[90vw] sm:w-[45vw] sm:min-h-[35vh]' layoutId={selectedId}>
+                            <div className='flex items-center justify-between my-4 px-4'>
+                                <motion.h1 className='font-bold text-2xl'>{items[selectedId].header}</motion.h1>
+                                <motion.button className='flex items-end' onClick={() => setSelectedId(null)}>
+                                    <AiOutlineCloseCircle size={22} />
+                                </motion.button>
+                            </div>
+                            <div className='flex items-center justify-between'>
+                                <motion.p className='text-lg m-1'>{items[selectedId].content}</motion.p>
+                                <motion.img src={items[selectedId].imageUrl} className='w-32 h-32 border object-cover rounded-lg' alt='Tracks' />
+                            </div>
+                        </motion.div>
+
+
+                    )}
+                </AnimatePresence> */}
+
             </div>
-            <br />
-            <h1 className='text-white text-left font-semibold text-2xl border-2 p-2 border-white shadow-white shadow'> Innovative Tracks</h1>
-            <div className='radial-bg-2 w-[98vw] h-screen absolute'></div>
-            <div className={`flex flex-1 items-center justify-center flex-wrap mt-4 ` + (selectedId && ' blur-lg')}>
-                {
-                    Object.keys(items).map((id) => (
-                        <ToggleContent
-                            key={id}
-                            id={id}
-                            header={items[id].header}
-                        />
-                    ))
-                }
-            </div>
-            <AnimatePresence>
-                {selectedId && (
-
-                    <motion.div className='bg-[#1e1e1e] text-white rounded-md drop-shadow-md border border-blue-800 p-4 absolute sm:mt-64 mt-32 w-[90vw] sm:w-[45vw] sm:min-h-[35vh]' layoutId={selectedId}>
-                        <div className='flex items-center justify-between my-4 px-4'>
-                            <motion.h1 className='font-bold text-2xl'>{items[selectedId].header}</motion.h1>
-                            <motion.button className='flex items-end' onClick={() => setSelectedId(null)}>
-                                <AiOutlineCloseCircle size={22} />
-                            </motion.button>
-                        </div>
-                        <div className='flex items-center justify-between'>
-                            <motion.p className='text-lg m-1'>{items[selectedId].content}</motion.p>
-                            <motion.img src={items[selectedId].imageUrl} className='w-32 h-32 border object-cover rounded-lg' alt='Tracks' />
-                        </div>
-                    </motion.div>
-
-
-                )}
-            </AnimatePresence>
-
-        </div>
             <div className='flex flex-grow gap-x-4 items-center min-w-full justify-center my-8  md:gap-x-8 max-md:flex-col'>
-            <button type="button" class="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg px-5 py-2.5 text-center mr-2 mb-2 text-4xl max-md:mb-10" onClick={() => redirectToPage(1)}>Innovative Tracks</button>
-            <button type="button" class="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg px-5 py-2.5 text-center mr-2 mb-2 text-4xl " onClick={()=>redirectToPage(2)}>Sponsored Tracks</button>
+                <button type="button" className="text-white bg-gradient-to-br from-green-400 to-blue-600  rounded-lg px-5 py-2.5 text-center mr-2 mb-2 text-xl max-md:mb-10" onClick={() => redirectToPage(1)}>Innovative Tracks</button>
+                <button type="button" className="text-white bg-gradient-to-br from-green-400 to-blue-600  rounded-lg px-5 py-2.5 text-center mr-2 mb-2 text-xl " onClick={() => redirectToPage(2)}>Sponsored Tracks</button>
             </div>
         </>
     )
