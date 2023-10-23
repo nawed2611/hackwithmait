@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
+import Footer from './Footer';
 
 const Table = () => {
     function ToggleContent({ header, id }) {
@@ -29,7 +30,7 @@ const Table = () => {
         },
         3: {
             header: "Sustainable Development",
-            content: "The demand for natural resources and the impact of human activities on the environment have raised concerns about sustainable development. HackwithMAIT3.0 offers a sustainability track for participants to explore and develop solutions that support economic growth without harming the planet. Participants will have the opportunity to learn about sustainability technologies and practices and to use their skills and creativity to make a difference.",
+            content: "The demand for natural resources and the impact of human activities on the environment have raised concerns about sustainable development. HackwithMAIT 4.0 offers a sustainability track for participants to explore and develop solutions that support economic growth without harming the planet. Participants will have the opportunity to learn about sustainability technologies and practices and to use their skills and creativity to make a difference.",
             imageUrl: "https://img.freepik.com/free-vector/illustration-human-avatar-with-environment_53876-17627.jpg?w=1060&t=st=1671132491~exp=1671133091~hmac=8185b524e3750c928c4d6065c422fb5f26c52027dd8ce80d51782c7c4a12e17b"
         },
         4: {
@@ -52,8 +53,8 @@ const Table = () => {
     return (
         <>
             <div className='radial-bg-2 w-[98vw] h-screen absolute'></div>
-            <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 my-5">
+            <div class="relative overflow-x-auto shadow-md  p-2">
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 sm:rounded-lg my-5">
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
                             <th scope="col" class="px-6 py-3">
@@ -78,7 +79,7 @@ const Table = () => {
                     }
                 </table>
             </div>
-
+            <Footer />
         </>
     )
 }

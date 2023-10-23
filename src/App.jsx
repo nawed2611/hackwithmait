@@ -18,7 +18,7 @@ function App() {
       <CarouselScreen />
       {/* <Speakers /> */}
       {/* <Tracks /> */}
-      {/* <Timeline/> */}
+      <Timeline />
       {/* <Schedule /> */}
       <Sponsors />
       {/* <Team /> */}
