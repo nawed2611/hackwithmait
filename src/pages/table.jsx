@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 
-const table = () => { 
+const Table = () => {
     function ToggleContent({ header, id }) {
         return (
             <motion.div
@@ -41,7 +41,7 @@ const table = () => {
             header: "Communication",
             content: "Communication technology is a broad field that encompasses a range of tools and approaches for facilitating communication and information sharing. This includes everything from messaging and video conferencing to social media and online collaboration tools. In communication track, participants will have the chance to learn about the latest technologies and practices in communication technology and to use their skills and creativity to make a difference.",
             imageUrl: "https://img.freepik.com/free-vector/people-communicating-via-social-media_74855-5551.jpg?w=1380&t=st=1671132559~exp=1671133159~hmac=b0665e05b3d655d98ba7774f6d0a1dceab50745befb50c67baaeb86abb7d955f"
-    
+
         },
         6: {
             header: "Open Innovation",
@@ -49,58 +49,38 @@ const table = () => {
             imageUrl: "https://img.freepik.com/free-vector/business-team-meeting-office-co-working-space_74855-6913.jpg?w=1060&t=st=1671132595~exp=1671133195~hmac=6f1b9412ee3f34dd1bcfb198a3103d0c6a35b20b31c78aca3584e4e246977156"
         }
     }
-  return (
-    <>
-    <div className='radial-bg-2 w-[98vw] h-screen absolute'></div>
-    <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 my-5">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-            <tr>
-                <th scope="col" class="px-6 py-3">
-                    Track
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Problem Statement
-                </th>
-            </tr>
-        </thead>
-        {
-            Object.keys(items).map((id) => (
-                <tr class="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-2xl">
-                    {items[id].header}
-                </th>
-                <td class="px-6 py-4 text-xl">
-                    {items[id].content}
-                </td>
-                </tr>
-            ))
-        }
-            </table>
+    return (
+        <>
+            <div className='radial-bg-2 w-[98vw] h-screen absolute'></div>
+            <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 my-5">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                Track
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Problem Statement
+                            </th>
+                        </tr>
+                    </thead>
+                    {
+                        Object.keys(items).map((id) => (
+                            <tr class="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-2xl">
+                                    {items[id].header}
+                                </th>
+                                <td class="px-6 py-4 text-xl">
+                                    {items[id].content}
+                                </td>
+                            </tr>
+                        ))
+                    }
+                </table>
             </div>
-        
-    </>
-  )
+
+        </>
+    )
 }
 
-export default table
-
-{/* <AnimatePresence>
-                {selectedId && (
-
-                    <motion.div className='bg-[#1e1e1e] text-white rounded-md drop-shadow-md border border-blue-800 p-4 absolute sm:mt-64 mt-32 w-[90vw] sm:w-[45vw] sm:min-h-[35vh]' layoutId={selectedId}>
-                        <div className='flex items-center justify-between my-4 px-4'>
-                            <motion.h1 className='font-bold text-2xl'>{items[selectedId].header}</motion.h1>
-                            <motion.button className='flex items-end' onClick={() => setSelectedId(null)}>
-                                <AiOutlineCloseCircle size={22} />
-                            </motion.button>
-                        </div>
-                        <div className='flex items-center justify-between'>
-                            <motion.p className='text-lg m-1'>{items[selectedId].content}</motion.p>
-                            <motion.img src={items[selectedId].imageUrl} className='w-32 h-32 border object-cover rounded-lg' alt='Tracks' />
-                        </div>
-                    </motion.div>
-
-
-                )}
-            </AnimatePresence> */}
+export default Table;
