@@ -1,8 +1,22 @@
 import React, { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
+import Footer from './Footer';
 
-const table = () => { 
+const table = () => {
+    function ToggleContent({ header, id }) {
+        return (
+            <motion.div
+                layout
+                layoutId={id}
+                onClick={() => setSelectedId(id)}
+                className='flex z-10 flex-col justify-center items-center w-[40%] h-32 sm:w-[28vw] sm:h-[35vh] m-2 bg-white rounded-lg shadow-lg cursor-pointer max-md:my-4 max-md:h-1/5 max-md:w-3/4'
+            >
+                <motion.img src={items[id].imageUrl} className='w-full h-full object-fit rounded-lg hover:blur-md transition-all' alt='Tracks' />
+                <motion.h2 className='bg-white drop-shadow-sm p-2 rounded-md absolute font-bold  text-xs sm:text-xl' layout>{header}</motion.h2>
+            </motion.div>
+        )
+    }
     const items = {
         1: {
             header: "FinTech",
@@ -28,7 +42,6 @@ const table = () => {
             header: "Communication",
             content: "Communication technology is a broad field that encompasses a range of tools and approaches for facilitating communication and information sharing. This includes everything from messaging and video conferencing to social media and online collaboration tools. In communication track, participants will have the chance to learn about the latest technologies and practices in communication technology and to use their skills and creativity to make a difference.",
             imageUrl: "https://img.freepik.com/free-vector/people-communicating-via-social-media_74855-5551.jpg?w=1380&t=st=1671132559~exp=1671133159~hmac=b0665e05b3d655d98ba7774f6d0a1dceab50745befb50c67baaeb86abb7d955f"
-    
         },
         6: {
             header: "Open Innovation",
@@ -36,38 +49,38 @@ const table = () => {
             imageUrl: "https://img.freepik.com/free-vector/business-team-meeting-office-co-working-space_74855-6913.jpg?w=1060&t=st=1671132595~exp=1671133195~hmac=6f1b9412ee3f34dd1bcfb198a3103d0c6a35b20b31c78aca3584e4e246977156"
         }
     }
-  return (
-    <>
-    <div className='radial-bg-2 w-[98vw] h-screen absolute'></div>
-    <div class="relative overflow-x-auto shadow-md sm:rounded-lg ">
-    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 my-5 max-md:my-0">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 max-md:invisible">
-            <tr>
-                <th scope="col" class="px-6 py-3">
-                    Track
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Problem Statement
-                </th>
-            </tr>
-        </thead>
-        {
-            Object.keys(items).map((id) => (
-                <tr class="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700 max-md:flex max-md:flex-col">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white text-2xl ">
-                    {items[id].header}
-                </th>
-                <td class="px-6 py-4 text-xl">
-                    {items[id].content}
-                </td>
-                </tr>
-            ))
-        }
-            </table>
+    return (
+        <>
+            <div className='radial-bg-2 w-[98vw] h-screen absolute'></div>
+            <div class="relative overflow-x-auto shadow-md  p-2">
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 sm:rounded-lg my-5">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                Track
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Problem Statement
+                            </th>
+                        </tr>
+                    </thead>
+                    {
+                        Object.keys(items).map((id) => (
+                            <tr class="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-2xl">
+                                    {items[id].header}
+                                </th>
+                                <td class="px-6 py-4 text-xl">
+                                    {items[id].content}
+                                </td>
+                            </tr>
+                        ))
+                    }
+                </table>
             </div>
-        
-    </>
-  )
+            <Footer />
+        </>
+    )
 }
 
-export default table
+export default table;
