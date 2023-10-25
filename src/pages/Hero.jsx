@@ -34,6 +34,9 @@ const Hero = () => {
     }, []);
 
     const [isOpen, setIsOpen] = useState(false);
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
     return (
         <div className='flex flex-col min-h-screen overflow-x-hidden text-white max-md:min-h-full'>
             <motion.div
@@ -55,13 +58,18 @@ const Hero = () => {
                             })
                         }
                     </ul>
-                    <button onClick={() => setIsOpen(isOpen => !isOpen)} className="visible sm:invisible absolute top-10 right-10 max-md:right-6 max-md:top-6"><GiHamburgerMenu size={20} /></button>
+                    <button onClick={toggleMenu} className="visible sm:invisible absolute top-10 right-10 max-md:right-6 max-md:top-6">
+                        {isOpen ? (
+                            <AiFillCloseCircle size={24} />
+                        ) : (
+                            <GiHamburgerMenu size={20} />
+                        )}
+                    </button>
                     <motion.ul
-                        className='absolute top-0 left-0 w-screen h-screen bg-black z-200 flex flex-col items-center justify-center gap-8'
+                        className='absolute top-0 left-0 w-[90%] m-auto h-screen bg-black z-200 flex flex-col items-center justify-center gap-3'
                         animate={isOpen ? "open" : "closed"}
                         variants={variants}
                     >
-                        <button onClick={() => setIsOpen(isOpen => !isOpen)} className=""><AiFillCloseCircle size={24} /></button>
                         {
                             navLinks.map((link, index) => {
                                 if (link === 'About Us')
@@ -74,7 +82,7 @@ const Hero = () => {
                     </motion.ul>
                 </nav>
             </motion.div>
-            <img src={HeroBG} alt='Hero Background' className='absolute top-0 object-cover w-screen h-screen -z-10' />
+            <img src={HeroBG} alt='Hero Background' className={'absolute top-0 object-cover w-screen h-screen -z-10 ' + (isOpen && ' !relative ')}/>
             <motion.div
                 animate={{ y: -20 }}
                 transition={{ type: "spring" }}

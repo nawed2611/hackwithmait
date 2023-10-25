@@ -13,6 +13,17 @@ import SponsorTracks from './SponsorTracks_trash';
 import { useNavigate } from 'react-router-dom';
 
 const Tracks = () => {
+    const navigate=useNavigate()
+    const redirectToPage=(page)=>{
+        if (page===1){
+            console.log("normal tracks");
+            navigate("/table")
+        }
+        if (page===2){
+            console.log("normal tracks");
+            navigate("/")
+        }
+    }
     const [selectedId, setSelectedId] = useState(null);
     const navigate = useNavigate();
     const redirectToPage = (page) => {
