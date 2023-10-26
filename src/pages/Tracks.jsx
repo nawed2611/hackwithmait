@@ -21,7 +21,7 @@ const Tracks = () => {
         }
         if (page===2){
             console.log("normal tracks");
-            navigate("/")
+            navigate("/sptable")
         }
     }
     const [selectedId, setSelectedId] = useState(null);
