@@ -165,7 +165,7 @@ const spdiv = () => {
       <div className='radial-bg-2 w-[98vw] h-screen absolute'></div>
 
       <div class="relative shadow-md sm:rounded-lg ">
-        {windowWidth < 500 ?
+        {windowWidth < 800 ?
           (<div class="text-sm text-left text-gray-500 dark:text-gray-400">
             <div class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400  ">
               <div className='flex justify-between bg-gray-50 dark:bg-gray-800 '>
