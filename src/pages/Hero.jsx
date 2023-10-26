@@ -75,7 +75,7 @@ const Hero = () => {
                                 if (link === 'About Us')
                                     link = link.substring(0, link.indexOf(' '))
                                 return (
-                                    <li className='hover:scale-105 hover:text-slate-50 cursor-pointer transition-all hover:underline' key={index}><Link to={link} spy={true} smooth={true}>{link}</Link></li>
+                                    <li className='hover:scale-105 hover:text-slate-50 cursor-pointer transition-all hover:underline' key={index}>{link != "Innovative Tracks" ? <Link to={link} spy={true} smooth={true}>{link}</Link> : <a href='/table'>Innovative Tracks</a>}</li>
                                 )
                             })
                         }

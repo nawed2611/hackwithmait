@@ -51,12 +51,11 @@ const table = () => {
     }
     return (
         <>
-            <div className='radial-bg-2 w-[98vw] h-screen absolute'></div>
-            <div class="relative overflow-x-auto shadow-md  p-2">
-                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 sm:rounded-lg my-5">
+            <div class="shadow-md  p-2">
+                <table class=" text-sm text-left text-gray-500 dark:text-gray-400 sm:rounded-lg my-5">
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                        <tr>
-                            <th scope="col" class="px-6 py-3">
+                        <tr class="">
+                            <th scope="col" class="px-6 py-3 w-[50px]">
                                 Track
                             </th>
                             <th scope="col" class="px-6 py-3">
@@ -67,7 +66,7 @@ const table = () => {
                     {
                         Object.keys(items).map((id) => (
                             <tr class="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
-                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-2xl">
+                                <th scope="row" class="sm:px-6 pl-5 py-4 font-medium text-gray-900 dark:text-white text-2xl w-[50px]">
                                     {items[id].header}
                                 </th>
                                 <td class="px-6 py-4 text-xl">
@@ -77,6 +76,7 @@ const table = () => {
                         ))
                     }
                 </table>
+
             </div>
             <Footer />
         </>
