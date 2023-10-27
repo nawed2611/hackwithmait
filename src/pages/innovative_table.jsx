@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion';
-import { AiOutlineCloseCircle } from 'react-icons/ai';
+import { AiFillCloseCircle, AiOutlineCloseCircle } from 'react-icons/ai';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { Link } from 'react-scroll';
 import devfolioimg from '../assets/Sponsors/Devfolio.png'
@@ -87,7 +87,7 @@ const table = () => {
                         )}
                     </button>
                     <motion.ul
-                        className='absolute top-0 left-0 w-[90%] m-auto h-screen bg-black z-200 flex flex-col items-center justify-center gap-3'
+                        className='absolute top-0 left-0 w-[90%] m-auto h-screen bg-black z-2000 flex flex-col items-center justify-center gap-3'
                         animate={isOpen ? "open" : "closed"}
                         variants={variants}
                     >
@@ -96,7 +96,7 @@ const table = () => {
                                 if (link === 'About Us')
                                     link = link.substring(0, link.indexOf(' '))
                                 return (
-                                    <li className='hover:scale-105 hover:text-slate-50 cursor-pointer transition-all hover:underline' key={index}><Link to={link} spy={true} smooth={true}>{link}</Link></li>
+                                    <li className='hover:scale-105 hover:text-slate-50 cursor-pointer transition-all hover:underline' key={index}>{(link != "Innovative Tracks" && link != "Sponsor Tracks") ? <a href='/' spy={true} smooth={true}>{link}</a> : (link == "Innovative Tracks" && link != "Sponsor Tracks") ? <a href='/table'>Innovative Tracks</a> : <a href='/sptable'>Sponsor Tracks</a>}</li>
                                 )
                             })
                         }

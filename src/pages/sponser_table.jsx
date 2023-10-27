@@ -12,6 +12,7 @@ import Maitlogo from '../assets/Sponsors/MAITLogo_white.png'
 import hwmlogo from '../assets/Sponsors/HWM_LOGO.jpeg'
 import { useState } from 'react';
 import Footer from './Footer';
+import { AiFillCloseCircle } from 'react-icons/ai';
 
 const variants = {
   open: { opacity: 10, x: 0 },
@@ -193,7 +194,7 @@ const sptable = () => {
                 if (link === 'About Us')
                   link = link.substring(0, link.indexOf(' '))
                 return (
-                  <li className='hover:scale-105 hover:text-slate-50 cursor-pointer transition-all hover:underline' key={index}><Link to={link} spy={true} smooth={true}>{link}</Link></li>
+                  <li className='hover:scale-105 hover:text-slate-50 cursor-pointer transition-all hover:underline' key={index}>{(link != "Innovative Tracks" && link != "Sponsor Tracks") ? <a href='/' spy={true} smooth={true}>{link}</a> : (link == "Innovative Tracks" && link != "Sponsor Tracks") ? <a href='/table'>Innovative Tracks</a> : <a href='/sptable'>Sponsor Tracks</a>}</li>
                 )
               })
             }
@@ -202,7 +203,7 @@ const sptable = () => {
       </motion.div>
       <div class="relative overflow-x-auto shadow-md sm:rounded-lg p-4">
         <table class="w-full text-sm text-left text-gray-400 my-5 max-md:my-0">
-          <thead class="text-xs  uppercase text-gray-400 max-md:invisible">
+          <thead class="text-xs uppercase text-gray-400 max-md:invisible">
             <tr>
               <th scope="col" class="px-6 py-3 text-xl">
                 Track
