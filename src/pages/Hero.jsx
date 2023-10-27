@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Logo from '../assets/logo.jpg';
 import HeroBG from '../assets/hero.svg';
-import { BsCalendar3 } from 'react-icons/bs';
+import { BsCalendar3, BsPeople } from 'react-icons/bs';
 import { BiMoney, BiUserPlus } from 'react-icons/bi';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiFillCloseCircle } from 'react-icons/ai';
@@ -19,7 +19,7 @@ const variants = {
     closed: { opacity: 0, x: "-100%" },
 }
 
-const navLinks = ['About Us', 'Speakers', 'Tracks', 'Timeline', 'Sponsors', 'Team Members', 'FAQs', 'Contact Us'];
+const navLinks = ['About Us', 'Speakers', 'Innovative Tracks', 'Sponsor Tracks', 'Timeline', 'Sponsors', 'FAQs', 'Contact Us'];
 
 const Hero = () => {
     React.useEffect(() => {
@@ -34,13 +34,16 @@ const Hero = () => {
     }, []);
 
     const [isOpen, setIsOpen] = useState(false);
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
     return (
         <div className='flex flex-col min-h-screen overflow-x-hidden text-white max-md:min-h-full'>
             <motion.div
                 className='flex items-center justify-between mx-4 sm:mx-8 pl-8 pr-2 h-[15vh]  border-black max-md:bg-black max-md:mb-4  max-md:h-16 max-md:m-0 max-md:pl-2'>
                 <div className='flex items-center mt-12 gap-x-8 max-md:mb-10 max-md:gap-x-0 max-md:p-0'>
-                    <img src={Maitlogo} alt="MAIT Logo" className=' h-24 max-md:h-10 max-md:mx-2' />
-                    <img src={hwmlogo} alt='HackwithMAIT 4.0 Logo' className='h-32 max-md:h-10' />
+                    <img src={Maitlogo} alt="MAIT Logo" className='h-20 max-md:h-10 max-md:mx-2' />
+                    <img src={hwmlogo} alt='HackwithMAIT 4.0 Logo' className='h-20 max-md:h-10' />
                 </div>
                 <nav className=''>
                     <ul className='invisible sm:visible px-4 py-2 ring rounded-md glass flex text-lg gap-8 max-md:w-0'>
@@ -48,19 +51,25 @@ const Hero = () => {
                             navLinks.map((link, index) => {
                                 if (link === 'About Us')
                                     link = link.substring(0, link.indexOf(' '))
+
                                 return (
-                                    <li className='hover:scale-105 hover:text-slate-50 cursor-pointer transition-all hover:underline' key={index}><Link to={link} spy={true} smooth={true}>{link}</Link></li>
+                                    <li className='hover:scale-105 hover:text-slate-50 cursor-pointer transition-all hover:underline' key={index}>{link != "Innovative Tracks" ? <Link to={link} spy={true} smooth={true}>{link}</Link> : <a href='/table'>Innovative Tracks</a>}</li>
                                 )
                             })
                         }
                     </ul>
-                    <button onClick={() => setIsOpen(isOpen => !isOpen)} className="visible sm:invisible absolute top-10 right-10 max-md:right-6 max-md:top-6"><GiHamburgerMenu size={20} /></button>
+                    <button onClick={toggleMenu} className="visible sm:invisible absolute top-10 right-10 max-md:right-6 max-md:top-6">
+                        {isOpen ? (
+                            <AiFillCloseCircle size={24} />
+                        ) : (
+                            <GiHamburgerMenu size={20} />
+                        )}
+                    </button>
                     <motion.ul
-                        className='absolute top-0 left-0 w-screen h-screen bg-black z-200 flex flex-col items-center justify-center gap-8'
+                        className='absolute top-0 left-0 w-[90%] m-auto h-screen bg-black z-200 flex flex-col items-center justify-center gap-3'
                         animate={isOpen ? "open" : "closed"}
                         variants={variants}
                     >
-                        <button onClick={() => setIsOpen(isOpen => !isOpen)} className=""><AiFillCloseCircle size={24} /></button>
                         {
                             navLinks.map((link, index) => {
                                 if (link === 'About Us')
@@ -73,7 +82,7 @@ const Hero = () => {
                     </motion.ul>
                 </nav>
             </motion.div>
-            <img src={HeroBG} alt='Hero Background' className='absolute top-0 object-cover w-screen h-screen -z-10' />
+            <img src={HeroBG} alt='Hero Background' className={'absolute top-0 object-cover w-screen h-screen -z-10 ' + (isOpen && ' !relative ')}/>
             <motion.div
                 animate={{ y: -20 }}
                 transition={{ type: "spring" }}
@@ -90,12 +99,13 @@ const Hero = () => {
                         <img src={replitimg} alt="REPLIT LOGO" className='h-12 max-md:h-8' />
                     </div>
                 </div>
+                <p className='mt-2 font-bold'>Presents</p>
                 <h1 className='font-[800] text-center text-8xl text-wrapper'>Hack with MAIT <strong className='hero-text font-[800]'>4.0</strong></h1>
                 <div className='svg-wrapper'>
                     <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
                         <rect className="shape" height="60" width="320" />
                     </svg>
-                    <p className='text-2xl mt-16 sm:mt-16'>Towards a better world through tech</p>
+                    <p className='text-2xl mt-16 sm:mt-16'><b>M</b>asterminds <b>A</b>ccelerating <b>I</b>nnovation <b>T</b>ogether</p>
                 </div>
                 <div className='flex text-xl items-center justify-center sm:mt-4'><BsCalendar3 size={18} className='mx-2' />{' '} <p>22nd-23rd November 2023</p></div>
                 <div
@@ -116,6 +126,12 @@ const Hero = () => {
                         whileTap={{ scale: 1 }}
                         className='mt-6 sm:mt-12 flex items-center text-2xl  justify-center px-4 p-2 button-bg rounded-xl'>
                         <FaMoneyBillWave size={24} className='mr-2' />{' '}<p>Call for Sponsors</p></motion.a>
+                    <motion.a
+                        href='https://docs.google.com/forms/d/e/1FAIpQLSf6P-DtWle6KsCrMilsApnxOO4ya0hKwkNnqSbcwVmg8Jn0Hg/viewform'
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 1 }}
+                        className='mt-6 sm:mt-12 flex items-center text-2xl  justify-center px-4 p-2 button-bg rounded-xl'>
+                        <BsPeople size={24} className='mr-2' />{' '}<p>Call for Mentors</p></motion.a>
                     <motion.a
                         href='https://discord.gg/A385NNEHKD'
                         whileHover={{ scale: 1.05 }}
