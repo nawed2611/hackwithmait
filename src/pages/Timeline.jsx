@@ -18,7 +18,7 @@ const Timeline = () => {
     };
   }, []);
   return (
-    <div className='flex flex-col text-white items-center About'>
+    <div className='flex flex-col text-white items-center Timeline'>
       <div className='flex flex-col sm:flex-row w-full items-center sm:items-baseline sm:space-x-4 mt-2 px-20'>
         <div className='font-bold text-2xl'>
           Timeline
