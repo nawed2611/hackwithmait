@@ -19,7 +19,7 @@ const variants = {
     closed: { opacity: 0, x: "-100%" },
 }
 
-const navLinks = ['About Us', 'Speakers', 'Innovative Tracks', 'Sponsor Tracks', 'Timeline', 'Sponsors', 'FAQs', 'Contact Us'];
+const navLinks = ['About Us', 'Innovative Tracks', 'Sponsor Tracks', 'Timeline', 'Sponsors', 'FAQs', 'Contact Us'];
 
 const Hero = () => {
     React.useEffect(() => {

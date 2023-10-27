@@ -1,8 +1,29 @@
 import React, { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { Link } from 'react-scroll';
+import devfolioimg from '../assets/Sponsors/Devfolio.png'
+import replitimg from '../assets/Sponsors/Replit.png'
+import polygonimg from '../assets/Sponsors/Polygon.png'
+import Maitlogo from '../assets/Sponsors/MAITLogo_white.png'
+import hwmlogo from '../assets/Sponsors/HWM_LOGO.jpeg'
+import Footer from './Footer';
 
-const table = () => { 
+
+const variants = {
+    open: { opacity: 10, x: 0 },
+    closed: { opacity: 0, x: "-100%" },
+}
+
+const navLinks = ['Home', 'Innovative Tracks', 'Sponsor Tracks'];
+
+
+const table = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
     const items = {
         1: {
             header: "FinTech",
@@ -28,7 +49,7 @@ const table = () => {
             header: "Communication",
             content: "Communication technology is a broad field that encompasses a range of tools and approaches for facilitating communication and information sharing. This includes everything from messaging and video conferencing to social media and online collaboration tools. In communication track, participants will have the chance to learn about the latest technologies and practices in communication technology and to use their skills and creativity to make a difference.",
             imageUrl: "https://img.freepik.com/free-vector/people-communicating-via-social-media_74855-5551.jpg?w=1380&t=st=1671132559~exp=1671133159~hmac=b0665e05b3d655d98ba7774f6d0a1dceab50745befb50c67baaeb86abb7d955f"
-    
+
         },
         6: {
             header: "Open Innovation",
@@ -36,38 +57,82 @@ const table = () => {
             imageUrl: "https://img.freepik.com/free-vector/business-team-meeting-office-co-working-space_74855-6913.jpg?w=1060&t=st=1671132595~exp=1671133195~hmac=6f1b9412ee3f34dd1bcfb198a3103d0c6a35b20b31c78aca3584e4e246977156"
         }
     }
-  return (
-    <>
-    <div className='radial-bg-2 w-[98vw] h-screen absolute'></div>
-    <div class="relative overflow-x-auto shadow-md sm:rounded-lg ">
-    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 my-5 max-md:my-0">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 max-md:invisible">
-            <tr>
-                <th scope="col" class="px-6 py-3">
-                    Track
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Problem Statement
-                </th>
-            </tr>
-        </thead>
-        {
-            Object.keys(items).map((id) => (
-                <tr class="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700 max-md:flex max-md:flex-col">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white text-2xl ">
-                    {items[id].header}
-                </th>
-                <td class="px-6 py-4 text-xl">
-                    {items[id].content}
-                </td>
-                </tr>
-            ))
-        }
-            </table>
+    return (
+        <>
+            <div className='radial-bg-2 w-[98vw] h-screen absolute'></div>
+            <motion.div
+                className='flex items-center justify-between text-white mx-4 sm:mx-8 pl-8 pr-2 h-[15vh]  border-black max-md:bg-black max-md:mb-4  max-md:h-16 max-md:m-0 max-md:pl-2'>
+                <div className='flex items-center mt-12 gap-x-8 max-md:mb-10 max-md:gap-x-0 max-md:p-0'>
+                    <img src={Maitlogo} alt="MAIT Logo" className='h-20 max-md:h-10 max-md:mx-2' />
+                    <img src={hwmlogo} alt='HackwithMAIT 4.0 Logo' className='h-20 max-md:h-10' />
+                </div>
+                <nav className=''>
+                    <ul className='invisible sm:visible px-4 py-2 ring rounded-md glass flex text-lg gap-8 max-md:w-0'>
+                        {
+                            navLinks.map((link, index) => {
+                                if (link === 'About Us')
+                                    link = link.substring(0, link.indexOf(' '))
+
+                                return (
+                                    <li className='hover:scale-105 hover:text-slate-50 cursor-pointer transition-all hover:underline' key={index}>{(link != "Innovative Tracks" && link != "Sponsor Tracks") ? <a href='/' spy={true} smooth={true}>{link}</a> : (link == "Innovative Tracks" && link != "Sponsor Tracks") ? <a href='/table'>Innovative Tracks</a> : <a href='/sptable'>Sponsor Tracks</a>}</li>
+                                )
+                            })
+                        }
+                    </ul>
+                    <button onClick={toggleMenu} className="visible sm:invisible absolute top-10 right-10 max-md:right-6 max-md:top-6">
+                        {isOpen ? (
+                            <AiFillCloseCircle size={24} />
+                        ) : (
+                            <GiHamburgerMenu size={20} />
+                        )}
+                    </button>
+                    <motion.ul
+                        className='absolute top-0 left-0 w-[90%] m-auto h-screen bg-black z-200 flex flex-col items-center justify-center gap-3'
+                        animate={isOpen ? "open" : "closed"}
+                        variants={variants}
+                    >
+                        {
+                            navLinks.map((link, index) => {
+                                if (link === 'About Us')
+                                    link = link.substring(0, link.indexOf(' '))
+                                return (
+                                    <li className='hover:scale-105 hover:text-slate-50 cursor-pointer transition-all hover:underline' key={index}><Link to={link} spy={true} smooth={true}>{link}</Link></li>
+                                )
+                            })
+                        }
+                    </motion.ul>
+                </nav>
+            </motion.div>
+            <div class="relative overflow-x-auto shadow-md sm:rounded-lg p-4">
+                <table class="w-full text-sm text-left sm:rounded-lg  text-gray-500 dark:text-gray-400 my-5 max-md:my-0">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 max-md:invisible">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                Track
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Problem Statement
+                            </th>
+                        </tr>
+                    </thead>
+                    {
+                        Object.keys(items).map((id) => (
+                            <tr class="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700 max-md:flex max-md:flex-col">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white text-2xl ">
+                                    {items[id].header}
+                                </th>
+                                <td class="px-6 py-4 text-xl">
+                                    {items[id].content}
+                                </td>
+                            </tr>
+                        ))
+                    }
+                </table>
+                <Footer />
             </div>
-        
-    </>
-  )
+
+        </>
+    )
 }
 
 export default table
