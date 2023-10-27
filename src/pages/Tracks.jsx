@@ -14,12 +14,6 @@ import { useNavigate } from 'react-router-dom';
 
 const Tracks = () => {
     const [selectedId, setSelectedId] = useState(null);
-    const navigate = useNavigate();
-    const redirectToPage = (page) => {
-        if (page === 1) {
-            navigate('/table');
-        }
-    }
 
     const items = {
         1: {

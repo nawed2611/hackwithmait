@@ -7,6 +7,7 @@ import SPTable from './pages/sponser_table'
 import './index.css'
 import 'tw-elements';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import SpTable from './pages/sponser_table'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -14,7 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/table" element={<Table />} />
-        <Route path="/sptable" element={<SPTable />} />
+        <Route path="/sptable" element={<SpTable />} />
       </Routes>
     </Router>
   </React.StrictMode>

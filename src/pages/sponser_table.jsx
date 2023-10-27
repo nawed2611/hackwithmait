@@ -2,31 +2,30 @@ import Afree from '../assets/Sponsors/AfreeBug.jpeg'
 import Prism from '../assets/Sponsors/Prism.png'
 import Tezos from '../assets/Sponsors/Tezos.png'
 import Monkhood from '../assets/Sponsors/Monkhood.jpeg'
-import { AnimatePresence, motion } from 'framer-motion';
-import { GiHamburgerMenu } from 'react-icons/gi';
-import { Link } from 'react-scroll';
-import devfolioimg from '../assets/Sponsors/Devfolio.png'
-import replitimg from '../assets/Sponsors/Replit.png'
-import polygonimg from '../assets/Sponsors/Polygon.png'
-import Maitlogo from '../assets/Sponsors/MAITLogo_white.png'
-import hwmlogo from '../assets/Sponsors/HWM_LOGO.jpeg'
-import { useState } from 'react';
+import { useEffect, useState } from 'react'
+import {motion} from "framer-motion"
+import Maitlogo from '../assets/Sponsors/MAITLogo_white.png';
+import hwmlogo from '../assets/Sponsors/HWM_LOGO.jpeg';
 import Footer from './Footer';
-import { AiFillCloseCircle } from 'react-icons/ai';
-
-const variants = {
-  open: { opacity: 10, x: 0 },
-  closed: { opacity: 0, x: "-100%" },
-}
-
-const navLinks = ['Home', 'Innovative Tracks', 'Sponsor Tracks'];
+import About from './About'
 
 
-const sptable = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  }
+const SpTable = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    // Add event listener to update windowWidth when the window size changes
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
 
   const spItems = {
     1: {
@@ -37,9 +36,9 @@ const sptable = () => {
           <br />
           <p>NOTE: This problem statement's solution has to be developed using technologies mentioned in the problem statement provided below.</p>
           <br />
-          <p>PROBLEM STATEMENT: <a target='blank' href="https://docs.google.com/document/d/1qo4G6sRPL0SQ2PIDpVYTx1SowAM-3aDXYdwLvKeVKAk/edit?usp=sharing" className='text-blue-500 hover:underline'>https://docs.google.com/document/d/1qo4G6sRPL0SQ2PIDpVYTx1SowAM-3aDXYdwLvKeVKAk/edit?usp=sharing</a></p>
+          <p>PROBLEM STATEMENT: <a target='blank' href="https://docs.google.com/document/d/1qo4G6sRPL0SQ2PIDpVYTx1SowAM-3aDXYdwLvKeVKAk/edit?usp=sharing" className='text-blue-500 hover:underline'>Click Here </a></p>
           <br />
-          <p>Customising XMRig Source Code Document: <a href="https://drive.google.com/file/d/1E6Zuu5nQiMgdsVu8qbuiVt2xqJXMqtoh/view?usp=sharing" className='text-blue-500 hover:underline'>https://drive.google.com/file/d/1E6Zuu5nQiMgdsVu8qbuiVt2xqJXMqtoh/view?usp=sharing</a></p>
+          <p>Customising XMRig Source Code Document: <a href="https://drive.google.com/file/d/1E6Zuu5nQiMgdsVu8qbuiVt2xqJXMqtoh/view?usp=sharing" className='text-blue-500 hover:underline'><br /> Click Here</a></p>
           <br />
           <p>PRIZE: Rs.50,000</p>
         </>,
@@ -72,7 +71,7 @@ const sptable = () => {
           <p>- Participants are encouraged to consider scalability, data security, and user experience in their solution.</p>
           <p>- The solution can be web-based or platform-agnostic, depending on participants' preferences.</p>
           <br />
-          <p> Problem Statement Document:<a href="https://docs.google.com/document/d/1i99WgPTuKUxTd2DsqVlr1OgeTXzKd_v8EMVYDLg2Y1E/edit?usp=sharing" className='text-blue-500 hover:underline'>https://docs.google.com/document/d/1i99WgPTuKUxTd2DsqVlr1OgeTXzKd_v8EMVYDLg2Y1E/edit?usp=sharing</a></p>
+          <p> Problem Statement Document:<a href="https://docs.google.com/document/d/1i99WgPTuKUxTd2DsqVlr1OgeTXzKd_v8EMVYDLg2Y1E/edit?usp=sharing" className='text-blue-500 hover:underline'><br />Click here</a></p>
         </>,
       spImageUrl: Prism
     },
@@ -117,7 +116,7 @@ const sptable = () => {
           <br />
           <p>  This task will help you gain practical knowledge in real-time application development, working with Socket.IO, Kotlin for Android development, MongoDB for database management, and API development and testing, all within a local server environment.</p>
           <br />
-          <p> Problem Statement Document:<a href="https://drive.google.com/file/d/1KvFKLt7iKoVOpHYTuUa1pMNbMfiBHAH8/view?usp=sharing" className='text-blue-500 hover:underline'>https://drive.google.com/file/d/1KvFKLt7iKoVOpHYTuUa1pMNbMfiBHAH8/view?usp=sharing</a></p>
+          <p> Problem Statement Document:<a href="https://drive.google.com/file/d/1KvFKLt7iKoVOpHYTuUa1pMNbMfiBHAH8/view?usp=sharing" className='text-blue-500 hover:underline'> Click here</a></p>
         </>
       ,
       spImageUrl: Monkhood
@@ -149,93 +148,119 @@ const sptable = () => {
           <p>Why Tezos?</p>
           <p>Tezos is a powerful, self-amending blockchain platform that allows you to build decentralized applications (DApps) and smart contracts with ease. Its unique governance mechanism and focus on security make it an ideal choice for blockchain enthusiasts and developers looking to create innovative solutions</p>
           <br />
-          <p> Problem Statement Document:<a href="https://docs.google.com/document/d/1-ZEA_jFhldYmxsIt69XsmSWVjFmFs5vqadYOPhKvktQ/edit?usp=sharing" className='text-blue-500 hover:underline'>https://docs.google.com/document/d/1-ZEA_jFhldYmxsIt69XsmSWVjFmFs5vqadYOPhKvktQ/edit?usp=sharing</a></p>
+          <p> Problem Statement Document:<a href="https://docs.google.com/document/d/1-ZEA_jFhldYmxsIt69XsmSWVjFmFs5vqadYOPhKvktQ/edit?usp=sharing" className='text-blue-500 hover:underline'> Click Here</a></p>
         </>
       ),
       spImageUrl: Tezos
     },
   }
+  const [isOpen, setIsOpen] = useState(false);
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
+    const navLinks = ['Home', 'Innovative Tracks', 'Sponsor Tracks'];
+
+    const variants = {
+        open: { opacity: 1, x: 0 },
+        closed: { opacity: 0, x: "-100%" },
+    };
   return (
     <>
       <div className='radial-bg-2 w-[98vw] h-screen absolute'></div>
       <motion.div
-        className='flex items-center justify-between text-white mx-4 sm:mx-8 pl-8 pr-2 h-[15vh]  border-black max-md:bg-black max-md:mb-4  max-md:h-16 max-md:m-0 max-md:pl-2'>
-        <div className='flex items-center mt-12 gap-x-8 max-md:mb-10 max-md:gap-x-0 max-md:p-0'>
-          <img src={Maitlogo} alt="MAIT Logo" className='h-20 max-md:h-10 max-md:mx-2' />
-          <img src={hwmlogo} alt='HackwithMAIT 4.0 Logo' className='h-20 max-md:h-10' />
+        className="flex relative items-center sm:flex-row flex-col justify-between text-white mx-4 sm:mx-8 pl-8 pr-2 h-[15vh]  border-black max-md:bg-black max-md:mb-4  max-md:h-16 max-md:m-0 max-md:pl-2"
+      >
+        <div className="flex items-center mt-12 gap-x-8 max-md:mb-10 max-md:gap-x-0 max-md:p-0">
+          <img src={Maitlogo} alt="MAIT Logo" className="h-20 max-md:h-10 max-md:mx-2" />
+          <img src={hwmlogo} alt="HackwithMAIT 4.0 Logo" className="h-20 max-md:h-10" />
         </div>
-        <nav className=''>
-          <ul className='invisible sm:visible px-4 py-2 rounded-md glass flex text-lg gap-8 max-md:w-0'>
-            {
-              navLinks.map((link, index) => {
-                if (link === 'About Us')
-                  link = link.substring(0, link.indexOf(' '))
-
-                return (
-                  <li className='hover:scale-105 hover:text-slate-50 cursor-pointer transition-all hover:underline' key={index}>{(link != "Innovative Tracks" && link != "Sponsor Tracks") ? <a href='/' spy={true} smooth={true}>{link}</a> : (link == "Innovative Tracks" && link != "Sponsor Tracks") ? <a href='/table'>Innovative Tracks</a> : <a href='/sptable'>Sponsor Tracks</a>}</li>
-                )
-              })
-            }
+        <nav>
+          <ul className=" px-4 py-2 ring rounded-md glass flex text-lg gap-8 ">
+            <li className="hover:scale-105 hover:text-slate-50 cursor-pointer transition-all hover:underline">
+              <a href="/">
+                Home
+              </a>
+            </li>
+            <li className="hover:scale-105 hover:text-slate-50 cursor-pointer transition-all hover:underline">
+              <a href='/table'>
+                Innovative Tracks
+              </a>
+            </li>
+            <li className="hover:scale-105 hover:text-slate-50 cursor-pointer transition-all hover:underline">
+              <a href="/sptable">
+                Sponsor Tracks
+              </a>
+            </li>
           </ul>
-          <button onClick={toggleMenu} className="visible sm:invisible absolute top-10 right-10 max-md:right-6 max-md:top-6">
-            {isOpen ? (
-              <AiFillCloseCircle size={24} />
-            ) : (
-              <GiHamburgerMenu size={20} />
-            )}
-          </button>
-          <motion.ul
-            className='absolute top-0 left-0 w-[90%] m-auto h-screen bg-black z-200 flex flex-col items-center justify-center gap-3'
-            animate={isOpen ? "open" : "closed"}
-            variants={variants}
-          >
-            {
-              navLinks.map((link, index) => {
-                if (link === 'About Us')
-                  link = link.substring(0, link.indexOf(' '))
-                return (
-                  <li className='hover:scale-105 hover:text-slate-50 cursor-pointer transition-all hover:underline' key={index}>{(link != "Innovative Tracks" && link != "Sponsor Tracks") ? <a href='/' spy={true} smooth={true}>{link}</a> : (link == "Innovative Tracks" && link != "Sponsor Tracks") ? <a href='/table'>Innovative Tracks</a> : <a href='/sptable'>Sponsor Tracks</a>}</li>
-                )
-              })
-            }
-          </motion.ul>
+
+
         </nav>
       </motion.div>
-      <div class="relative overflow-x-auto shadow-md sm:rounded-lg p-4">
-        <table class="w-full text-sm text-left text-gray-400 my-5 max-md:my-0">
-          <thead class="text-xs uppercase text-gray-400 max-md:invisible">
-            <tr>
-              <th scope="col" class="px-6 py-3 text-xl">
-                Track
-              </th>
-              <th scope="col" class="px-6 py-3 text-xl">
-                Problem Statement
-              </th>
-              <th scope="col" class="px-6 py-3 text-xl">
-                Sponsors
-              </th>
-            </tr>
-          </thead>
-          {
-            Object.keys(spItems).map((id) => (
-              <tr class="border-b border-gray-700 max-md:flex max-md:flex-col">
-                <th scope="row" class="px-6 py-4 font-medium text-white text-2xl ">
-                  {spItems[id].spHeader}
+      <div class="mt-32 shadow-md sm:rounded-lg ">
+        {windowWidth < 800 ?
+          (<div class="text-sm text-left text-gray-500 dark:text-gray-400">
+            <div class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400  ">
+              <div className='flex justify-between bg-gray-50 dark:bg-gray-800 '>
+                <div scope="col" class="px-6 py-3 text-xl">
+                  Track / Problem Statement / Sponsers
+                </div>
+
+              </div>
+            </div>
+            {
+              Object.keys(spItems).map((id) => (
+                <div class="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700 flex flex-col ">
+                  <div class="px-6 py-4 font-medium text-gray-900 dark:text-white text-2xl ">
+                    {spItems[id].spHeader}
+                  </div>
+                  <div className='flex flex-col'>
+                    <div class="px-6 py-4 text-xl">
+                      {spItems[id].spContent}
+                    </div>
+                  </div>
+                  <div class="px-6 py-4 text-xl">
+                    <img src={spItems[id].spImageUrl} className='w-40' />
+                  </div>
+                </div>
+              ))
+            }
+          </div>) :
+          (<table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 my-5 max-md:my-0">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 max-md:invisible">
+              <tr>
+                <th scope="col" class="px-6 py-3 text-xl">
+                  Track
                 </th>
-                <td class="px-6 py-4 text-xl">
-                  {spItems[id].spContent}
-                </td>
-                <td class="px-6 py-4 text-xl">
-                  <img src={spItems[id].spImageUrl} />
-                </td>
+                <th scope="col" class="px-6 py-3 text-xl">
+                  Problem Statement
+                </th>
+                <th scope="col" class="px-6 py-3 text-xl">
+                  Sponsers
+                </th>
               </tr>
-            ))
-          }
-        </table>
-        <Footer />
+            </thead>
+            {
+              Object.keys(spItems).map((id) => (
+                <tr class="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700 max-md:flex max-md:flex-col">
+                  <th scope="row" class="px-6 py-4 font-medium text-start text-gray-900 dark:text-white text-2xl ">
+                    {spItems[id].spHeader}
+                  </th>
+                  <td class="px-6 py-4 text-xl">
+                    {spItems[id].spContent}
+                  </td>
+                  <td class="px-6 py-4 text-xl">
+                    <img src={spItems[id].spImageUrl} />
+                  </td>
+                </tr>
+              ))
+            }
+          </table>)}
+          <Footer/>
       </div>
 
     </>
   )
 }
-export default sptable
+
+export default SpTable;
