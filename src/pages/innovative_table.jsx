@@ -104,21 +104,21 @@ const table = () => {
                 </nav>
             </motion.div>
             <div class="relative overflow-x-auto shadow-md sm:rounded-lg p-4">
-                <table class="w-full text-sm text-left sm:rounded-lg  text-gray-500 dark:text-gray-400 my-5 max-md:my-0">
-                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 max-md:invisible">
+                <table class="w-full text-sm text-left sm:rounded-lg  text-gray-400 my-5 max-md:my-0">
+                    <thead class="text-xs  uppercase text-gray-400 max-md:invisible">
                         <tr>
-                            <th scope="col" class="px-6 py-3">
+                            <th scope="col" class="px-6 py-3 text-xl">
                                 Track
                             </th>
-                            <th scope="col" class="px-6 py-3">
+                            <th scope="col" class="px-6 py-3 text-xl">
                                 Problem Statement
                             </th>
                         </tr>
                     </thead>
                     {
                         Object.keys(items).map((id) => (
-                            <tr class="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700 max-md:flex max-md:flex-col">
-                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white text-2xl ">
+                            <tr class="border-b border-gray-700 max-md:flex max-md:flex-col">
+                                <th scope="row" class="px-6 py-4 font-medium text-white text-2xl ">
                                     {items[id].header}
                                 </th>
                                 <td class="px-6 py-4 text-xl">
