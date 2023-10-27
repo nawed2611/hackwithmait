@@ -1,22 +1,24 @@
-import React, { useState } from 'react'
-import { AnimatePresence, motion } from 'framer-motion';
-import { AiOutlineCloseCircle } from 'react-icons/ai';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { Link } from 'react-scroll';
+import Maitlogo from '../assets/Sponsors/MAITLogo_white.png';
+import hwmlogo from '../assets/Sponsors/HWM_LOGO.jpeg';
 import Footer from './Footer';
 
-const table = () => {
-    function ToggleContent({ header, id }) {
-        return (
-            <motion.div
-                layout
-                layoutId={id}
-                onClick={() => setSelectedId(id)}
-                className='flex z-10 flex-col justify-center items-center w-[40%] h-32 sm:w-[28vw] sm:h-[35vh] m-2 bg-white rounded-lg shadow-lg cursor-pointer max-md:my-4 max-md:h-1/5 max-md:w-3/4'
-            >
-                <motion.img src={items[id].imageUrl} className='w-full h-full object-fit rounded-lg hover:blur-md transition-all' alt='Tracks' />
-                <motion.h2 className='bg-white drop-shadow-sm p-2 rounded-md absolute font-bold  text-xs sm:text-xl' layout>{header}</motion.h2>
-            </motion.div>
-        )
-    }
+const Table = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
+    const navLinks = ['Home', 'Innovative Tracks', 'Sponsor Tracks'];
+
+    const variants = {
+        open: { opacity: 1, x: 0 },
+        closed: { opacity: 0, x: "-100%" },
+    };
+
     const items = {
         1: {
             header: "FinTech",
@@ -48,39 +50,67 @@ const table = () => {
             content: "Open innovation involves involving people outside a company or organization in the development of new ideas and technologies. HackwithMAIT 4.0 offers an open innovation track for participants to explore and develop their own solutions. Participants will have the opportunity to learn about open innovation technologies and practices and to use their skills and creativity to make a difference.",
             imageUrl: "https://img.freepik.com/free-vector/business-team-meeting-office-co-working-space_74855-6913.jpg?w=1060&t=st=1671132595~exp=1671133195~hmac=6f1b9412ee3f34dd1bcfb198a3103d0c6a35b20b31c78aca3584e4e246977156"
         }
-    }
+    };
+
     return (
         <>
-            <div class="shadow-md  p-2">
-                <table class=" text-sm text-left text-gray-500 dark:text-gray-400 sm:rounded-lg my-5">
-                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                        <tr class="">
-                            <th scope="col" class="px-6 py-3 w-[50px]">
+            <div className="radial-bg-2 w-[98vw] h-screen absolute"></div>
+            <motion.div
+                className="flex items-center sm:flex-row flex-col justify-between text-white mx-4 sm:mx-8 pl-8 pr-2 h-[15vh]  border-black max-md:bg-black max-md:mb-4  max-md:h-16 max-md:m-0 max-md:pl-2"
+            >
+                <div className="flex items-center mt-12 gap-x-8 max-md:mb-10 max-md:gap-x-0 max-md:p-0">
+                    <img src={Maitlogo} alt="MAIT Logo" className="h-20 max-md:h-10 max-md:mx-2" />
+                    <img src={hwmlogo} alt="HackwithMAIT 4.0 Logo" className="h-20 max-md:h-10" />
+                </div>
+                <nav>
+                    <ul className=" px-4 py-2 ring rounded-md glass flex text-lg gap-8 ">
+                        <li className="hover:scale-105 hover:text-slate-50 cursor-pointer transition-all hover:underline">
+                            <a href="/">
+                                Home
+                            </a>
+                        </li>
+                        <li className="hover:scale-105 hover:text-slate-50 cursor-pointer transition-all hover:underline">
+                            <a href='/table'>
+                                Innovative Tracks
+                            </a>
+                        </li>
+                        <li className="hover:scale-105 hover:text-slate-50 cursor-pointer transition-all hover:underline">
+                            <a href="/sptable">
+                                Sponsor Tracks
+                            </a>
+                        </li>
+                    </ul>
+
+
+                </nav>
+            </motion.div>
+            <div className=" overflow-x-auto shadow-md sm:rounded-lg p-4 mt-12">
+                <table className="w-full text-sm text-left sm:rounded-lg text-gray-400 my-5 max-md:my-0">
+                    <thead className="text-xs uppercase text-gray-400 max-md:invisible">
+                        <tr>
+                            <th scope="col" className="px-6 py-3 text-xl">
                                 Track
                             </th>
-                            <th scope="col" class="px-6 py-3">
+                            <th scope="col" className="px-6 py-3 text-xl">
                                 Problem Statement
                             </th>
                         </tr>
                     </thead>
-                    {
-                        Object.keys(items).map((id) => (
-                            <tr class="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
-                                <th scope="row" class="sm:px-6 pl-5 py-4 font-medium text-gray-900 dark:text-white text-2xl w-[50px]">
-                                    {items[id].header}
-                                </th>
-                                <td class="px-6 py-4 text-xl">
-                                    {items[id].content}
-                                </td>
-                            </tr>
-                        ))
-                    }
+                    {Object.keys(items).map((id) => (
+                        <tr className="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700" key={id}>
+                            <th scope="row" className="sm:px-6 pl-5 py-4 font-medium text-gray-900 dark:text-white text-2xl w-[50px]">
+                                {items[id].header}
+                            </th>
+                            <td className="px-6 py-4 text-xl">
+                                {items[id].content}
+                            </td>
+                        </tr>
+                    ))}
                 </table>
-
+                <Footer />
             </div>
-            <Footer />
         </>
-    )
-}
+    );
+};
 
-export default table;
+export default Table;

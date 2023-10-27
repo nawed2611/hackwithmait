@@ -19,7 +19,7 @@ const variants = {
     closed: { opacity: 0, x: "-100%" },
 }
 
-const navLinks = ['About Us', 'Speakers', 'Innovative Tracks', 'Sponsor Tracks', 'Timeline', 'Sponsors', 'FAQs', 'Contact Us'];
+const navLinks = ['About Us', 'Innovative Tracks', 'Sponsor Tracks', 'Timeline', 'Sponsors', 'FAQs', 'Contact Us'];
 
 const Hero = () => {
     React.useEffect(() => {
@@ -53,7 +53,7 @@ const Hero = () => {
                                     link = link.substring(0, link.indexOf(' '))
 
                                 return (
-                                    <li className='hover:scale-105 hover:text-slate-50 cursor-pointer transition-all hover:underline' key={index}>{link != "Innovative Tracks" ? <Link to={link} spy={true} smooth={true}>{link}</Link> : <a href='/table'>Innovative Tracks</a>}</li>
+                                    <li className='hover:scale-105 hover:text-slate-50 cursor-pointer transition-all hover:underline' key={index}>{(link != "Innovative Tracks" && link != "Sponsor Tracks") ? <Link to={link} spy={true} smooth={true}>{link}</Link> : (link == "Innovative Tracks" && link != "Sponsor Tracks") ? <a href='/table'>Innovative Tracks</a> : <a href='/sptable'>Sponsor Tracks</a>}</li>
                                 )
                             })
                         }
@@ -75,14 +75,14 @@ const Hero = () => {
                                 if (link === 'About Us')
                                     link = link.substring(0, link.indexOf(' '))
                                 return (
-                                    <li className='hover:scale-105 hover:text-slate-50 cursor-pointer transition-all hover:underline' key={index}>{link != "Innovative Tracks" ? <Link to={link} spy={true} smooth={true}>{link}</Link> : <a href='/table'>Innovative Tracks</a>}</li>
+                                    <li className='hover:scale-105 hover:text-slate-50 cursor-pointer transition-all hover:underline' key={index}>{(link != "Innovative Tracks" && link != "Sponsor Tracks") ? <a href='/' >{link}</a> : (link == "Innovative Tracks" && link != "Sponsor Tracks") ? <a href='/table'>Innovative Tracks</a> : <a href='/sptable'>Sponsor Tracks</a>}</li>
                                 )
                             })
                         }
                     </motion.ul>
                 </nav>
             </motion.div>
-            <img src={HeroBG} alt='Hero Background' className={'absolute top-0 object-cover w-screen h-screen -z-10 ' + (isOpen && ' !relative ')}/>
+            <img src={HeroBG} alt='Hero Background' className={'absolute top-0 object-cover w-screen h-screen -z-10 ' + (isOpen && ' !relative ')} />
             <motion.div
                 animate={{ y: -20 }}
                 transition={{ type: "spring" }}

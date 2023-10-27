@@ -15,7 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/table" element={<Table />} />
-        <Route path="/sptable" element={<SPTable />} />
+        <Route path="/sptable" element={<SpTable />} />
       </Routes>
     </Router>
   </React.StrictMode>
