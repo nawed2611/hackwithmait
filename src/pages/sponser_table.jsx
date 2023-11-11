@@ -3,7 +3,7 @@ import Prism from '../assets/Sponsors/Prism.png'
 import Tezos from '../assets/Sponsors/Tezos.png'
 import Monkhood from '../assets/Sponsors/Monkhood.jpeg'
 import { useEffect, useState } from 'react'
-import { motion } from "framer-motion"
+import {motion} from "framer-motion"
 import Maitlogo from '../assets/Sponsors/MAITLogo_white.png';
 import hwmlogo from '../assets/Sponsors/HWM_LOGO.jpeg';
 import Footer from './Footer';
@@ -155,6 +155,7 @@ const SpTable = () => {
     },
   }
   const [isOpen, setIsOpen] = useState(false);
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -165,6 +166,7 @@ const SpTable = () => {
     open: { opacity: 1, x: 0 },
     closed: { opacity: 0, x: "-100%" },
   };
+
   return (
     <>
       <div className='radial-bg-2 w-[98vw] h-screen absolute'></div>
@@ -197,6 +199,7 @@ const SpTable = () => {
 
         </nav>
       </motion.div>
+
       <div className="mt-32 shadow-md sm:rounded-lg p-4">
         {windowWidth < 800 ?
           (<div className="text-sm text-left text-gray-500 dark:text-gray-400">
@@ -210,6 +213,7 @@ const SpTable = () => {
             </div>
             {
               Object.keys(spItems).map((id) => (
+
                 <div className="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700 flex flex-col ">
                   <div className="px-6 py-4 font-medium text-gray-900 dark:text-white text-2xl ">
                     {spItems[id].spHeader}
@@ -242,6 +246,7 @@ const SpTable = () => {
             </thead>
             {
               Object.keys(spItems).map((id) => (
+
                 <tr className="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700 max-md:flex max-md:flex-col">
                   <th scope="row" className="px-6 py-4 font-medium text-start text-gray-900 dark:text-white text-2xl ">
                     {spItems[id].spHeader}
