@@ -13,8 +13,8 @@ import replitimg from '../assets/Sponsors/Replit.png'
 import polygonimg from '../assets/Sponsors/Polygon.png'
 import Maitlogo from '../assets/Sponsors/MAITLogo_white.png'
 import hwmlogo from '../assets/Sponsors/HWM_LOGO.jpeg'
-import quine1 from '../assets/Sponsors/Property 1=dark.svg'
-import quine2 from '../assets/Sponsors/Property 1=variant4.svg'
+import quine1 from '../assets/Sponsors/dark_quine.svg'
+import quine2 from '../assets/Sponsors/light_quine.svg'
 
 const variants = {
     open: { opacity: 10, x: 0 },
