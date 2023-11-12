@@ -155,16 +155,18 @@ const SpTable = () => {
     },
   }
   const [isOpen, setIsOpen] = useState(false);
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
 
-    const navLinks = ['Home', 'Innovative Tracks', 'Sponsor Tracks'];
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
-    const variants = {
-        open: { opacity: 1, x: 0 },
-        closed: { opacity: 0, x: "-100%" },
-    };
+  const navLinks = ['Home', 'Innovative Tracks', 'Sponsor Tracks'];
+
+  const variants = {
+    open: { opacity: 1, x: 0 },
+    closed: { opacity: 0, x: "-100%" },
+  };
+
   return (
     <>
       <div className='radial-bg-2 w-[98vw] h-screen absolute'></div>
@@ -197,66 +199,69 @@ const SpTable = () => {
 
         </nav>
       </motion.div>
-      <div class="mt-32 shadow-md sm:rounded-lg ">
+
+      <div className="mt-32 shadow-md sm:rounded-lg p-4">
         {windowWidth < 800 ?
-          (<div class="text-sm text-left text-gray-500 dark:text-gray-400">
-            <div class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400  ">
+          (<div className="text-sm text-left text-gray-500 dark:text-gray-400">
+            <div className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400  ">
               <div className='flex justify-between bg-gray-50 dark:bg-gray-800 '>
-                <div scope="col" class="px-6 py-3 text-xl">
-                  Track / Problem Statement / Sponsers
+                <div scope="col" className="px-6 py-3 text-xl">
+                  Track / Problem Statement / Sponsors
                 </div>
 
               </div>
             </div>
             {
               Object.keys(spItems).map((id) => (
-                <div class="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700 flex flex-col ">
-                  <div class="px-6 py-4 font-medium text-gray-900 dark:text-white text-2xl ">
+
+                <div className="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700 flex flex-col ">
+                  <div className="px-6 py-4 font-medium text-gray-900 dark:text-white text-2xl ">
                     {spItems[id].spHeader}
                   </div>
                   <div className='flex flex-col'>
-                    <div class="px-6 py-4 text-xl">
+                    <div className="px-6 py-4 text-xl">
                       {spItems[id].spContent}
                     </div>
                   </div>
-                  <div class="px-6 py-4 text-xl">
+                  <div className="px-6 py-4 text-xl">
                     <img src={spItems[id].spImageUrl} className='w-40' />
                   </div>
                 </div>
               ))
             }
           </div>) :
-          (<table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 my-5 max-md:my-0">
-            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 max-md:invisible">
+          (<table className="w-full text-sm text-left text-gray-500 dark:text-gray-400 my-5 max-md:my-0">
+            <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 max-md:invisible">
               <tr>
-                <th scope="col" class="px-6 py-3 text-xl">
+                <th scope="col" className="px-6 py-3 text-xl">
                   Track
                 </th>
-                <th scope="col" class="px-6 py-3 text-xl">
+                <th scope="col" className="px-6 py-3 text-xl">
                   Problem Statement
                 </th>
-                <th scope="col" class="px-6 py-3 text-xl">
-                  Sponsers
+                <th scope="col" className="px-6 py-3 text-xl">
+                  Sponsors
                 </th>
               </tr>
             </thead>
             {
               Object.keys(spItems).map((id) => (
-                <tr class="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700 max-md:flex max-md:flex-col">
-                  <th scope="row" class="px-6 py-4 font-medium text-start text-gray-900 dark:text-white text-2xl ">
+
+                <tr className="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700 max-md:flex max-md:flex-col">
+                  <th scope="row" className="px-6 py-4 font-medium text-start text-gray-900 dark:text-white text-2xl ">
                     {spItems[id].spHeader}
                   </th>
-                  <td class="px-6 py-4 text-xl">
+                  <td className="px-6 py-4 text-xl">
                     {spItems[id].spContent}
                   </td>
-                  <td class="px-6 py-4 text-xl">
+                  <td className="px-6 py-4 text-xl">
                     <img src={spItems[id].spImageUrl} />
                   </td>
                 </tr>
               ))
             }
           </table>)}
-          <Footer/>
+        <Footer />
       </div>
 
     </>

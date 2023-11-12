@@ -13,6 +13,8 @@ import replitimg from '../assets/Sponsors/Replit.png'
 import polygonimg from '../assets/Sponsors/Polygon.png'
 import Maitlogo from '../assets/Sponsors/MAITLogo_white.png'
 import hwmlogo from '../assets/Sponsors/HWM_LOGO.jpeg'
+import quine1 from '../assets/Sponsors/dark_quine.svg'
+import quine2 from '../assets/Sponsors/light_quine.svg'
 
 const variants = {
     open: { opacity: 10, x: 0 },
@@ -75,7 +77,7 @@ const Hero = () => {
                                 if (link === 'About Us')
                                     link = link.substring(0, link.indexOf(' '))
                                 return (
-                                    <li className='hover:scale-105 hover:text-slate-50 cursor-pointer transition-all hover:underline' key={index}>{(link != "Innovative Tracks" && link != "Sponsor Tracks") ? <a href='/' >{link}</a> : (link == "Innovative Tracks" && link != "Sponsor Tracks") ? <a href='/table'>Innovative Tracks</a> : <a href='/sptable'>Sponsor Tracks</a>}</li>
+                                    <li className='hover:scale-105 hover:text-slate-50 cursor-pointer transition-all hover:underline' key={index}>{(link != "Innovative Tracks" && link != "Sponsor Tracks") ? <Link to={link} spy={true} smooth={true}>{link}</Link> : (link == "Innovative Tracks" && link != "Sponsor Tracks") ? <a href='/table'>Innovative Tracks</a> : <a href='/sptable'>Sponsor Tracks</a>}</li>
                                 )
                             })
                         }
@@ -97,6 +99,9 @@ const Hero = () => {
                     </div>
                     <div>
                         <img src={replitimg} alt="REPLIT LOGO" className='h-12 max-md:h-8' />
+                    </div>
+                    <div>
+                        <img src={quine2} alt="REPLIT LOGO" className='h-12 max-md:h-8' />
                     </div>
                 </div>
                 <p className='mt-2 font-bold'>Presents</p>

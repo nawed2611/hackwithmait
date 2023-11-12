@@ -10,6 +10,8 @@ import Prism from '../assets/Sponsors/Prism.png'
 import AfreeBug from '../assets/Sponsors/AfreeBug.jpeg'
 import wolfram3 from '../assets/Sponsors/wolfram3.png'
 import MonkHood from '../assets/Sponsors/Monkhood.jpeg'
+import quine1 from '../assets/Sponsors/dark_quine.svg'
+import quine2 from '../assets/Sponsors/light_quine.svg'
 
 const Sponsors = () => {
     return (
@@ -57,6 +59,9 @@ const Sponsors = () => {
                 </div>
                 <div className='flex px-12 my-5 gap-3 items-center justify-center mx-10 max-md:p-0 max-md:my-3'>
                     <img src={MonkHood} alt="" className='roundeS h-24' />
+                </div>
+                <div className='flex px-12 my-5 gap-3 items-center justify-center mx-10 max-md:p-0 max-md:my-3'>
+                    <img src={quine2} alt="" className='roundeS h-24' />
                 </div>
             </div>
 
