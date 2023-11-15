@@ -5,6 +5,7 @@ import { BsCalendar3, BsPeople } from 'react-icons/bs';
 import { BiMoney, BiUserPlus } from 'react-icons/bi';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiFillCloseCircle } from 'react-icons/ai';
+import { GiClick } from "react-icons/gi";
 import { FaDiscord, FaJoint, FaMoneyBill, FaMoneyBillWave, FaUser } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import { motion } from "framer-motion"
@@ -101,7 +102,7 @@ const Hero = () => {
                         <img src={replitimg} alt="REPLIT LOGO" className='h-12 max-md:h-8' />
                     </div>
                     <div>
-                        <img src={quine2} alt="REPLIT LOGO" className='h-12 max-md:h-8' />
+                    <a href="https://quine.sh/?utm_source=hackwithmait"><img src={quine2} alt="REPLIT LOGO" className='h-12 max-md:h-8' /></a>
                     </div>
                 </div>
                 <p className='mt-2 font-bold'>Presents</p>
@@ -143,6 +144,12 @@ const Hero = () => {
                         whileTap={{ scale: 1 }}
                         className='mt-6 sm:mt-12 flex items-center text-2xl  justify-center px-4 p-2 button-bg rounded-xl'>
                         <FaDiscord size={24} className='mr-2' />{' '}<p>Join Our Discord</p></motion.a>
+                        <motion.a
+                        href='https://forms.gle/56eG7xMdAcwjE4H48'
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 1 }}
+                        className='mt-6 sm:mt-12 flex items-center text-2xl  justify-center px-4 p-2 button-bg rounded-xl'>
+                        <GiClick size={24} className='mr-2' />{' '}<p>Quine Registration Link</p></motion.a>
                 </div>
             </motion.div>
         </div >
