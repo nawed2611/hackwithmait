@@ -20,7 +20,7 @@ const Footer = () => {
                         <p className='text-xl'>
                             Maharaja Agrasen Institute of Technology,<br />
                             Rohini, Delhi, <br />
-                            110034
+                            110086
                         </p>
                     </div>
                 </div>

@@ -52,7 +52,7 @@ const FAQ = () => {
                     </div>
                     {/* CONTENT */}
                     <div className='transition-all duration-1000 overflow-hidden'>
-                        <p className='font-semibold p-2 text-justify'>Nothing. Attending Hack with MAIT 4.0 is free.
+                        <p className='font-semibold p-2 text-justify'>Nothing. Attending HackwithMAIT 4.0 is free.
                         </p>
                     </div>
                 </div>
@@ -82,7 +82,7 @@ const FAQ = () => {
                     </div>
                     {/* CONTENT */}
                     <div className='transition-all duration-1000 overflow-hidden'>
-                        <p className='font-semibold p-2 text-justify'>The event is being hosted at MAIT, New Delhi.
+                        <p className='font-semibold p-2 text-justify'>The event is being hosted at Maharaja Agrasen Institute of Technology, New Delhi.
                         </p>
                     </div>
                 </div>
