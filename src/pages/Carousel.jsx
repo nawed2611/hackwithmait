@@ -31,7 +31,7 @@ const CarouselScreen = () => {
     <div className='flex flex-col overflow-hidden items-center'>
     <div className='flex flex-col items-center sm:items-baseline sm:flex-row w-full space-x-4 sm:px-20 p-2'>
         <p className='text-white font-semibold text-2xl'>
-            Hack with MAIT 3.0 Album
+            HackwithMAIT 3.0 Album
         </p>
         <div className='bg-gradient-to-r from-white to-transparent sm:w-[80%] w-[90%] h-2 mt-4'>
         </div>

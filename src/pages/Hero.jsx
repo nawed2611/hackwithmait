@@ -22,7 +22,7 @@ const variants = {
     closed: { opacity: 0, x: "-100%" },
 }
 
-const navLinks = ['About Us', 'Innovative Tracks', 'Sponsor Tracks', 'Timeline', 'Sponsors', 'FAQs', 'Contact Us'];
+const navLinks = ['About Us', 'Innovative Tracks', 'Sponsored Tracks', 'Timeline', 'Sponsors', 'FAQ\'s', 'Contact Us'];
 
 const Hero = () => {
     React.useEffect(() => {
@@ -102,11 +102,11 @@ const Hero = () => {
                         <img src={replitimg} alt="REPLIT LOGO" className='h-12 max-md:h-8' />
                     </div>
                     <div>
-                    <a href="https://quine.sh/?utm_source=hackwithmait"><img src={quine2} alt="REPLIT LOGO" className='h-12 max-md:h-8' /></a>
+                    <div className='bg-white p-2 rounded-lg'> <a href="https://quine.sh/?utm_source=hackwithmait" ><img src={quine2} alt="REPLIT LOGO" className='h-10 max-md:h-8' /></a></div>
                     </div>
                 </div>
-                <p className='mt-2 font-bold'>Presents</p>
-                <h1 className='font-[800] text-center text-8xl text-wrapper'>Hack with MAIT <strong className='hero-text font-[800]'>4.0</strong></h1>
+                <p className='mt-2 font-bold text-lg'>Presents</p>
+                <h1 className='font-[800] text-center text-8xl text-wrapper'>HackwithMAIT <strong className='hero-text font-[800]'>4.0</strong></h1>
                 <div className='svg-wrapper'>
                     <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
                         <rect className="shape" height="60" width="320" />

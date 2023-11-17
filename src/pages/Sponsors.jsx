@@ -12,6 +12,7 @@ import wolfram3 from '../assets/Sponsors/wolfram3.png'
 import MonkHood from '../assets/Sponsors/Monkhood.jpeg'
 import quine1 from '../assets/Sponsors/dark_quine.svg'
 import quine2 from '../assets/Sponsors/light_quine.svg'
+import bikanerwala from '../assets/Sponsors/bikanerwala.avif'
 
 const Sponsors = () => {
     return (
@@ -60,8 +61,11 @@ const Sponsors = () => {
                 <div className='flex px-12 my-5 gap-3 items-center justify-center mx-10 max-md:p-0 max-md:my-3'>
                     <img src={MonkHood} alt="" className='roundeS h-24' />
                 </div>
+                <div className='flex px-12 my-5 gap-3 items-center justify-center mx-10 max-md:p-0 max-md:my-3 bg-white p-2 rounded-xl ml-[5.5rem]'>
+                    <img src={quine2} alt="" className='roundeS h-24 justify-center' />
+                </div>
                 <div className='flex px-12 my-5 gap-3 items-center justify-center mx-10 max-md:p-0 max-md:my-3'>
-                    <img src={quine2} alt="" className='roundeS h-24' />
+                    <img src={bikanerwala} alt="" className='rounded h-20' />
                 </div>
             </div>
 
