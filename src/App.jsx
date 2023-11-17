@@ -9,7 +9,7 @@ import FAQ from './pages/FAQ';
 import Team from './pages/Team';
 import Footer from './pages/Footer';
 import Timeline from './pages/Timeline';
-
+import CommunityPartners from './pages/CommunityPartners'
 function App() {
   return (
     <div className="flex flex-col overflow-x-hidden ">
@@ -21,6 +21,7 @@ function App() {
       <Timeline />
       {/* <Schedule /> */}
       <Sponsors />
+      <CommunityPartners/>
       {/* <Team /> */}
       <FAQ />
       <Footer />

@@ -14,7 +14,7 @@ const About = () => {
       <div className='radial-bg w-[98vw] h-screen'></div>
       <div className='flex glass flex-col justify-center items-center m-2 sm:m-16 mt-8 p-6'>
         <p className='leading-relaxed text-3xl font-[500]'>
-          Welcome to HackwithMAIT 4.0, the annual hackathon organized by the Computer Science and Engineering department at MAIT.
+          Welcome to HackwithMAIT 4.0, the annual hackathon organized by the Computer Science and Engineering department and Computer Science and Technology department at MAIT.
 
           This event brings together some of the brightest and most creative minds from across India to compete and collaborate on innovative ideas and projects. Over the course of the hackathon, participants will have the opportunity to work on a wide range of challenges and problem statements, and to learn from experienced mentors and judges from the tech industry.
 
@@ -42,7 +42,7 @@ const About = () => {
               <p className='drop-shadow-lg shadow-[#00000030] p-2 px-4'>2</p>
               <p className='drop-shadow-lg shadow-[#00000030] p-2 px-4'>2</p>
             </div>
-            <p className='mx-1 text-center text-3xl'>Connections since Hack with MAIT 1.0</p>
+            <p className='mx-1 text-center text-3xl'>Connections since HackwithMAIT 1.0</p>
           </div>
         </div>
       </div>

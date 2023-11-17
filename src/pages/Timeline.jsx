@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Div from "../assets/timeline/div.flextimeline.svg"
+import Div from "../assets/timeline/div.flextimeline1.svg"
 import PhTime1 from "../assets/timeline/phone timeline.svg"
 import PhTime2 from "../assets/timeline/phone timeline day 2.svg"
 const Timeline = () => {
