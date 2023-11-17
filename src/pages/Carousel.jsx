@@ -6,7 +6,7 @@ const images = [
   {
     src:
       'https://cse.mait.ac.in/gallery/_data/i/upload/2023/04/24/20230424120632-daf4a1f7-sm.jpg',
-    alt: 'Hack with MAIT Album',
+    alt: 'HackwithMAIT Album',
   },
   {
     src:
@@ -16,12 +16,12 @@ const images = [
   {
     src:
       'https://cse.mait.ac.in/gallery/_data/i/upload/2023/04/24/20230424120632-a9ded2e6-sm.jpg',
-    alt: 'Hack with MAIT Album',
+    alt: 'HackwithMAIT Album',
   },
   {
     src:
       'https://cse.mait.ac.in/gallery/_data/i/upload/2023/04/24/20230424120629-b02217c8-sm.jpg',
-    alt: 'Hack with MAIT Album',
+    alt: 'HackwithMAIT Album',
   },
   // Add more image objects here
 ];

@@ -123,7 +123,7 @@ const SponsorTracks = () => {
                 <SponsorTrack
                     title="Tezos India"
                     image={Tezos}
-                    content={`Welcome to the Hack with MAIT 4.0 Sponsored Blockchain Track, proudly presented by Tezos! Get ready to unleash your creativity, innovation, and coding prowess as you dive into the exciting world of blockchain technology. With a total prize pool of $500, this is your chance to shine and make a lasting impact.
+                    content={`Welcome to the HackwithMAIT 4.0 Sponsored Blockchain Track, proudly presented by Tezos! Get ready to unleash your creativity, innovation, and coding prowess as you dive into the exciting world of blockchain technology. With a total prize pool of $500, this is your chance to shine and make a lasting impact.
 
                     Track Details:
                     Company Sponsor: Tezos
