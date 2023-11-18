@@ -5,7 +5,7 @@ import replitimg from '../assets/Sponsors/Replit.png'
 import polygonimg from '../assets/Sponsors/Polygon.png'
 import hwmlogo from '../assets/Sponsors/HWM_LOGO.jpeg'
 import Tezos from '../assets/Sponsors/Tezos.png'
-import Kwikpic from '../assets/Sponsors/Kwikpic.png'
+import Kwikpic from '../assets/Sponsors/Kwikpic_partner.jpg'
 import Prism from '../assets/Sponsors/Prism.png'
 import AfreeBug from '../assets/Sponsors/AfreeBug.jpeg'
 import wolfram3 from '../assets/Sponsors/wolfram3.png'
@@ -41,10 +41,10 @@ const Sponsors = () => {
                     <img src={replitimg} alt="" className=' h-24' />
                 </div>
                 <div className='flex px-12 my-5 gap-3 items-center justify-center mx-10 max-md:p-0 max-md:my-3'>
-                    <img src={Tezos} alt="" className='rounded h-24' />
+                    <img src={Kwikpic} alt="" className='rounded h-24' />
                 </div>
                 <div className='flex px-12 my-5 gap-3 items-center justify-center mx-10 max-md:p-0 max-md:my-3'>
-                    <img src={Kwikpic} alt="" className='rounded h-24' />
+                    <img src={Tezos} alt="" className='rounded h-24' />
                 </div>
                 <div className='flex px-12 my-5 gap-3 items-center justify-center mx-10 max-md:p-0 max-md:my-3'>
                     <img src={Prism} alt="" className='rounded h-20' />
