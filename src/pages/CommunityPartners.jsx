@@ -1,7 +1,7 @@
 import OCD from '../Community_Partners/OCD.png'
 import Techcom from '../Community_Partners/techcom.jpg'
 import WAC from '../Community_Partners/WAC.png'
-import Kwikpic from '../assets/Sponsors/kwikpic_partner.jpg'
+import Kwikpic from '../assets/Sponsors/kwikpicpartner.jpg'
 
 
 const CommunityPartners = () => {
